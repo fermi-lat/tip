@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 09:56:17 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Prune a few more unneeded local variables.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 08:48:15 PDT 2004
 tip/src
 
