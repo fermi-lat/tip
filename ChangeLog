@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 13:48:39 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add static Table::openReadWrite, which opens a file of any supported
+format (currently FITS only.) Use this in test program to open file
+rather than using the FitsTable class directly.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 13:48:38 PST 2004
 users/peachey/table/src
 
