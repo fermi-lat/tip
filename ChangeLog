@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Jan 21 19:12:31 PST 2005
+tip/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Link against libHist on Linux.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1, operation: add
 Package: tip
