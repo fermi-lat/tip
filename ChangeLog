@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Mar  3 13:12:31 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add and test getKeyword for strings.
+    *
+------------------------------------------------------------
+User: peachey  Wed Mar  3 13:12:31 PST 2004
 users/peachey/table/table
 
 Modified Files:
