@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Mar  3 12:48:25 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Add overloads for all primitive types.
+    *
+------------------------------------------------------------
+User: peachey  Wed Mar  3 12:48:25 PST 2004
 users/peachey/table/table
 
 Modified Files:
