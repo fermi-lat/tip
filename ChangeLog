@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 15:08:21 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h 
+Log Message:
+Add setKeywordGeneric template
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 09:01:03 PDT 2004
 tip/tip
 
