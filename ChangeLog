@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 08:15:19 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Rename getCellSize getNumElements. Add setNumElements.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 07:32:39 PDT 2004
 tip/tip
 
