@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar  5 08:22:27 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h Table.h VectorAdaptor.h 
+Log Message:
+Clean up some things which are no longer necessary.
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar  5 08:22:27 PST 2004
 users/peachey/table/src
 
 Modified Files:
