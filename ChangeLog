@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Aug 25 13:54:26 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestImage.cxx 
+Log Message:
+Add facility to read/write entire images to/from a 1-d array.
+    *
+------------------------------------------------------------
+User: peachey  Wed Aug 25 13:54:26 PDT 2004
 tip/src
 
 Modified Files:
