@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Sep 29 18:31:03 PDT 2004
+tip/tip
+
+Modified Files:
+	KeyRecord.h 
+Log Message:
+Add getValue method to convert any keyword to the corresponding value type.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Sep 29 07:08:24 PDT 2004
 tip/doc
 
