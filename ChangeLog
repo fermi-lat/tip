@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  5 07:50:16 PDT 2005
+tip/tip
+
+Modified Files:
+	KeyRecord.h 
+Log Message:
+Keep only 15 digits, the limit of a double, and always show the
+decimal point, so that floating point values *look* like floating points,
+even if the value happens to be an integer.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p0, operation: add
 Package: tip
