@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 07:40:29 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Add tests for proper behavior (error) when calling a non-const method
+for an extension object whose underlying file is open read-only.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 06:33:58 PDT 2004
 tip/src
 
