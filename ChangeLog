@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr  1 12:51:06 PST 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Add static method globalInit which calls RootExtensionManager::resetSigHandlers
+to prevent Root from catching signals. Also, simplify this factory; don't use
+FileSvc class, which is an unneccessary complication.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr  1 12:49:27 PST 2004
 tip/src
 
