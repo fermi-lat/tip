@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 02:05:08 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+Be more thorough about resetting signal handlers.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr  1 12:51:50 PST 2004
 tip/src
 
