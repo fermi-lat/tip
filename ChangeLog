@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Feb 19 12:39:42 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Remove unneccessary explicit constructors for Cell and Record. Protect
+against self-assignment in Iterator::operator=
+    *
+------------------------------------------------------------
 User: peachey  Thu Feb 19 07:32:00 PST 2004
 users/peachey/table/src/test
 
