@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:51:18 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.h FitsTabularData.cxx 
+Log Message:
+Move getCellGeneric here from FitsExtension class. Add
+getVectorCellGeneric for low level support for vector columns.
+Add new internal class ColumnInfo for encapsulating info about
+the columns. When opening a table, populate two containers for
+this info: one indexed on column number, the other on column name.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 06:53:45 PST 2004
 users/peachey/table/table
 
