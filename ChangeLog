@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:38:51 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h RootExtensionManager.cxx 
+	RootExtensionManager.h 
+Added Files:
+	KeyRecord.cxx 
+Log Message:
+Add/test new abstraction to handle entire key records (name, value, comment)
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:11:38 PDT 2004
 tip/tip
 
