@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 13 10:28:47 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h VectorAdaptor.h 
+Log Message:
+Add/fix support for setting vector valued columns.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 13 10:06:04 PDT 2004
 tip/src/test
 
