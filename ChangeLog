@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu May 20 07:02:41 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h RootExtensionManager.h 
+Log Message:
+Input pointers to "set" methods are now const.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 19 11:13:59 PDT 2004
 tip/tip
 
