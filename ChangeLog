@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 16 06:37:30 PDT 2004
+tip/tip
+
+Modified Files:
+	Extension.h Header.h Keyword.h Table.h TableRecord.h 
+Added Files:
+	ExtensionData.h IExtensionData.h 
+Removed Files:
+	HeaderData.h IData.h IExtensionManager.h IHeaderData.h 
+	ITabularData.h TabularData.h 
+Log Message:
+Consolidate functionality of IHeaderData and ITabularData (and their
+subclasses) into IExtensionData and its subclasses. Simplify relationships
+between extension manager classes and IExtensionData.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 16 06:37:29 PDT 2004
 tip/src
 
