@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 28 14:20:30 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx TestTable.h test_tip_main.cxx 
+Log Message:
+Throw an exception if someone attempts to get a vector from a scalar
+column or vice versa. Change tests to test for this behavior.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 26 14:41:30 PDT 2004
 tip/src
 
