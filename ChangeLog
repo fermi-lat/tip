@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 07:19:11 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	RootExtensionUtils.cxx RootExtensionUtils.h 
+Log Message:
+Added code to support reading Root files. New class LeafBuffer holds
+the references which Root uses to get/set values in a Leaf. Code
+from tuple by Toby Burnett incorporated to manage the Root access.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 07:15:24 PST 2004
 users/peachey/table/src
 
