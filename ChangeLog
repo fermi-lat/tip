@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 12:03:58 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Verify that channel can be gotten as a long and that the long values agree with
+the doubles.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 11:39:34 PST 2004
 users/peachey/table/table
 
