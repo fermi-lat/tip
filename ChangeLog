@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 16 06:37:29 PDT 2004
+tip/src
+
+Modified Files:
+	Extension.cxx FitsExtensionManager.cxx FitsExtensionManager.h 
+	IFileSvc.cxx RootExtensionManager.cxx RootExtensionManager.h 
+Added Files:
+	FitsExtensionData.h RootExtensionData.h 
+Log Message:
+Consolidate functionality of IHeaderData and ITabularData (and their
+subclasses) into IExtensionData and its subclasses. Simplify relationships
+between extension manager classes and IExtensionData.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 16 06:32:29 PDT 2004
 tip/src/test
 
