@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Nov 18 11:01:52 PST 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx 
+Log Message:
+Add <cstdlib> and <limits>.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Nov 16 05:48:44 PST 2004
 tip/src
 
