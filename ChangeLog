@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 07:36:31 PST 2004
+users/peachey/table/table
+
+Added Files:
+	TableRecord.h 
+Log Message:
+Table::Record and Table::Cell migrated to TableRecord and TableCell in this
+new header file.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 07:35:33 PST 2004
 users/peachey/table/table
 
