@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 13:39:41 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ScalarAdaptor.h Table.h VectorAdaptor.h 
+Removed Files:
+	Ref.h 
+Log Message:
+Rename ReferenceAdaptor to ScalarAdaptor.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 13:27:38 PST 2004
 users/peachey/table/src
 
