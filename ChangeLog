@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Fri Feb 20 13:34:26 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Change FitsException to TableException.
+    *
+------------------------------------------------------------
+User: peachey  Fri Feb 20 13:34:26 PST 2004
 users/peachey/table/src
 
 Modified Files:
