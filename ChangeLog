@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:52:47 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtension.h 
+Log Message:
+Move getCellGeneric templates to FitsTabularData class.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 10:51:18 PST 2004
 users/peachey/table/src
 
