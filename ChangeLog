@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Jul 14 10:45:35 PDT 2004
+tip/src
+
+Modified Files:
+	Header.cxx 
+Log Message:
+Oops, formatTime should be const.
+    *
+------------------------------------------------------------
+User: peachey  Wed Jul 14 10:45:35 PDT 2004
 tip/tip
 
 Modified Files:
