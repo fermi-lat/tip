@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Dec  7 07:37:19 PST 2004
+tip/src
+
+Modified Files:
+	KeyRecord.cxx 
+Log Message:
+Silence warning about unused variable.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Nov 18 11:01:52 PST 2004
 tip/src/test
 
