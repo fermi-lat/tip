@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: peachey  Wed Mar 31 14:43:16 PST 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Support for variable vector columns. Change getFieldNumElements to
+accept an optional second argument with the record number. In
+the case of constant vectors this is ignored, but for variable length
+columns the number of elements in that row are returned.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Mar 31 14:43:16 PST 2004
 tip/tip
 
 Modified Files:
