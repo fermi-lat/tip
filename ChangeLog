@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:38:24 PDT 2004
+tip/src
+
+Added Files:
+	FitsColumn.h RootColumn.h RootColumn.cxx 
+Log Message:
+Add new columnar data abstractions, which ultimately will simplify
+and improve the factoring of the implementation.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:35:27 PDT 2004
 tip/tip
 
