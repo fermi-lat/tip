@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:10:52 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+Log Message:
+Remove createFile method, which is now located in file manager
+class.
+
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:10:06 PDT 2004
 tip/tip
 
