@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 10:50:46 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Use default constructor instead of explicit construction from 0 for temporary
+value used in copy method.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Sep 27 10:13:45 PDT 2004
 tip/doc
 
