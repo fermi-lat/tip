@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 07:28:46 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Use new constructor for FitsColumn, which takes a pointer to the
+FitsExtensionManager object. Method getColumn changed to make sure object is a table,
+and that the column index being sought is valid.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 07:26:44 PDT 2004
 tip/src
 
