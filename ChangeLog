@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Fri Feb 20 12:42:59 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Mainly cosmetic changes; instead of using row_num, num_rows, etc. use
+record_index, numRecords, etc.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Feb 20 12:42:59 PST 2004
 users/peachey/table/src
 
 Modified Files:
