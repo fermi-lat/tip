@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:32:20 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Change test so that it doesn't rely on copying TableRecord objects.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:31:13 PDT 2004
 tip/src/test
 
