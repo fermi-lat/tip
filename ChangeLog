@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 08:17:11 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h FitsExtensionManager.cxx 
+Log Message:
+Begin phasing out ColumnInfo class in favor of FitsColumn.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 08:15:19 PDT 2004
 tip/src
 
