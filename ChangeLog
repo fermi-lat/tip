@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 08:48:15 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h FitsExtensionManager.cxx 
+Log Message:
+Use IColumn's getId instead of ColumnInfo, which was removed.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 08:46:07 PDT 2004
 tip/src
 
