@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 06:33:58 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+If a file cannot be opened read-write, open it read-only.
+Fix the warning about cfitsio 2.48: make it more accurate with
+regard to determining the version.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 06:32:50 PDT 2004
 tip/data
 
