@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 10:05:32 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionData.cxx FitsExtensionData.h FitsTabularData.cxx 
+	FitsTabularData.h 
+Log Message:
+Migrate all "read", "readKeyword" etc. methods to the less file-oriented
+"get", "getKeyword" etc.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:51:28 PST 2004
 users/peachey/table/src
 
