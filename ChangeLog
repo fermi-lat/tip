@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 14 06:51:17 PDT 2004
+tip/src/test
+
+Added Files:
+	TestExtensionData.cxx 
+Log Message:
+Beginnings of a more thorough test suite.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 13 12:10:39 PDT 2004
 tip/src
 
