@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 12:28:34 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Move Cell and Record "up" into Table's namespace.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 12:24:00 PST 2004
 users/peachey/table/table
 
