@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 13:05:56 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Removed Files:
+	RootExtensionUtils.h RootExtensionUtils.cxx 
+Log Message:
+Renaming RootExtensionUtils to RootExtensionManager part 1: rename files.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:57:41 PST 2004
 users/peachey/table/src
 
