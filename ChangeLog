@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 07:19:47 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Report what() from exceptions, and add test of Root file access.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 07:19:11 PST 2004
 users/peachey/table/src
 
