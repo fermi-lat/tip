@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: peachey  Wed May 19 11:13:58 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add and setFieldNumElements, for modifying the length of a fixed-width
+field (changing vector to scalar and vice versa.) When this is called,
+all internal column information structures are updated. Because the
+number of elements in a field can now change at any time, do not
+cache vector/scalar nature of a field.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon May 17 06:55:15 PDT 2004
 tip/src/test
 
