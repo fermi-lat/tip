@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Mon Apr  5 08:55:51 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Add a new method double Cell::get() for convenience when getting doubles.
+    *
+------------------------------------------------------------
+User: peachey  Mon Apr  5 08:55:51 PDT 2004
 tip/src/test
 
 Modified Files:
