@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 12:15:34 PST 2005
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestException.h 
+Log Message:
+Test TipException class.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan 11 12:14:27 PST 2005
 tip/src
 
