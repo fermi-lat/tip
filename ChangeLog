@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:07:11 PDT 2004
+tip/src/test
+
+Added Files:
+	TestFileManager.cxx TestFileManager.h 
+Log Message:
+Tests for file oriented activities.
+
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:06:03 PDT 2004
 tip/src
 
