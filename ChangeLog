@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Tue Mar  2 07:31:21 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Make column name lookup case insensitive.
+    *
+------------------------------------------------------------
+User: peachey  Tue Mar  2 07:31:21 PST 2004
 users/peachey/table/src
 
 Modified Files:
