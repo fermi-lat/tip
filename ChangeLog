@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr  6 10:36:07 PDT 2005
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+Avoid warnings on windows by renaming an iterator which was used
+later in the same method, even though this is completely legal C++.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr  6 10:34:50 PDT 2005
 tip/src
 
