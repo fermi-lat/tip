@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Tue May 25 07:52:21 PDT 2004
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx FitsFileManager.h IFileSvc.cxx 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add methods to test whether a file exists, and/or whether it is a valid
+Fits or Root file.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu May 20 07:02:41 PDT 2004
 tip/tip
 
