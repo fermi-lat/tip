@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 09:54:52 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+Log Message:
+Do not allow read-only tables to be modified. Correct some error
+messages which suffered from too much cut-and-paste.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 09:47:20 PDT 2004
 tip/src/test
 
