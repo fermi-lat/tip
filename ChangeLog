@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar 18 11:10:57 PST 2004
+users/peachey/table/src
+
+Added Files:
+	RootExtensionData.cxx RootExtensionData.h 
+	RootExtensionUtils.cxx RootExtensionUtils.h RootHeaderData.cxx 
+	RootHeaderData.h RootTabularData.cxx RootTabularData.h 
+Log Message:
+First cut at Root access.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar 18 11:10:16 PST 2004
 users/peachey/table/src/test
 
