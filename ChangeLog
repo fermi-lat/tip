@@ -1,4 +1,29 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 13 09:56:32 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+Log Message:
+- FitsExtensionManager::open() now checks whether the given extension is
+  a table and if so, calls openTable() automatically. The latter method
+  is now protected.
+
+- Add new isTable() method to tell clients whether or not the given
+  extension is a table.
+
+- FitsExtensionManger::close now takes optional int status argument
+  instead of hard-wiring an internal status variable to 0.
+
+- Methods which pertain only to tables now throw if they are called
+  for a non-table extension.
+
+- Replaced a bunch of if (status) with if (0 != status).
+
+- Cosmetic changes in error report formatting.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 12 07:15:14 PDT 2004
 tip/src/test
 
