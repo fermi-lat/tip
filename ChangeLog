@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Fri Feb 20 13:22:34 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Merge ITabularData with Table and FitsTabularData with FitsTable. Note
+that as of this commit, ITabularData.h was deleted, FitsTabularData.h
+was moved in the repository to FitsTable.h, FitsTabularData.cxx was
+moved in the repository to FitsTable.cxx.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Feb 20 13:22:34 PST 2004
 users/peachey/table/src
 
 Modified Files:
