@@ -3,10 +3,11 @@ package tip
 version v1r1p1
 
 author James Peachey <peachey@lheamail.gsfc.nasa.gov>
-# $Id$
+# $Id: requirements,v 1.7 2004/04/03 00:40:35 burnett Exp $
 
 use STpolicy *
 use ROOT * IExternal
 use cfitsio * IExternal
 
 apply_pattern ST_library option=-no_share
+application sample sample/sample.cxx
