@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:06:03 PDT 2004
+tip/src
+
+Added Files:
+	FitsFileManager.cxx FitsFileManager.h 
+Log Message:
+New class which provides file-oriented access, as distinct from the
+extension-oriented access provided in extension manager classes.
+
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:02:32 PDT 2004
 tip/src/test
 
