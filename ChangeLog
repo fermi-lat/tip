@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 14:06:07 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx 
+Log Message:
+Add support for writing columns
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 10:24:03 PST 2004
 users/peachey/table/src
 
