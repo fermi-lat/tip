@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:08:34 PST 2004
+users/peachey/table/src
+
+Removed Files:
+	FitsExtensionData.cxx FitsExtensionData.h 
+	FitsExtensionUtils.cxx FitsExtensionUtils.h 
+Log Message:
+Removing code rendered obsolete by new FitsExtensionManager class.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:07:31 PST 2004
 users/peachey/table/src
 
