@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 10:10:41 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionData.h FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Remove fitsfile * member from FitsTabularData in favor of an inline
+getFitsFp() method in FitsExtensionData.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 10:05:33 PST 2004
 users/peachey/table/table
 
