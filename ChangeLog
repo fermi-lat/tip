@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  8 12:26:59 PST 2004
+users/peachey/table/src
+
+Removed Files:
+	FitsExtension.cxx FitsExtension.h 
+Log Message:
+No longer necessary; functionality moved to FitsExtensionData and
+FitsExtensionUtils classes.
+    *
+------------------------------------------------------------
 User: peachey  Mon Mar  8 10:16:09 PST 2004
 users/peachey/table/table
 
