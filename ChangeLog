@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 08:24:05 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Add base class ConstTableRecord for use with a const_iterator type, and anticipate
+usage by new RandomAccessIterator by defining appropriate methods.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 08:22:33 PST 2004
 users/peachey/table/table
 
