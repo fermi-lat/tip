@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  9 06:44:11 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add stub methods for creating Root files and resizing tables.
+However, these methods just throw.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  9 06:40:37 PDT 2004
 tip/src
 
