@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Feb 26 17:42:08 PST 2004
+users/peachey/table/table
+
+Added Files:
+	ITabularData.h 
+Log Message:
+Reviving ITabularData class in order to separate specific
+table implementations (Root, FITS, etc.) from the concrete hierarchy of Headers,
+extensions, images, tables etc.
+    *
+------------------------------------------------------------
 User: peachey  Thu Feb 26 09:13:23 PST 2004
 users/peachey/table/src/test
 
