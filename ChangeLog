@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: peachey  Fri Oct 29 13:03:42 PDT 2004
+tip/tip
+
+Modified Files:
+	Extension.h Header.h IFileSvc.h Image.h Table.h 
+Removed Files:
+	ExtensionData.h IExtensionData.h Keyword.h TableRecord.h 
+Log Message:
+Major internal structural refactoring, with no functional change. The
+IExtensionData hierarchy was removed in favor of directly subclassing
+Table, Header and Image classes for each file format. This reduces
+the number of classes which need to be altered to add new features,
+simplifies the inheritance structure, and makes it more sensible,
+in that the underlying Fits image and table handlers are in different
+classes.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Oct 29 13:03:41 PDT 2004
 tip/src/test
 
