@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:29:51 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Use RootColumn type instead of LeafBuffer.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:29:07 PDT 2004
 tip/src
 
