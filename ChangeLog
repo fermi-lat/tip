@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 02:40:24 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.h 
+Log Message:
+Add filter capability.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 02:06:50 PST 2004
 tip/src
 
