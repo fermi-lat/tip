@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 12:12:03 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Use the array index of the column container to identify field
+index, rather than the column number from the fitsfile.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 09:56:17 PDT 2004
 tip/src
 
