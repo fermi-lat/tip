@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 06:19:13 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Add ability to get a range of values from a cell.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 06:17:59 PST 2004
 users/peachey/table/src
 
