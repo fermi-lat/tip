@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 12:47:21 PST 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+Log Message:
+Support filtering syntax for Fits files too. Improved error handling
+and reporting.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 12:45:57 PST 2004
 tip/src
 
