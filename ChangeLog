@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 08:30:55 PST 2005
+tip/tip
+
+Modified Files:
+	Table.h 
+Log Message:
+Removing abstract isTable method, which is not needed because
+it is declared in the base class Extension.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jan  5 10:04:50 PST 2005
 tip/src/test
 
