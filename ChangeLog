@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 12:17:19 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Add getFieldIndex method to ITabularData and subclasses. This method returns
+an integral index indicating the index of the given field.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 12:17:18 PST 2004
 users/peachey/table/table
 
