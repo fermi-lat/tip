@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun 17 06:50:50 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.h 
+Log Message:
+Check upper as well as lower limit when looking up a column.
+Remove getFieldNumElements/setFieldNumElements which are superseded by
+IColumn::getNumElements/setNumElements.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun 17 06:48:53 PDT 2004
 tip/src
 
