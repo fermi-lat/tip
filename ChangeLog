@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Tue Apr 20 14:10:29 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestFileManager.cxx TestFileManager.h 
+Log Message:
+Add IFileSvc::readTable, for opening tables read-only, and test for this.
+    *
+------------------------------------------------------------
+User: peachey  Tue Apr 20 14:10:29 PDT 2004
 tip/src
 
 Modified Files:
