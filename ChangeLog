@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Tue Mar 30 14:02:34 PST 2004
+users/peachey/tip/tip
+
+Modified Files:
+	Extension.h Header.h HeaderData.h IData.h IExtensionManager.h 
+	IFileSvc.h IHeaderData.h ITabularData.h Iterator.h Keyword.h 
+	ScalarAdaptor.h Table.h TableRecord.h TabularData.h 
+	TipException.h VectorAdaptor.h tip_types.h 
+Log Message:
+Migrating from table to tip: TableException -> TipException,
+namespace table -> namespace tip, table_types.h -> tip_types.h, etc.
+    *
+------------------------------------------------------------
+User: peachey  Tue Mar 30 14:02:34 PST 2004
 users/peachey/tip/src/test
 
 Modified Files:
