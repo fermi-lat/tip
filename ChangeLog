@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 14:00:45 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.h 
+Log Message:
+Add test for copying fields using assignment operators for Records
+and Cells.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 14:00:20 PDT 2004
 tip/src/test
 
