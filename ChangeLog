@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar  5 08:32:34 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Remove less general overloads for getCell from ITabularData and subclasses.
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar  5 08:32:34 PST 2004
 users/peachey/table/table
 
 Modified Files:
