@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun 17 06:55:02 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Replace calls to IExtensionData::getFieldNumElements/setFieldNumElements
+with calls to IColumn::getNumElements/setNumElements.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun 17 06:54:10 PDT 2004
 tip/tip
 
