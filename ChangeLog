@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 12:03:43 PST 2004
+users/peachey/table/src
+
+Added Files:
+	FitsPrimProps.cxx FitsPrimProps.h 
+Log Message:
+New class to facilitate calling type-specific cfitsio functions from
+templated functions.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 10:10:41 PST 2004
 users/peachey/table/src
 
