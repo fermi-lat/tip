@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar 18 11:23:27 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsFileSvc.cxx FitsFileSvc.h 
+Log Message:
+Begin to add Root file support to the file service.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar 18 11:16:25 PST 2004
 users/peachey/table/table
 
