@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan  4 12:13:06 PST 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx 
+Log Message:
+Only create primary image when a template is not used.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan  4 10:02:54 PST 2005
 tip/src
 
