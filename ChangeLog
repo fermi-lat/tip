@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  9 06:40:37 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+Log Message:
+Add capability to create files and resize tables. Fix a bug which
+caused an error getting the number of rows when it really was OK.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr  7 11:45:49 PDT 2004
 tip/data
 
