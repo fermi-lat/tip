@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue May 25 12:20:26 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestImage.cxx 
+Log Message:
+Add and test support for changing the dimensions of an image.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue May 25 12:20:26 PDT 2004
 tip/src
 
 Modified Files:
