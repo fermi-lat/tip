@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Tue Apr 20 13:08:01 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx TestTable.h 
+Log Message:
+Add Table::ConstIterator class and tests to confirm it works.
+    *
+------------------------------------------------------------
+User: peachey  Tue Apr 20 13:08:01 PDT 2004
 tip/tip
 
 Modified Files:
