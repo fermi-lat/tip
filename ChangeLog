@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 14 14:31:49 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add checks to ensure client code cannot attempt to access non-existent
+columns.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr 14 14:01:15 PDT 2004
 tip/src/test
 
