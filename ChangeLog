@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 14:01:48 PDT 2004
+tip/src/sample
+
+Modified Files:
+	sample.cxx 
+Log Message:
+Add sample code showing how to use assignments
+between records to copy tables.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 14:00:45 PDT 2004
 tip/src/test
 
