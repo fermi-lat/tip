@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 13:34:26 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTable.cxx FitsTable.h 
+Log Message:
+Change FitsException to TableException.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 13:28:16 PST 2004
 users/peachey/table/table
 
