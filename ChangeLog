@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:11:38 PDT 2004
+tip/tip
+
+Modified Files:
+	Table.h 
+Log Message:
+Add row filtering.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:10:51 PDT 2004
 tip/tip
 
