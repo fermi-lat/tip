@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun 17 06:48:53 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Correct code which classifies column as scalar or vector.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun 17 06:48:11 PDT 2004
 tip/src/test
 
