@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:44:42 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Pass tab_data argument to Extension base constructor. This is possible
+now because ITabularData derives from IExtensionData.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:42:47 PST 2004
 users/peachey/table/table
 
