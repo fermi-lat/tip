@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 08:41:25 PST 2005
+tip/src/test
+
+Modified Files:
+	TestImage.cxx 
+Log Message:
+Change two distinct tests so that their results don't clobber
+each other, so that both tests can be verified that they are working.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan 11 08:39:53 PST 2005
 tip/src/test
 
