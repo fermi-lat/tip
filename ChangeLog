@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 06:20:26 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Test whether the first element in a vector valued cell is correct.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 06:19:40 PST 2004
 users/peachey/table/table
 
