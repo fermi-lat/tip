@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Sep 27 10:10:41 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestImage.cxx 
+Log Message:
+Change setImageDimensions so that the new dimensions are saved in the
+m_image_dimensions member.
+    *
+------------------------------------------------------------
 User: peachey  Thu Aug 26 14:47:23 PDT 2004
 tip/src/test
 
