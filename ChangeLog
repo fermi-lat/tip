@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 06:42:08 PDT 2004
+tip/data
+
+Added Files:
+	aeff_DC1.fits 
+Log Message:
+New test file, used to verify that variable length columns work.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 06:40:39 PDT 2004
 tip/tip
 
