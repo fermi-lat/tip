@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 07:37:32 PST 2004
+users/peachey/table/table
+
+Added Files:
+	TableIterator.h 
+Log Message:
+Table::Iterator migrated to TableIterator in this new header file.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 07:36:31 PST 2004
 users/peachey/table/table
 
