@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr 22 08:39:10 PDT 2004
+tip/src/sample
+
+Modified Files:
+	sample.cxx 
+Log Message:
+Modify sample code to demonstrate const Table access.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr 22 08:38:45 PDT 2004
 tip/src/test
 
