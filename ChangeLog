@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 11:39:34 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Keyword.h TableRecord.h 
+Log Message:
+Templatize get method.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 11:37:35 PST 2004
 users/peachey/table/table
 
