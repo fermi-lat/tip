@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Aug 26 14:47:23 PDT 2004
+tip/src/test
+
+Removed Files:
+	.test_table_main.cxx.swp 
+Log Message:
+Removing editor swap file which was added by accident.
+    *
+------------------------------------------------------------
 User: peachey  Thu Aug 26 13:59:48 PDT 2004
 tip/src
 
