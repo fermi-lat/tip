@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Sep 29 06:48:08 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestKeyRecord.cxx 
+Log Message:
+Add getValue method to convert any keyword to the corresponding value type.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Sep 29 06:48:07 PDT 2004
 tip/src
 
