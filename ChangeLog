@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Oct 29 12:46:50 PDT 2004
+tip/src
+
+Modified Files:
+	FileSummary.cxx FitsFileManager.h Header.cxx 
+Log Message:
+Correcting inclusions.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Sep 29 18:31:03 PDT 2004
 tip/tip
 
