@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr  1 12:49:27 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add static method resetSigHandlers to prevent Root from catching signals.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr  1 11:30:38 PST 2004
 tip/src
 
