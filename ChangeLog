@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:45:21 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	RootExtensionUtils.cxx 
+Removed Files:
+	RootTabularData.h RootTabularData.cxx 
+Log Message:
+Remove RootTabularData in favor of generic TabularData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:40:12 PST 2004
 users/peachey/table/src
 
