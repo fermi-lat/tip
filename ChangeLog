@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Tue Sep 28 11:38:51 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestKeyRecord.cxx TestKeyRecord.h 
+Log Message:
+Add/test new abstraction to handle entire key records (name, value, comment)
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Sep 28 11:38:51 PDT 2004
 tip/src
 
 Modified Files:
