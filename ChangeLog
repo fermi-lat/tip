@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:08:41 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+When creating files, use file manager rather than extension manager.
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:07:11 PDT 2004
 tip/src/test
 
