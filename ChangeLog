@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:51:02 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestKeyRecord.cxx 
+Log Message:
+Add a test for constructor from name, value, comment.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:38:51 PDT 2004
 tip/tip
 
