@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Jul 23 16:21:59 PDT 2004
+tip/src
+
+Modified Files:
+	FitsPrimProps.cxx 
+Log Message:
+Add flag for classifying char * as a string.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jul 19 06:40:29 PDT 2004
 tip/tip
 
