@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 14 14:34:29 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Add parallel tests for Root files.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr 14 14:31:49 PDT 2004
 tip/src
 
