@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 08:22:27 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Clean up some things which are no longer necessary.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 08:17:16 PST 2004
 users/peachey/table/src/test
 
