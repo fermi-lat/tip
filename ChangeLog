@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan  4 10:01:19 PST 2005
+tip/tip
+
+Modified Files:
+	Image.h Table.h 
+Log Message:
+Add/clarify a comment.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r0p1, operation: add
 Package: tip
