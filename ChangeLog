@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 21:24:06 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Add method getNumElements to get the number of elements in a
+vector column.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 21:17:45 PST 2004
 users/peachey/table/src
 
