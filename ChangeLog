@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 08:47:38 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Derive from new Extension class.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 08:46:24 PST 2004
 users/peachey/table/table
 
