@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:56:19 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h 
+Log Message:
+Add overload of getCell for std::vector<double>.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 10:54:37 PST 2004
 users/peachey/table/table
 
