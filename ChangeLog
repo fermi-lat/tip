@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:35:27 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Use new column abstractions instead of getCell. Make copy construction
+of TableRecord objects private, in anticipation of changing its behavior.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:33:42 PDT 2004
 tip/tip
 
