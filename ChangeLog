@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Apr  2 03:16:45 PST 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx RootExtensionManager.cxx 
+Log Message:
+Add filtering support in the interface, and for Root files.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Apr  2 03:16:45 PST 2004
 tip/tip
 
 Modified Files:
