@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 21:17:45 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h 
+Log Message:
+Add method getFieldNumElements to get the number of elements in a
+vector column.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 21:15:57 PST 2004
 users/peachey/table/table
 
