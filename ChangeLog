@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: peachey  Wed Jul 14 06:32:02 PDT 2004
+tip/tip
+
+Modified Files:
+	Header.h 
+Log Message:
+Add some conveniences:
+1) new method formatTime which puts a time into a fits-standard format
+2) new method get(list-of-key-names, list-of-key-val-pairs) which gets
+   all keywords in the list if they exist and returns an array of
+   name-value pairs
+3) new method update(list-of-key-val-pairs) which updates keywords in
+   an extension with the given list.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jul 14 06:26:55 PDT 2004
 tip/src
 
