@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 14:05:17 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Add utility method TableCell::getFieldIndex, which simplifies and
+consolidates places throughout the class where the index of the
+current cell is used. Fix assignments between TableRecord,
+ConstTableRecord and TableCell so that they work as expected.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 14:01:48 PDT 2004
 tip/src/sample
 
