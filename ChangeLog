@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 25 11:57:01 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Remove get/setPixel(x, y, pixel), because its function is replaced by
+get/setPixel(vector<long> x, pixel), and overloaded versions are not necessary
+except at the very top level (Image class).
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 25 11:54:37 PDT 2004
 tip/tip
 
