@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 09:11:53 PDT 2004
+tip/tip
+
+Modified Files:
+	Iterator.h 
+Log Message:
+Add explicit operator = to allow assignment of iterator objects
+to be independent of assignment of their underlying data objects.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 09:10:41 PDT 2004
 tip/tip
 
