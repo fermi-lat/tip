@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 14:31:47 PST 2005
+tip/tip
+
+Modified Files:
+	IFileSvc.h 
+Log Message:
+Add facility for creating a file in memory.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 14:29:14 PST 2005
 tip/src
 
