@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar  2 07:16:50 PST 2004
+users/peachey/table/table
+
+Removed Files:
+	IHeaderData.h 
+Log Message:
+IHeaderData encapsulation superceded by IExtensionData.
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar  2 07:01:36 PST 2004
 users/peachey/table/src
 
