@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr  1 12:51:50 PST 2004
+tip/src
+
+Removed Files:
+	FileSvc.h FileSvc.cxx 
+Log Message:
+FileSvc class is not really needed, at least for now.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr  1 12:51:22 PST 2004
 tip/tip
 
