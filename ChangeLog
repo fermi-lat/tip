@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar 19 14:55:25 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FileSvc.cxx FitsExtensionManager.h IFileSvc.cxx 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Misc. clean up: header files, comments, etc.
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar 19 14:55:25 PST 2004
 users/peachey/table/table
 
 Modified Files:
