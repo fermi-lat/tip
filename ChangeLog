@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 12:13:10 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx TestExtensionData.cxx 
+Log Message:
+rather than column numbers from fits files.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 12:12:03 PDT 2004
 tip/src
 
