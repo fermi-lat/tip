@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:54:37 PST 2004
+users/peachey/table/table
+
+Added Files:
+	VectorAdaptor.h 
+Log Message:
+New adaptor for supporting vector-valued columns.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 10:52:47 PST 2004
 users/peachey/table/src
 
