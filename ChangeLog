@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 09:10:41 PDT 2004
+tip/tip
+
+Modified Files:
+	IExtensionData.h ExtensionData.h 
+Log Message:
+Add copyRecord method, which copies an entire record from one
+table to another.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 09:09:51 PDT 2004
 tip/src
 
