@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 10:05:33 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Header.h IExtensionData.h ITabularData.h Ref.h TableRecord.h 
+Log Message:
+Migrate all "read", "readKeyword" etc. methods to the less file-oriented
+"get", "getKeyword" etc.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 10:05:32 PST 2004
 users/peachey/table/src/test
 
