@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 21:15:57 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	VectorAdaptor.h 
+Log Message:
+Beginnings of new vector value interface.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 12:30:37 PST 2004
 users/peachey/table/src
 
