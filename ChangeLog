@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Aug 26 13:59:48 PDT 2004
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx 
+Log Message:
+Fix bug concerning creation of images.
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 25 14:06:16 PDT 2004
 tip/src
 
