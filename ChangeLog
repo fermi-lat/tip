@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan  4 10:02:54 PST 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx 
+Log Message:
+Fix bug: when creating a new file, it is necessary to add the primary
+HDU as an image explicitly.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan  4 10:01:19 PST 2005
 tip/src
 
