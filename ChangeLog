@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 20 13:34:06 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx TestTable.h 
+Log Message:
+Add test for reading Root files. Clean up test of getFieldCont.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 20 13:08:01 PDT 2004
 tip/src/test
 
