@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 21:24:40 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Test new getNumElements methods.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 21:24:06 PST 2004
 users/peachey/table/table
 
