@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:30:57 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Extension.h Header.h 
+Log Message:
+Use IExtensionData instead of IHeaderData.
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:29:25 PST 2004
 users/peachey/table/table
 
