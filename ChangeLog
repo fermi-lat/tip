@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 12:08:27 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtension.cxx FitsExtension.h 
+Log Message:
+Migrate from FitsExtensionData, a subclass of IExtensionData, to
+FitsExtension, which is similar to IExtensionData, but uses non-virtual
+templated methods. This is because this class is really just a helper
+for FitsTabularData, and the latter already implements IExtensionData,
+so there was no use in having another implementation of that interface.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 12:05:54 PST 2004
 users/peachey/table/table
 
