@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 08:37:32 PST 2005
+tip/src
+
+Modified Files:
+	FitsImage.cxx FitsImage.h FitsTable.cxx FitsTable.h 
+Log Message:
+Add getName/setName methods.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan 11 08:34:03 PST 2005
 tip/tip
 
