@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 14:54:58 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Extension.h 
+Log Message:
+Moved implementation into source file.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 13:39:41 PST 2004
 users/peachey/table/src/test
 
