@@ -1,5 +1,22 @@
 ------------------------------------------------------------
 User: peachey  Fri Oct 29 13:03:41 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx TestExtensionData.cxx TestExtensionData.h 
+	TestFileManager.cxx TestTable.cxx 
+Log Message:
+Major internal structural refactoring, with no functional change. The
+IExtensionData hierarchy was removed in favor of directly subclassing
+Table, Header and Image classes for each file format. This reduces
+the number of classes which need to be altered to add new features,
+simplifies the inheritance structure, and makes it more sensible,
+in that the underlying Fits image and table handlers are in different
+classes.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Oct 29 13:03:41 PDT 2004
 tip/src
 
 Modified Files:
