@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Fri May 14 08:07:13 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestFileSummary.cxx TestFileSummary.h 
+Log Message:
+Add ability to get a summary of a data file: so far, just the names of
+all extensions in that file.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri May 14 08:07:13 PDT 2004
 tip/src
 
 Modified Files:
