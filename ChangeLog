@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 06:40:39 PDT 2004
+tip/tip
+
+Modified Files:
+	TipException.h 
+Log Message:
+Add new cfitsio-specific exception class.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 26 08:26:25 PDT 2004
 tip/src/test
 
