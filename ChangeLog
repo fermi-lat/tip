@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Aug 25 11:30:22 PDT 2004
+tip/tip
+
+Modified Files:
+	IExtensionData.h Image.h 
+Log Message:
+new overloads for getPixel
+    *
+------------------------------------------------------------
+User: burnett  Wed Aug 25 11:30:22 PDT 2004
 tip/src
 
 Modified Files:
