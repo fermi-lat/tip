@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 06:32:50 PDT 2004
+tip/data
+
+Added Files:
+	a1_read_only.pha 
+Log Message:
+Add new test for read-only file access.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 06:32:49 PDT 2004
 tip/src/test
 
