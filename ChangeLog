@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Wed Jul 14 10:32:37 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Add capability to update a set of keywords in every extension in a file,
+and a test for this capability.
+    *
+------------------------------------------------------------
+User: peachey  Wed Jul 14 10:32:37 PDT 2004
 tip/tip
 
 Modified Files:
