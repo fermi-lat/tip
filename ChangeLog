@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Thu Feb 26 09:12:52 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Ref.h Table.h 
+Log Message:
+Ref template was changed into ReferenceAdaptor, with an extra parameter
+giving the referent type. This is so that the same idea as Ref may be
+used for other applications, e.g. keywords. Ref is now a subclass
+of ReferenceAdaptor which refers to Table::Cells.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Feb 25 12:55:59 PST 2004
 users/peachey/table/table
 
