@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:40:12 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsFileSvc.cxx RootExtensionUtils.cxx RootExtensionUtils.h 
+Removed Files:
+	RootExtensionData.cxx RootExtensionData.h 
+Log Message:
+In a manner parallel to the simplication on the Fits side, replace
+RootExtensionData with RootExtensionUtils.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:17:49 PST 2004
 users/peachey/table/src
 
