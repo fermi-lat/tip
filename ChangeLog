@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 11:16:18 PST 2004
+users/peachey/table/table
+
+Added Files:
+	HeaderData.h 
+Log Message:
+New generic implmentation of IHeaderData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 10:14:31 PST 2004
 users/peachey/table/src
 
