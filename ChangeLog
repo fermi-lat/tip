@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Aug 25 14:06:16 PDT 2004
+tip/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Document changes to Image handling, for v1r8p0
+    *
+------------------------------------------------------------
+User: peachey  Wed Aug 25 14:06:16 PDT 2004
 tip/doc
 
 Modified Files:
