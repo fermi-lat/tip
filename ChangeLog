@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:55:52 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	RootExtensionUtils.h 
+Log Message:
+Add stubs for keyword access, so that RootExtensionUtils class can be
+modified to use the generic HeaderData instead of RootHeaderData.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:45:21 PST 2004
 users/peachey/table/src
 
