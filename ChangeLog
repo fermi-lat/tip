@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:02:32 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Move newer tests to the bottom so that their output is more easily
+focused on when the test runs.
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:01:26 PDT 2004
 tip/src/test
 
