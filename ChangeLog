@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jan  5 10:03:16 PST 2005
+tip/tip
+
+Modified Files:
+	Header.h 
+Log Message:
+Add get/setKeyComment and get/setKeyUnit methods.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jan  5 10:02:40 PST 2005
 tip/src
 
