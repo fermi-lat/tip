@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 07:32:16 PDT 2004
+tip/tip
+
+Modified Files:
+	IExtensionData.h ExtensionData.h 
+Log Message:
+Clean up some dead code.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 07:31:48 PDT 2004
 tip/src/test
 
