@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 08:03:29 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+Don't load shared libraries more than once.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 08:03:02 PST 2004
 tip/src
 
