@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 14:21:55 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h 
+Log Message:
+Add and test the ability for FITS files to be opened explicitly for
+read-only access, regardless of the permissions of the file on disk.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 14:19:01 PDT 2004
 tip/src/test
 
