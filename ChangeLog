@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 06:19:40 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	VectorAdaptor.h 
+Log Message:
+Correct VectorAdaptor to call get correctly for a range of cell values.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 06:19:13 PST 2004
 users/peachey/table/table
 
