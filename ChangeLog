@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 08:17:36 PDT 2004
+tip/tip
+
+Modified Files:
+	IColumn.h 
+Log Message:
+Add getNumElements and setNumElements methods.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 08:17:11 PDT 2004
 tip/src
 
