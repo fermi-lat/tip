@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 08:32:34 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h 
+Log Message:
+Remove less general overloads for getCell from ITabularData and subclasses.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 08:22:27 PST 2004
 users/peachey/table/table
 
