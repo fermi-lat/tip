@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue May 25 12:20:26 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add and test support for changing the dimensions of an image.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue May 25 10:27:42 PDT 2004
 tip/tip
 
