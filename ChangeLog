@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 31 07:06:38 PST 2004
+users/peachey/tip/tip
+
+Modified Files:
+	Iterator.h 
+Log Message:
+Fix incorrect usage of std::iterator as base class for iterator type.
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar 30 14:02:34 PST 2004
 users/peachey/tip/tip
 
