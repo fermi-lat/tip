@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  8 13:24:36 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx FitsExtensionUtils.h 
+	FitsTabularData.cxx FitsTabularData.h 
+Log Message:
+Move all calls to Cfitsio into FitsExtensionUtils. This makes interface
+class FitsTabularData very clean.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Mar  8 12:26:59 PST 2004
 users/peachey/table/src
 
