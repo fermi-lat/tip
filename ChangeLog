@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 08:24:24 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Use new RandwomAccessIterator instead of old TableIterator.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 08:24:05 PST 2004
 users/peachey/table/table
 
