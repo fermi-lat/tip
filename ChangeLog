@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 07:40:07 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Refine the last added tests further. Use qualifiers for types
+which have been moving around.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 07:37:32 PST 2004
 users/peachey/table/table
 
