@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  9 07:05:43 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Removed Files:
+	a1.pha arlac.pha digi.root merit.root 
+Log Message:
+Move data files to the data directory.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  9 06:56:13 PDT 2004
 tip/src/test
 
