@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 12:41:44 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Begin to add support for images.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 12:41:44 PDT 2004
 tip/src/test
 
 Modified Files:
