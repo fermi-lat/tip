@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 20 13:07:14 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Make a bigger fuss about something which should have halted compilation.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 20 13:01:20 PDT 2004
 tip/tip
 
