@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Feb 26 09:13:23 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add tests of assignment and promotion.
+    *
+------------------------------------------------------------
 User: peachey  Thu Feb 26 09:12:52 PST 2004
 users/peachey/table/table
 
