@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Nov 16 05:48:44 PST 2004
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+Add missing #include <algorithm>.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Nov 10 11:09:36 PST 2004
 tip/src
 
