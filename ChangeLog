@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Thu Jun 17 06:54:10 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h IExtensionData.h 
+Log Message:
+Remove getFieldNumElements/setFieldNumElements which are superseded by
+IColumn::getNumElements/setNumElements.
+    *
+------------------------------------------------------------
+User: peachey  Thu Jun 17 06:54:10 PDT 2004
 tip/src
 
 Modified Files:
