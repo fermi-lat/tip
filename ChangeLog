@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 09:47:20 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Clean up at the end of the test method, instead of waiting for the
+destructor. This is to prevent unexpected crosstalk between two
+copies of the extension open at the same time by cfitsio.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 09:46:46 PDT 2004
 tip/src/test
 
