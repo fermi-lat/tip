@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 08:17:16 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	VectorAdaptor.h 
+Log Message:
+Replace original VectorAdaptor with new VectorAdaptorMM.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 06:20:26 PST 2004
 users/peachey/table/src/test
 
