@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 08:44:37 PST 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx FitsFileManager.h 
+Log Message:
+Add clobber to createFile method. Rename createImage and
+createTable to appendImage and appendTable, respectively.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan 11 08:43:57 PST 2005
 tip/src
 
