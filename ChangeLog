@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 17 10:43:20 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Make sure each Table object is deleted.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar 17 10:42:49 PST 2004
 users/peachey/table/table
 
