@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 15:08:56 PDT 2004
+tip/src
+
+Modified Files:
+	FitsPrimProps.cxx 
+Log Message:
+Add specialization for const char * to support string literals.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 15:08:21 PDT 2004
 tip/src
 
