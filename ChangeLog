@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Tue Jun 15 08:46:07 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Add field and accessor to get the id (name) of a field.
+    *
+------------------------------------------------------------
+User: peachey  Tue Jun 15 08:46:07 PDT 2004
 tip/tip
 
 Modified Files:
