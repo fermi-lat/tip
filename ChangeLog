@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 12:07:44 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Change Record so that it contains 1) a pointer to the
+Table instead of a reference to the Iterator, and 2)
+the row number. Change Cell so that it contains a pointer
+to Record, rather than a reference to Iterator.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 07:13:54 PST 2004
 users/peachey/table/table
 
