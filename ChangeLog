@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 11:17:13 PST 2004
+users/peachey/table/src
+
+Removed Files:
+	FitsHeaderData.h FitsHeaderData.cxx 
+Log Message:
+FITS-specific version no longer needed.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 11:16:18 PST 2004
 users/peachey/table/table
 
