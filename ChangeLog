@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 08:22:33 PST 2004
+users/peachey/table/table
+
+Added Files:
+	Iterator.h 
+Log Message:
+New templated iterator for more general use with Table and other things
+which behave like Table.
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar  2 07:31:21 PST 2004
 users/peachey/table/src/test
 
