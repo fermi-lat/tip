@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 31 14:40:14 PST 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Correct the sample code to be more correct.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar 31 07:06:56 PST 2004
 users/peachey/tip/cmt
 
