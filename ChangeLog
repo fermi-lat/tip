@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 12:49:50 PST 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Test filtering syntax for FITS case. Add details about TODO 8.
+Cosmetic changes to error reporting.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 12:48:47 PST 2004
 tip/src
 
