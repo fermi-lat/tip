@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  8 10:16:08 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsFileSvc.cxx FitsTabularData.cxx FitsTabularData.h 
+Added Files:
+	FitsExtensionData.cxx FitsExtensionData.h 
+	FitsExtensionUtils.cxx FitsExtensionUtils.h FitsHeaderData.cxx 
+	FitsHeaderData.h 
+Log Message:
+Fairly major repackaging. Methods in IExtensionData for accessing headers
+were moved to a new IHeaderData interface. Instead IExtensionData now
+"has a" IHeaderData. ITabularData and its subclass FitsTabularData now
+do not contain keyword-related methods. The FitsExtension class has
+morphed into FitsExtensionUtils, which can now serve as the central
+encapsulation of Cfitsio calls. The result of all this is a cleaner
+overall data model.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 14:09:22 PST 2004
 users/peachey/table/src/test
 
