@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 21 12:56:15 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Break assignment and initialization of TableRecord from ConstTableRecord.
+Otherwise, it's trivial to modify a supposedly constant record.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr 21 12:55:08 PDT 2004
 tip/tip
 
