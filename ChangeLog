@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 07:35:33 PST 2004
+users/peachey/table/table
+
+Added Files:
+	TableException.h 
+Log Message:
+Put TableException in its own file.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 06:00:23 PST 2004
 users/peachey/table/src
 
