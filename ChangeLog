@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:42:47 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h 
+Log Message:
+Derive ITabularData from IExtensionData to facilitate a parallel
+relationship between Table and Extension.
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:32:33 PST 2004
 users/peachey/table/src/test
 
