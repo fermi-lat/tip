@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sat Feb 21 20:42:13 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add necessary overloads to get const Records from const Iterators, and
+const Cells from const Records.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 13:48:39 PST 2004
 users/peachey/table/table
 
