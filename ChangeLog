@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar  1 08:08:32 PST 2005
+tip/tip
+
+Modified Files:
+	TipException.h 
+Log Message:
+Return status, not just 1 from code method.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p1, operation: add
 Package: tip
