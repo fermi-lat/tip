@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 07:31:48 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Use IColumn class + its get method instead of getCell.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 07:31:12 PDT 2004
 tip/src/test
 
