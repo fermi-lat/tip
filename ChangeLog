@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 25 11:54:37 PDT 2004
+tip/tip
+
+Modified Files:
+	IExtensionData.h 
+Log Message:
+Make get/setPixel(vector, pixel) pure, and remove other get/setPixel(x, y, pixel).
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 25 11:53:51 PDT 2004
 tip/tip
 
