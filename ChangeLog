@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 10:53:12 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Add row filtering.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 10:50:46 PDT 2004
 tip/src
 
