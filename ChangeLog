@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Tue May 25 10:27:42 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestImage.cxx TestImage.h test_tip_main.cxx 
+Log Message:
+Refactor IFileSvc to be more intelligent about opening extensions in
+files. Add methods to IFileSvc to open Image objects, and tests of
+all the above.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue May 25 10:27:42 PDT 2004
 tip/src
 
 Modified Files:
