@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  8 13:59:57 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	VectorAdaptor.h 
+Log Message:
+Fix get/set for vector table cells.
+    *
+------------------------------------------------------------
 User: peachey  Mon Mar  8 13:24:36 PST 2004
 users/peachey/table/src
 
