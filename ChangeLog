@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr  1 11:30:38 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+Suppress Root warning about file not existing, as it is confusing.
+    *
+------------------------------------------------------------
 User: peachey  Thu Apr  1 11:07:05 PST 2004
 tip/src/test
 
