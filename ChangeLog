@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 13 10:06:04 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Test assignment to vector-valued columns.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 13 10:05:27 PDT 2004
 tip/tip
 
