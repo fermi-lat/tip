@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Fri Apr 16 13:27:20 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h IExtensionData.h Table.h 
+Log Message:
+Add getValidFields() method as needed to allow clients to obtain a
+list of fields in the table. Tests added for this method for both
+FITS and Root cases.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Apr 16 13:27:20 PDT 2004
 tip/src/test
 
 Modified Files:
