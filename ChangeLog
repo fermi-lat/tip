@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue May 25 07:54:06 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestFileManager.cxx TestFileManager.h 
+Log Message:
+Add methods to test whether a file exists, and/or whether it is a valid
+Fits or Root file.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue May 25 07:52:21 PDT 2004
 tip/tip
 
