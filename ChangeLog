@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 11:18:56 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx 
+Log Message:
+Use generic HeaderData instead of FitsHeaderData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 11:17:13 PST 2004
 users/peachey/table/src
 
