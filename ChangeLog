@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 02:41:04 PST 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+Add filter capability. Fix the last commit: ints cant be converted to enums, duh.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 02:40:24 PST 2004
 tip/src
 
