@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 12:16:08 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	table_types.h 
+Log Message:
+Add type FieldIndex_t to represent how fields (columns) are indexed.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 12:03:58 PST 2004
 users/peachey/table/src/test
 
