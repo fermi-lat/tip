@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 07:26:44 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+FitsColumn now keeps a pointer to the FitsFileManager, rather than
+to the fitsfile * poiinter. This is so that FitsColumn can gain access to
+other information from the manager, such as whether the object is writable.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:38:25 PDT 2004
 tip/tip
 
