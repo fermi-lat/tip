@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:11:54 PST 2004
+users/peachey/table/src
+
+Removed Files:
+	FitsTabularData.h FitsTabularData.cxx 
+Log Message:
+Removing code rendered obsolete by new FitsExtensionManager class.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:08:34 PST 2004
 users/peachey/table/src
 
