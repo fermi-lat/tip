@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 11:48:38 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	TabularData.h 
+Log Message:
+User reference instead of a pointer in TabularData class.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 11:44:07 PST 2004
 users/peachey/table/src
 
