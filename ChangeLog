@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:58:52 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add test for reading vector valued column into Table::Vector<double>.
+Change test to use new a1.pha file.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 10:58:10 PST 2004
 users/peachey/table/src/test
 
