@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Nov 10 11:09:36 PST 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Add #include <typeinfo>.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Oct 29 19:50:28 PDT 2004
 tip/doc
 
