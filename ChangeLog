@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 08:25:53 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	table_types.h 
+Log Message:
+Add IndexDiff_t, and change Index to be signed, so that it will work with
+random access iterators.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 08:24:47 PST 2004
 users/peachey/table/table
 
