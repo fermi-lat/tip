@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 06:32:49 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx TestExtensionData.cxx 
+Added Files:
+	TestExtensionData.h 
+Log Message:
+Add new test for read-only file access.
+
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr 17 00:10:52 PDT 2004
 tip/src
 
