@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 02:06:50 PST 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+IFileSvc::instance() now ensures globalInit is called once.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 02:05:08 PST 2004
 tip/src
 
