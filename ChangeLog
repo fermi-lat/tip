@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 16 06:32:29 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestHarness.cxx TestHarness.h TestTable.cxx TestTable.h 
+Log Message:
+Make unit testing more thorough.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr 14 14:34:29 PDT 2004
 tip/src/test
 
