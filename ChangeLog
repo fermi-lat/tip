@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Wed Feb 25 12:55:59 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Ref.h Table.h 
+Log Message:
+Get rid of a typedef and a silly assignment operator for now.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Feb 25 12:55:59 PST 2004
 users/peachey/table/src/test
 
 Modified Files:
