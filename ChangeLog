@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Jul 23 16:22:45 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx 
+Log Message:
+Remove an include which is not needed.
+    *
+------------------------------------------------------------
 User: peachey  Fri Jul 23 16:21:59 PDT 2004
 tip/src
 
