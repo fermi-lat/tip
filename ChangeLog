@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Fri Apr 23 07:40:14 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.cxx TestTable.h 
+Log Message:
+Add method appendField, to allow fields to be added to tables. This works
+for FITS only (writing Root files isn't really supported, so for the
+Root case there are just stubs which throw.)
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Apr 23 07:40:14 PDT 2004
 tip/src
 
 Modified Files:
