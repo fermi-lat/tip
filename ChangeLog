@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:17:49 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h 
+	FitsFileSvc.cxx 
+Log Message:
+Renaming FitsExtensionUtils to FitsExtensionManagaer part 2: rename class and change usage.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:11:54 PST 2004
 users/peachey/table/src
 
