@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:32:33 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add a test for keyword reading.
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:30:57 PST 2004
 users/peachey/table/table
 
