@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:47:12 PST 2004
+users/peachey/table/src
+
+Added Files:
+	FitsExtensionData.cxx FitsExtensionData.h 
+Log Message:
+New IExtensionData subclass specific to Fits.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:44:42 PST 2004
 users/peachey/table/table
 
