@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr  1 08:16:50 PST 2004
+tip/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use * instead of particular Root version.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar 31 14:43:16 PST 2004
 tip/src
 
