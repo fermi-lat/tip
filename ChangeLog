@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon May 17 06:33:36 PDT 2004
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx 
+Log Message:
+Correct bug: number returned by fits_get_hdu_num starts at 1, while
+file names specifications start at 0.
+    *
+------------------------------------------------------------
 User: peachey  Fri May 14 13:35:10 PDT 2004
 tip/tip
 
