@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 16 13:33:57 PDT 2004
+tip/tip
+
+Modified Files:
+	Extension.h Table.h 
+Log Message:
+Table can just use extension manager from base class Extension.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 16 13:27:20 PDT 2004
 tip/tip
 
