@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Wed Mar  3 10:02:32 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Use new Keyword abstraction to handle keyword access.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Mar  3 10:02:32 PST 2004
 users/peachey/table/table
 
 Modified Files:
