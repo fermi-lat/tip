@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:56:58 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionManager.h 
+Log Message:
+Throw exceptions instead of using asserts.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:55:52 PST 2004
 users/peachey/table/src
 
