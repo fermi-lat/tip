@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jul 14 06:26:55 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Avoid potential memory leak when opening extensions which might
+exist, but have unexpected type (image instead of table, or vv.)
+    *
+------------------------------------------------------------
 User: peachey  Tue Jul 13 07:30:36 PDT 2004
 tip/src/sample
 
