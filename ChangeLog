@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 25 11:38:09 PDT 2004
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx FitsFileManager.h IFileSvc.cxx 
+Log Message:
+Add facility to create an image extension in a FITS file.
+    *
+------------------------------------------------------------
 User: burnett  Wed Aug 25 11:30:22 PDT 2004
 tip/tip
 
