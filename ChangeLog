@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 11:44:07 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx 
+Log Message:
+Use new generic TabularData class in lieu of Fits-specific FitsTabularData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 11:42:31 PST 2004
 users/peachey/table/table
 
