@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 15:10:44 PDT 2004
+tip/tip
+
+Modified Files:
+	IHeaderData.h HeaderData.h 
+Log Message:
+Complete overloads for getKeyword and setKeyword.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 15:09:32 PDT 2004
 tip/src
 
