@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Thu May 20 07:02:41 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h IExtensionData.h TableRecord.h 
+Log Message:
+Input pointers to "set" methods are now const.
+    *
+------------------------------------------------------------
+User: peachey  Thu May 20 07:02:41 PDT 2004
 tip/src
 
 Modified Files:
