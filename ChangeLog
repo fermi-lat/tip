@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 10:09:28 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx FitsExtensionUtils.h FitsFileSvc.cxx 
+Log Message:
+Class FitsExtensionUtils now derives from IExtensionData, and 
+obviates the need for FitsExtensionData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 07:20:36 PST 2004
 users/peachey/table/src/test
 
