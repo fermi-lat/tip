@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jan  5 10:02:40 PST 2005
+tip/src
+
+Modified Files:
+	FitsHeader.h FitsHeader.cxx 
+Log Message:
+Add get/setKeyComment and get/setKeyUnit methods.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan  4 12:13:06 PST 2005
 tip/src
 
