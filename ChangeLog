@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug  2 07:45:31 PDT 2004
+tip/data
+
+Added Files:
+	groD4-dc2v1.fits 
+Log Message:
+Add test file needed by latest tests.
+    *
+------------------------------------------------------------
 User: peachey  Fri Jul 23 16:24:07 PDT 2004
 tip/src/test
 
