@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 23:08:21 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Improve (slightly) the error reporting when a file cannot
+be opened either as FITS or Root format.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 15:16:01 PDT 2004
 tip/cmt
 
