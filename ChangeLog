@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:07:39 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Add test for row filtering.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:06:24 PDT 2004
 tip/src
 
