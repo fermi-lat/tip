@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 05:58:45 PST 2004
+users/peachey/table/src
+
+Added Files:
+	FitsTabularData.h FitsTabularData.cxx 
+Log Message:
+Reviving abstractions which relate purely to low-level data access.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Feb 26 17:42:08 PST 2004
 users/peachey/table/table
 
