@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 10:14:31 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx 
+Log Message:
+Guard against opening a file twice.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 10:14:11 PST 2004
 users/peachey/table/src
 
