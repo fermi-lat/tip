@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:57:41 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	RootExtensionUtils.cxx 
+Removed Files:
+	RootHeaderData.h RootHeaderData.cxx 
+Log Message:
+Replace RootHeaderData with generic HeaderData.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 12:56:58 PST 2004
 users/peachey/table/src
 
