@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 12:24:00 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Remove redundancy between Iterator and Record; now Record holds
+the Table pointer and record number. Streamline a couple other
+constructors and remove a couple which aren't really necessary.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 12:07:44 PST 2004
 users/peachey/table/table
 
