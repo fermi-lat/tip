@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 19 14:19:00 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsExtensionManager.h IFileSvc.cxx 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add and test the ability for FITS files to be opened explicitly for
+read-only access, regardless of the permissions of the file on disk.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 09:54:52 PDT 2004
 tip/src
 
