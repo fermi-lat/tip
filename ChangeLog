@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed Jul  7 13:00:53 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestInterpolation.cxx TestInterpolation.h 
+Log Message:
+Add class for interpolating values in tables, and test for same.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Jul  7 13:00:53 PDT 2004
 tip/src
 
 Added Files:
