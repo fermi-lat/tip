@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 08:55:51 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Add a new method double Cell::get() for convenience when getting doubles.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 06:52:27 PDT 2004
 tip/src
 
