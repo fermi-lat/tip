@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar  4 10:56:47 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Add new Vector typedef.
+    *
+------------------------------------------------------------
 User: peachey  Thu Mar  4 10:56:19 PST 2004
 users/peachey/table/table
 
