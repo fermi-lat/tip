@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Mar  1 07:54:55 PST 2004
+users/peachey/table/src
+
+Added Files:
+	IFileSvc.cxx FitsFileSvc.cxx FitsFileSvc.h 
+Log Message:
+New singleton abstract factory system for creating data objects.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Mar  1 07:54:55 PST 2004
 users/peachey/table/table
 
 Added Files:
