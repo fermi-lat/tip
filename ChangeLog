@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed Aug 25 11:38:10 PDT 2004
+tip/tip
+
+Modified Files:
+	IFileSvc.h 
+Log Message:
+Add facility to create an image extension in a FITS file.
+    *
+------------------------------------------------------------
+User: peachey  Wed Aug 25 11:38:10 PDT 2004
 tip/src/test
 
 Modified Files:
