@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 07:13:54 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Ref.h 
+Log Message:
+Change Ref class so that its referent Cell can be changed. Add
+Ref::operator =(Cell &) to support this.
+    *
+------------------------------------------------------------
 User: peachey  Thu Feb 19 12:39:42 PST 2004
 users/peachey/table/table
 
