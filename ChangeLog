@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 13:10:08 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtension.h 
+Log Message:
+Add specializations for strings and bools to keyword and cell templates.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 12:48:25 PST 2004
 users/peachey/table/src
 
