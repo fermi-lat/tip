@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:33:42 PDT 2004
+tip/tip
+
+Modified Files:
+	IExtensionData.h ExtensionData.h 
+Log Message:
+Add copyCell and getColumn methods. These use the new IColumn class
+etc. to manage columnar data.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:32:20 PDT 2004
 tip/src/test
 
