@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan 11 12:17:46 PST 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx FitsHeader.cxx FitsHeader.h FitsImage.cxx 
+	FitsTable.cxx KeyRecord.cxx 
+Log Message:
+For all errors which originate in cfitsio, use the int status returned
+by cfitsio in the TipException thrown.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jan 11 12:15:34 PST 2005
 tip/src/test
 
