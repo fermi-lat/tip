@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  9 08:07:17 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+When using a filtered (copied) file, delete the original file object,
+and make the TFile pointer point to the copy. Also shut up a warning.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  9 07:09:08 PDT 2004
 tip/data
 
