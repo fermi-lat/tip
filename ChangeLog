@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar  5 14:06:07 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h Ref.h TableRecord.h 
+Log Message:
+Add support for writing columns
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar  5 14:06:07 PST 2004
 users/peachey/table/src
 
 Modified Files:
