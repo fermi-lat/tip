@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri May 14 13:35:09 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Add capability to open for reading a general extension, be it table or image.
+    *
+------------------------------------------------------------
 User: peachey  Fri May 14 08:07:13 PDT 2004
 tip/tip
 
