@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:38:25 PDT 2004
+tip/src/test
+
+Added Files:
+	TestColumn.h TestColumn.cxx 
+Log Message:
+Add new columnar data abstractions, which ultimately will simplify
+and improve the factoring of the implementation.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:38:24 PDT 2004
 tip/src
 
