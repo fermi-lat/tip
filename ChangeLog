@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 13 10:05:27 PDT 2004
+tip/tip
+
+Modified Files:
+	TabularData.h 
+Log Message:
+Call open() instead of openTable(). The former now calls the latter and
+the latter is protected.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 13 10:04:31 PDT 2004
 tip/src
 
