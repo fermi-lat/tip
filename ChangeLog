@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:06:24 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.h 
+Log Message:
+Add row filtering (no-op).
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:05:16 PDT 2004
 tip/src
 
