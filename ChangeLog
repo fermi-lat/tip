@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 08:46:24 PST 2004
+users/peachey/table/table
+
+Added Files:
+	Extension.h Header.h IHeaderData.h 
+Log Message:
+New abstractions to handle extensions and headers.
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 07:43:09 PST 2004
 users/peachey/table/table
 
