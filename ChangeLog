@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar 19 13:19:29 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Extension.h IExtensionManager.h Table.h 
+Removed Files:
+	IExtensionData.h 
+Log Message:
+Changed IExtensionData to IExtensionManager, and RootExtensionUtils to
+RootExtensionManager.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar 19 13:19:29 PST 2004
 users/peachey/table/src
 
 Modified Files:
