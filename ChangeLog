@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 14:09:22 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Add a perfunctory test for writing, which simply reverses the contents
+of the channel column of a1.pha.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 14:08:20 PST 2004
 users/peachey/table/src
 
