@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 10:10:03 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsHeaderData.cxx 
+Log Message:
+Make sure file is open when header is created.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 10:09:28 PST 2004
 users/peachey/table/src
 
