@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 26 14:41:30 PDT 2004
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx 
+Log Message:
+When creating a fits file, close the file no matter what.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 23 11:22:04 PDT 2004
 tip/src/sample
 
