@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Tue Mar 30 14:02:34 PST 2004
+users/peachey/tip/src
+
+Modified Files:
+	Extension.cxx FileSvc.cxx FileSvc.h FitsExtensionManager.cxx 
+	FitsExtensionManager.h FitsPrimProps.cxx FitsPrimProps.h 
+	IFileSvc.cxx RootExtensionManager.cxx RootExtensionManager.h 
+	mainpage.h 
+Log Message:
+Migrating from table to tip: TableException -> TipException,
+namespace table -> namespace tip, table_types.h -> tip_types.h, etc.
+    *
+------------------------------------------------------------
+User: peachey  Tue Mar 30 14:02:34 PST 2004
 users/peachey/tip/cmt
 
 Modified Files:
