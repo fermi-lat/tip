@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  1 07:54:55 PST 2004
+users/peachey/table/table
+
+Added Files:
+	IFileSvc.h 
+Log Message:
+New singleton abstract factory system for creating data objects.
+
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 12:10:01 PST 2004
 users/peachey/table/src
 
