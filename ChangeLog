@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 12:43:00 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	ITabularData.h Table.h 
+Log Message:
+Mainly cosmetic changes; instead of using row_num, num_rows, etc. use
+record_index, numRecords, etc.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 12:42:59 PST 2004
 users/peachey/table/src/test
 
