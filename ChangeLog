@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  5 10:24:03 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.h 
+Log Message:
+Remove unneeded templates.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  5 08:33:18 PST 2004
 users/peachey/table/table
 
