@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 16 07:45:02 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionData.h FitsExtensionManager.cxx IFileSvc.cxx 
+	RootExtensionData.h RootExtensionManager.cxx 
+Log Message:
+Silence compiler warnings and slight clean-ups.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 16 06:37:30 PDT 2004
 tip/tip
 
