@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 11:35:36 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsPrimProps.cxx 
+Log Message:
+Nit-picking: qualify integral types with signed, to be consistent and clear.
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 11:13:05 PST 2004
 users/peachey/table/table
 
