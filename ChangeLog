@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 20 07:16:45 PDT 2004
+tip/data
+
+Removed Files:
+	a1_read_only.pha 
+Log Message:
+Fix test to access file which is read-only on disk so that it wont fail
+on Linux and wont run at all on Windows.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr 19 14:21:55 PDT 2004
 tip/tip
 
