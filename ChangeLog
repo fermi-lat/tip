@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr 23 11:22:04 PDT 2004
+tip/src/sample
+
+Modified Files:
+	sample.cxx 
+Log Message:
+Initialize silence_warning dummy variable.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 23 08:03:05 PDT 2004
 tip/src
 
