@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Mon May 17 06:43:42 PDT 2004
+tip/tip
+
+Modified Files:
+	IFileSvc.h 
+Log Message:
+Add method editExtension, permitting read/write access to images
+and tables in one call.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon May 17 06:43:42 PDT 2004
 tip/src/test
 
 Modified Files:
