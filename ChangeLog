@@ -1,0 +1,26 @@
+------------------------------------------------------------
+User: peachey  Thu Feb 19 07:27:43 PST 2004
+users/peachey/table
+
+Log Message:
+First import
+
+Status:
+
+Vendor Tag:	JP
+Release Tags:	v0
+		
+N users/peachey/table/src/FitsTabularData.h
+N users/peachey/table/src/mainpage.h
+N users/peachey/table/src/FitsTabularData.cxx
+N users/peachey/table/src/test/test_table_main.cxx
+N users/peachey/table/src/test/.test_table_main.cxx.swp
+N users/peachey/table/table/ITabularData.h
+N users/peachey/table/table/Ref.h
+N users/peachey/table/table/Table.h
+N users/peachey/table/table/table_types.h
+N users/peachey/table/cmt/requirements
+
+No conflicts created by this import
+
+    *
