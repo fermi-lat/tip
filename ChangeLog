@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 27 06:00:23 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Use ITabularData object for low-level table access instead of putting
+those methods directly in Table.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 27 05:58:45 PST 2004
 users/peachey/table/src
 
