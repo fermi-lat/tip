@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr 21 12:55:08 PDT 2004
+tip/src
+
+Modified Files:
+	Extension.cxx 
+Log Message:
+Add method to get constant Header, to support read-only Tables.
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr 21 07:57:28 PDT 2004
 tip/src
 
