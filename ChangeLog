@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 17 10:40:13 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionUtils.cxx 
+Log Message:
+Remove erroneous return statement.
+    *
+------------------------------------------------------------
 User: peachey  Mon Mar  8 13:59:57 PST 2004
 users/peachey/table/table
 
