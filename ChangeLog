@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Tue Apr 20 07:16:45 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Fix test to access file which is read-only on disk so that it wont fail
+on Linux and wont run at all on Windows.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Apr 20 07:16:45 PDT 2004
 tip/data
 
 Removed Files:
