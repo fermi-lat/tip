@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 09:09:51 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Add copyRecord method, which is just a stub since writing Root files not supported
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 09:09:06 PDT 2004
 tip/src
 
