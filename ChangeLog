@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 28 11:08:38 PDT 2004
+tip/src/test
+
+Added Files:
+	TestFilter.cxx TestFilter.h 
+Log Message:
+Add test for row filtering.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 28 11:07:39 PDT 2004
 tip/src/test
 
