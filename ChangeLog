@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 13:27:38 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FileSvc.cxx FileSvc.h IFileSvc.cxx 
+Removed Files:
+	FitsFileSvc.cxx FitsFileSvc.h 
+Log Message:
+Rename FitsFileSvc to FileSvc.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 13:19:29 PST 2004
 users/peachey/table/table
 
