@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar  2 07:31:21 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsTabularData.cxx 
+Log Message:
+Make column name lookup case insensitive.
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar  2 07:16:50 PST 2004
 users/peachey/table/table
 
