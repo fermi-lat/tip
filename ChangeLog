@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar 19 13:39:41 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Rename ReferenceAdaptor to ScalarAdaptor.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar 19 13:39:41 PST 2004
 users/peachey/table/table
 
 Modified Files:
