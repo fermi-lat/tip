@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 19 12:07:31 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionManager.cxx FitsFileSvc.cxx FitsTabularData.cxx 
+Log Message:
+Renaming FitsExtensionUtils to FitsExtensionManagaer part 1: rename files.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 19 11:48:38 PST 2004
 users/peachey/table/src
 
