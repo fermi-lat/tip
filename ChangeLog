@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:27:13 PDT 2004
+tip/tip
+
+Modified Files:
+	VectorAdaptor.h 
+Log Message:
+Write whole vector whenever any value is set.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 06:42:08 PDT 2004
 tip/data
 
