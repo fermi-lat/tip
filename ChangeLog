@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Jul 14 06:33:46 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Add tests for new methods in Header class: formatTime(time_t),
+get(..., list-of-key-value-pairs) and update(list-of-key-value-pairs).
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jul 14 06:32:02 PDT 2004
 tip/src
 
