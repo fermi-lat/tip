@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 15 07:31:12 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx 
+Log Message:
+Redo column test to use tip instead of cfitsio for most of it.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 15 07:30:26 PDT 2004
 tip/src
 
