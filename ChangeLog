@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 15:16:01 PDT 2004
+tip/src/sample
+
+Added Files:
+	sample.cxx 
+Log Message:
+New sample application to support mainpage.h examples.
+    *
+------------------------------------------------------------
 User: peachey  Mon Apr  5 15:15:26 PDT 2004
 tip/src/sample
 
