@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed May 26 08:26:25 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Correct bug in which axes were being flipped. While some Cfitsio image-access
+functions do require reversing order of axes, the ones being employed by getPixel
+and setPixel do not.
+    *
+------------------------------------------------------------
 User: peachey  Tue May 25 12:20:26 PDT 2004
 tip/tip
 
