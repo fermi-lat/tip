@@ -1,4 +1,28 @@
 ------------------------------------------------------------
+User: peachey  Fri Oct 29 13:03:41 PDT 2004
+tip/src
+
+Modified Files:
+	FitsColumn.h IFileSvc.cxx 
+Added Files:
+	FitsHeader.cxx FitsHeader.h FitsImage.cxx FitsImage.h 
+	FitsTable.cxx FitsTable.h RootHeader.h RootTable.cxx 
+	RootTable.h 
+Removed Files:
+	Extension.cxx FitsExtensionData.h FitsExtensionManager.cxx 
+	FitsExtensionManager.h RootExtensionData.h 
+	RootExtensionManager.cxx RootExtensionManager.h 
+Log Message:
+Major internal structural refactoring, with no functional change. The
+IExtensionData hierarchy was removed in favor of directly subclassing
+Table, Header and Image classes for each file format. This reduces
+the number of classes which need to be altered to add new features,
+simplifies the inheritance structure, and makes it more sensible,
+in that the underlying Fits image and table handlers are in different
+classes.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Oct 29 12:54:55 PDT 2004
 tip/src
 
