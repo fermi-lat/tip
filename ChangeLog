@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jul  7 13:00:53 PDT 2004
+tip/tip
+
+Added Files:
+	LinearInterp.h 
+Log Message:
+Add class for interpolating values in tables, and test for same.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 22 19:42:22 PDT 2004
 tip/src
 
