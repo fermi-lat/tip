@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:29:07 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h 
+Log Message:
+Add copyCell capability. Use container of new column abstractions to manage column data.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:28:26 PDT 2004
 tip/src
 
