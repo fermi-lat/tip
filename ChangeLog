@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 22 19:42:22 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx 
+Log Message:
+Add and test capability to get units of a column.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 21 14:53:10 PDT 2004
 tip/src/sample
 
