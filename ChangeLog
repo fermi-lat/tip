@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 12:41:44 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Added Files:
+	TestImage.cxx TestImage.h 
+Log Message:
+Begin to add support for images.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 12:41:44 PDT 2004
 tip/tip
 
 Modified Files:
