@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sat Apr 17 00:01:26 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestTable.h TestTable.cxx 
+Log Message:
+Use getDataDir() method from base class rather than local code with
+a m_data_dir member string.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr 16 23:53:09 PDT 2004
 tip/src/test
 
