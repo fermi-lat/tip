@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  9 07:09:08 PDT 2004
+tip/data
+
+Removed Files:
+	digi.root arlac.pha 
+Log Message:
+Removing unneeded data files.
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  9 07:05:43 PDT 2004
 tip/src/test
 
