@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 21 09:09:06 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.h 
+Log Message:
+Add copyRecord method, which copies an entire record from one
+table to another. This will only work if the destination table includes
+all the fields in the source table.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun 17 06:55:02 PDT 2004
 tip/tip
 
