@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Sun Feb 29 09:51:28 PST 2004
+users/peachey/table/src
+
+Removed Files:
+	FitsTable.h FitsTable.cxx 
+Log Message:
+Pretty sure this is dead code. It doesn't make sense to
+subclass the concrete Table class for Fits/Root etc.
+    *
+------------------------------------------------------------
 User: peachey  Sun Feb 29 09:48:57 PST 2004
 users/peachey/table/src
 
