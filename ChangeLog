@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar 19 14:55:25 PST 2004
+users/peachey/table/src/test
+
+Modified Files:
+	test_table_main.cxx 
+Log Message:
+Misc. clean up: header files, comments, etc.
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar 19 14:55:25 PST 2004
 users/peachey/table/src
 
 Modified Files:
