@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  5 07:51:23 PDT 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.h FitsFileManager.cxx 
+Log Message:
+Add internal methods to consolidate file/image creation.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  5 07:50:16 PDT 2005
 tip/tip
 
