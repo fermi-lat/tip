@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Tue Mar  1 12:06:23 PST 2005
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Demonstrate and fix a bug which prevented strings containing numbers being written to
+numerical columns.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Mar  1 12:06:23 PST 2005
 tip/tip
 
 Modified Files:
