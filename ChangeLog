@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar  3 11:12:14 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsPrimProps.cxx 
+Log Message:
+Add codes for signed and unsigned char. Updated documentation.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar  3 11:10:45 PST 2004
 users/peachey/table/table
 
