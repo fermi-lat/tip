@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue Mar 30 14:02:34 PST 2004
+users/peachey/tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Migrating from table to tip: TableException -> TipException,
+namespace table -> namespace tip, table_types.h -> tip_types.h, etc.
+    *
+------------------------------------------------------------
+User: peachey  Tue Mar 30 14:02:34 PST 2004
 users/peachey/tip/src
 
 Modified Files:
