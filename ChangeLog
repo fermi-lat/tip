@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue May 25 12:20:26 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h IExtensionData.h Image.h 
+Log Message:
+Add and test support for changing the dimensions of an image.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue May 25 12:20:26 PDT 2004
 tip/src/test
 
 Modified Files:
