@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Jun 14 10:31:13 PDT 2004
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx TestExtensionData.h 
+Log Message:
+Test column abstractions, and test copyCell.
+    *
+------------------------------------------------------------
 User: peachey  Mon Jun 14 10:29:51 PDT 2004
 tip/src
 
