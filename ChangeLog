@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 13 12:10:39 PDT 2004
+tip/src
+
+Modified Files:
+	FitsExtensionManager.cxx 
+Log Message:
+Cosmetic: move openTable so it's in the same order as in the header file.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 13 10:28:47 PDT 2004
 tip/tip
 
