@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 10:24:00 PST 2005
+tip/src
+
+Modified Files:
+	FitsFileManager.cxx FitsFileManager.h 
+Log Message:
+Add new protected utility closeFile to handle file closures safely.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p2, operation: add
 Package: tip
