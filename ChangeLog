@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jul 19 06:40:29 PDT 2004
+tip/tip
+
+Modified Files:
+	TableRecord.h 
+Log Message:
+Correct a nasty bug in which output iterator's record index
+was used for both input and output data.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jul 14 10:45:35 PDT 2004
 tip/src
 
