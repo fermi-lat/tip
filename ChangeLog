@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr  6 10:34:50 PDT 2005
+tip/src
+
+Modified Files:
+	FitsColumn.h FitsHeader.h 
+Log Message:
+Avoid warnings on windows by explicitly testing ints against 0 instead
+of implicitly converting to bool.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p1, operation: add
 Package: tip
