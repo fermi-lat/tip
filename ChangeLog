@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr  5 06:49:14 PDT 2004
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Make usage of Record more correct.
+    *
+------------------------------------------------------------
 User: peachey  Sat Apr  3 12:21:34 PST 2004
 tip/src
 
