@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb 20 13:06:01 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Move some of the longer inline methods outside of the class declarations
+to improve readability.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb 20 13:00:59 PST 2004
 users/peachey/table/table
 
