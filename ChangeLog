@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 12:41:44 PDT 2004
+tip/tip
+
+Modified Files:
+	ExtensionData.h IExtensionData.h tip_types.h 
+Added Files:
+	Image.h 
+Log Message:
+Begin to add support for images.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 12:41:44 PDT 2004
 tip/data
 
 Added Files:
