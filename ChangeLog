@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 17 10:41:29 PST 2004
+users/peachey/table/src
+
+Modified Files:
+	FitsExtensionData.cxx FitsFileSvc.cxx 
+Log Message:
+Be careful to delete parts of objects which were already created if
+an exception is thrown.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar 17 10:40:13 PST 2004
 users/peachey/table/src
 
