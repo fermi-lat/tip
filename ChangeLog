@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr 20 14:10:29 PDT 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Add IFileSvc::readTable, for opening tables read-only, and test for this.
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr 20 13:34:06 PDT 2004
 tip/src/test
 
