@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun 17 06:51:26 PDT 2004
+tip/src
+
+Modified Files:
+	RootExtensionManager.cxx 
+Log Message:
+Remove getFieldNumElements/setFieldNumElements which are superseded by
+IColumn::getNumElements/setNumElements.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun 17 06:50:50 PDT 2004
 tip/src
 
