@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Apr  6 11:10:37 PDT 2005
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx TestTable.cxx TestFileManager.cxx 
+Log Message:
+Silence warnings about unused local variables on Windows.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Apr  6 10:36:07 PDT 2005
 tip/src
 
