@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Mar  1 07:55:43 PST 2004
+users/peachey/table/table
+
+Modified Files:
+	Table.h 
+Log Message:
+Use IFileSvc instead of a static openReadWrite method to create tables.
+    *
+------------------------------------------------------------
 User: peachey  Mon Mar  1 07:54:55 PST 2004
 users/peachey/table/src
 
