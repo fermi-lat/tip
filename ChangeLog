@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Fri Apr  2 12:45:57 PST 2004
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Pursuant to TODO 1: remove a delete which was causing a seg fault.
+(Now there is a danger of a memory leak, but not a serious one).
+Pass filter expression to FitsExtensionManager constructor.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Apr  2 12:41:47 PST 2004
 tip/tip
 
