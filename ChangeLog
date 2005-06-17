@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Jun 17 11:05:09 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx 
+Log Message:
+Add getColumnKeyword facility, for getting column-specific keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Jun 17 11:05:08 PDT 2005
 tip/src
 
