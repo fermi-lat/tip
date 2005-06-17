@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Jun 17 11:05:09 PDT 2005
+tip/tip
+
+Modified Files:
+	Header.h IColumn.h 
+Log Message:
+Add getColumnKeyword facility, for getting column-specific keywords.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Jun 17 11:05:09 PDT 2005
 tip/src/test
 
 Modified Files:
