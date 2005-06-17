@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Fri Jun 17 06:41:17 PDT 2005
+tip/src
+
+Modified Files:
+	FitsImage.h IFileSvc.cxx 
+Removed Files:
+	FitsImage.cxx 
+Log Message:
+Generalize Image class by splitting it into class ImageBase + templated
+class TypedImage. Image is now a typedef for backward compatibility.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Jun 17 06:38:43 PDT 2005
 tip/src/test
 
