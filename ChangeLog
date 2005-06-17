@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Jun 17 11:05:08 PDT 2005
+tip/src
+
+Modified Files:
+	FitsColumn.h Header.cxx 
+Log Message:
+Add getColumnKeyword facility, for getting column-specific keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Jun 17 06:41:17 PDT 2005
 tip/tip
 
