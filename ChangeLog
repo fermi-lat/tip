@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Jun 17 06:38:43 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestImage.h TestExtensionData.h 
+Log Message:
+Include Image.h instead of just using Image forward declaration.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Jun 17 06:38:43 PDT 2005
 tip/tip
 
 Modified Files:
