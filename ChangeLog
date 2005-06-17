@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Fri Jun 17 06:41:17 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestImage.cxx 
+Log Message:
+Generalize Image class by splitting it into class ImageBase + templated
+class TypedImage. Image is now a typedef for backward compatibility.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Jun 17 06:41:17 PDT 2005
 tip/src
 
 Modified Files:
