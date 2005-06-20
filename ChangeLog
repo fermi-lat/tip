@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Jun 20 14:10:27 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestKeyRecord.cxx 
+Log Message:
+Add getName and getComment facilities to KeyRecord class.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Jun 20 14:10:27 PDT 2005
 tip/src
 
 Modified Files:
