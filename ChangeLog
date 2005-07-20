@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jul 19 17:59:08 PDT 2005
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Add getFormat method which returns the data type of the column.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jul 19 17:59:07 PDT 2005
 tip/tip
 
