@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Jul 19 17:59:07 PDT 2005
+tip/tip
+
+Modified Files:
+	IColumn.h 
+Log Message:
+Add getFormat method which returns the data type of the column.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r4p0, operation: add
 Package: tip
