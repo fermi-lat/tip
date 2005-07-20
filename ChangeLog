@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jul 19 18:00:16 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestTable.h 
+Log Message:
+Verify that columns containing unsigned integral values can be created,
+and that getFormat() returns the proper format for them.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Jul 19 17:59:55 PDT 2005
 tip/src/test
 
