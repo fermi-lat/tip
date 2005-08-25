@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Aug 25 08:16:12 PDT 2005
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Make paths more strictly Windows-like in hopes that this will allow
+test code to succeed when run by the release manager.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r5p0, operation: add
 Package: tip
