@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug 30 06:55:42 PDT 2005
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+Add more tests to hone in on problem in which a1.pha can't be
+opened by Windows version in release manager context.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r5p1, operation: add
 Package: tip
