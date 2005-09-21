@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep 20 18:26:41 PDT 2005
+tip/src
+
+Modified Files:
+	FitsHeader.h 
+Log Message:
+Add getNumKeywords, insert and append methods for adding keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 20 18:25:31 PDT 2005
 tip/src
 
