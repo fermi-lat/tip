@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue Sep 20 18:26:41 PDT 2005
+tip/tip
+
+Modified Files:
+	Header.h 
+Log Message:
+Add getNumKeywords, insert and append methods for adding keywords.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Sep 20 18:26:41 PDT 2005
 tip/src
 
 Modified Files:
