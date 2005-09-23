@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Sep 23 07:42:12 PDT 2005
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Add and test erase methods for getting rid of keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Sep 23 07:42:11 PDT 2005
 tip/tip
 
