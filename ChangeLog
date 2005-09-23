@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Sep 23 07:42:11 PDT 2005
+tip/tip
+
+Modified Files:
+	Header.h 
+Log Message:
+Add and test erase methods for getting rid of keywords.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Sep 23 07:42:11 PDT 2005
 tip/src
 
 Modified Files:
