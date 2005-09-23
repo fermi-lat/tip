@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Sep 23 07:42:11 PDT 2005
+tip/src
+
+Modified Files:
+	FitsHeader.cxx FitsHeader.h 
+Log Message:
+Add and test erase methods for getting rid of keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Sep 20 18:27:43 PDT 2005
 tip/src/test
 
