@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Sep 23 10:58:36 PDT 2005
+tip/src
+
+Modified Files:
+	FitsHeader.h FitsHeader.cxx 
+Log Message:
+Add and test find() methods for locating keywords of a given name, improve comments.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Sep 23 10:58:36 PDT 2005
 tip/tip
 
 Modified Files:
