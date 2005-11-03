@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: peachey  Thu Nov  3 11:40:20 PST 2005
+tip/src
+
+Modified Files:
+	RootColumn.h RootTable.cxx 
+Removed Files:
+	RootColumn.cxx 
+Log Message:
+Changed class RootColumn into a template, templated on the type of
+the internal buffer used by Root to store fetched data. Since this
+class is now totally inline, removed old implementation file. Changed
+RootTable to handle Float_t as well as Double_t using the template.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6, operation: add
 Package: tip
