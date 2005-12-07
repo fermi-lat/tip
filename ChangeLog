@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Dec  6 19:17:51 PST 2005
+tip/data
+
+Added Files:
+	FT2.root 
+Log Message:
+New test file for root vector access.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r7, operation: add
 Package: tip
