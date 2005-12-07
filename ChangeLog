@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Dec  6 19:25:47 PST 2005
+tip/src
+
+Modified Files:
+	RootColumn.h RootTable.cxx 
+Log Message:
+Add support for integers, and for vectors in Root files.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Dec  6 19:17:51 PST 2005
 tip/data
 
