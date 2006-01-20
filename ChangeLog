@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jan 19 18:12:02 PST 2006
+tip/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add support for OSX.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceToolsv6r2, operation: add
 Package: tip
