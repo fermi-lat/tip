@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jan 19 18:13:52 PST 2006
+tip/src
+
+Modified Files:
+	KeyRecord.cxx 
+Log Message:
+Use errno.h not error.h, as per C++ standard, to support gcc 3.3 and later.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jan 19 18:13:20 PST 2006
 tip/src/test
 
