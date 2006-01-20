@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jan 19 18:12:51 PST 2006
+tip/src
+
+Modified Files:
+	FitsFileManager.h FitsTipFile.h FitsFileManager.cxx 
+	FitsHeader.cxx FitsTipFile.cxx 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jan 19 18:12:02 PST 2006
 tip/cmt
 
