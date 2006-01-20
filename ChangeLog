@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jan 19 18:13:20 PST 2006
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+There are two extra keywords since adding checksum updates.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jan 19 18:12:51 PST 2006
 tip/src
 
