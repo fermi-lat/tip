@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Feb  1 10:38:35 PST 2006
+tip/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove custom optimization/debugging flags.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r8p2, operation: add
 Package: tip
