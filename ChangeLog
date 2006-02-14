@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Feb 14 13:11:31 PST 2006
+tip/tip
+
+Modified Files:
+	IFileSvc.h 
+Log Message:
+Eliminate compiler warning by not naming source object
+in empty copy constructor.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r8p3, operation: add
 Package: tip
