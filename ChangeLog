@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar 14 13:07:34 PST 2006
+tip/src/test
+
+Modified Files:
+	TestTable.cxx 
+Log Message:
+Add cmath header.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r8p5, operation: add
 Package: tip
