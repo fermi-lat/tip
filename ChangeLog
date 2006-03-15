@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Mar 15 11:14:49 PST 2006
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Handle getting vector-valued columns as vectors of strings.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar 14 13:07:34 PST 2006
 tip/src/test
 
