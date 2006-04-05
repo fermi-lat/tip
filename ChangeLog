@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  4 18:24:58 PDT 2006
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+When adding a new column, add TNULL keyword and update fits header structure.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  4 18:23:38 PDT 2006
 tip/src
 
