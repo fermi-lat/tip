@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  4 18:25:44 PDT 2006
+tip/src/test
+
+Modified Files:
+	TestTable.cxx TestColumn.cxx 
+Log Message:
+Test handling of null values, and of vectors of bools and strings.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  4 18:24:58 PDT 2006
 tip/src
 
