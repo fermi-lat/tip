@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri May  5 11:26:47 PDT 2006
+tip/src
+
+Modified Files:
+	FitsPrimProps.cxx 
+Log Message:
+Use min value for all undefined values.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r10, operation: add
 Package: tip
