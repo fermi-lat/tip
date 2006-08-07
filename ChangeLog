@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug  7 10:21:27 PDT 2006
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Use any_null flag to prevent seg-faults when null values are actually encountered.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri May  5 11:26:47 PDT 2006
 tip/src
 
