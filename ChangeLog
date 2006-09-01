@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Sep  1 10:32:51 PDT 2006
+tip/src
+
+Modified Files:
+	IFileSvc.cxx 
+Log Message:
+Add IFileSvc::openFile method, for opening a TipFile.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Sep  1 10:32:51 PDT 2006
 tip/tip
 
 Modified Files:
