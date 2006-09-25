@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Sep 25 13:47:31 PDT 2006
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Add isNull method, for determining whether a scalar value is null.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r11, operation: add
 Package: tip
