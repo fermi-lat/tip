@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Oct 17 12:31:39 PDT 2006
+tip/src
+
+Modified Files:
+	FitsHeader.cxx 
+Log Message:
+Rework erase code in an attempt to rectify seemingly spurious errors on Windows.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r12, operation: add
 Package: tip
