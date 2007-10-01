@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Mon Oct  1 11:34:33 PDT 2007
+tip/src/test
+
+Modified Files:
+	TestHarness.cxx test_tip_main.cxx 
+Log Message:
+use commonUtilities
+    *
+------------------------------------------------------------
+User: golpa  Mon Oct  1 11:34:33 PDT 2007
 tip/cmt
 
 Modified Files:
