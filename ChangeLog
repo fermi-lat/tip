@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Mon Dec 10 13:42:42 PST 2007
+tip
+
+Added Files:
+	SConscript tipLib.py 
+Log Message:
+Initial import of SCons files
+    *
+------------------------------------------------------------
 User: golpa  Mon Oct  1 11:34:33 PDT 2007
 tip/src/test
 
