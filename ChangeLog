@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Thu Feb 21 16:54:24 PST 2008
+tip
+
+Modified Files:
+	SConscript 
+Log Message:
+add facilities as a dependency of the test application, cosmetic changes
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-12-01, operation: add
 Package: tip
