@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 14 08:46:58 PDT 2008
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx TestTable.cxx 
+Log Message:
+Protect against continuing with tests that depend
+on a successful setup (avoid dereferening null pointers.
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-12-01, operation: mov
 Package: tip
