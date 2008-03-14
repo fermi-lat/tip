@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar 14 11:54:13 PDT 2008
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx TestHarness.cxx 
+Log Message:
+Make sure that a proper delimiter is used when concatenating paths.
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar 14 08:46:58 PDT 2008
 tip/src/test
 
