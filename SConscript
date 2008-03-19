@@ -1,4 +1,4 @@
-#$Id: SConscript,v 1.3 2008/02/22 00:54:24 golpa Exp $
+#$Id: SConscript,v 1.4 2008/02/26 16:27:13 glastrm Exp $
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
@@ -14,4 +14,5 @@ testEnv = progEnv.Clone()
 testEnv.Tool('facilitiesLib')
 test_tipBin = testEnv.Program('test_tip', listFiles(['src/test/*.cxx']))
 
-progEnv.Tool('registerObjects', package = 'tip', libraries = [tipLib], binaries = [sampleProg], testApps = [test_tipBin], includes = listFiles(['tip/*.h']))
+progEnv.Tool('registerObjects', package = 'tip', libraries = [tipLib], binaries = [sampleProg], testApps = [test_tipBin], includes = listFiles(['tip/*.h']),
+             data = listFiles(['data/*'], recursive = True))
