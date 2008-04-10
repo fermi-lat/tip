@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Apr 10 07:48:39 PDT 2008
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+Add test for a bug reported by Markus Ackermann, and a fix.
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-12-02, operation: mov
 Package: tip
