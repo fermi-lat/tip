@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Thu Apr 10 07:48:39 PDT 2008
+tip/src/test
+
+Modified Files:
+	TestTable.cxx 
+Log Message:
+Add test for a bug reported by Markus Ackermann, and a fix.
+    *
+------------------------------------------------------------
+User: peachey  Thu Apr 10 07:48:39 PDT 2008
 tip/src
 
 Modified Files:
