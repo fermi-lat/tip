@@ -2,6 +2,14 @@
 TAG
 Tag name: tip-02-12-03, operation: add
 Package: tip
+User: glastrm  Thu Apr 10 08:00:47 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: tip-02-12-03, operation: add
+Package: tip
 User: glastrm  Thu Apr 10 08:00:33 2008
 Files:
   tip/tipLib.py  1.2
