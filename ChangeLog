@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Thu Jun 19 17:02:52 PDT 2008
+ScienceTools-scons/tip
+
+Modified Files:
+	SConscript 
+Log Message:
+Added Author and Version fields
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-12-03, operation: add
 Package: tip
