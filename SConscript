@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.5 2008/03/19 20:36:51 glastrm Exp $
+# $Id: SConscript,v 1.6 2008/06/20 00:02:52 glastrm Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-12-03
 
@@ -12,7 +12,7 @@ libEnv.Tool('tipLib', depsOnly = 1)
 tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
 
 progEnv.Tool('tipLib')
-sampleProg = progEnv.Program('sample', 'src/sample/sample.cxx')
+sampleProg = progEnv.Program('sample',[ 'src/sample/sample.cxx'])
 
 testEnv = progEnv.Clone()
 testEnv.Tool('facilitiesLib')
