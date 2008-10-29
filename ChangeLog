@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: vernaleo  Wed Oct 29 13:14:14 PDT 2008
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx TestFileManager.cxx TestTable.cxx 
+Log Message:
+Changes from Peachey for ROOT-free build option
+    *
+------------------------------------------------------------
+User: vernaleo  Wed Oct 29 13:14:14 PDT 2008
 tip/src
 
 Modified Files:
