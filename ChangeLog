@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: v2r12p4, operation: mov
+Package: tip
+User: glastrm  Wed Oct 29 20:04:38 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: tip-02-12-04, operation: add
 Package: tip
 User: glastrm  Wed Oct 29 20:03:57 2008
