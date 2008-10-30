@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r12p4, operation: mov
+Package: tip
+User: glastrm  Wed Oct 29 20:03:47 2008
+Files:
+  tip/SConscript  1.8
+
+    *
+------------------------------------------------------------
 User: glastrm  Wed Oct 29 20:03:41 PDT 2008
 tip
 
