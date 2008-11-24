@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Nov 24 13:20:17 PST 2008
+tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Large file support: migrate from long to Index_t and use the
+long-long version of relevant cfitsio function calls.
+    *
+------------------------------------------------------------
+User: peachey  Mon Nov 24 13:20:17 PST 2008
 tip/tip
 
 Modified Files:
