@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Mon Nov 24 13:25:25 PST 2008
+tip/src/test
+
+Modified Files:
+	TestImage.cxx TestFileManager.cxx 
+Log Message:
+Use PixOrd_t, PixelCoordinate etc. throughout interfaces for dealing with images.
+    *
+------------------------------------------------------------
+User: peachey  Mon Nov 24 13:25:25 PST 2008
 tip/src
 
 Modified Files:
