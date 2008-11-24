@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Nov 24 11:34:21 PST 2008
+tip/tip
+
+Modified Files:
+	tip_types.h 
+Log Message:
+Support for large files: change and test using signed long long
+for the index type
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-12-04, operation: add
 Package: tip
