@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Nov 24 13:29:16 PST 2008
+tip/data
+
+Added Files:
+	large_file.tpl 
+Log Message:
+Support for large files: template for large file test.
+    *
+------------------------------------------------------------
 User: peachey  Mon Nov 24 13:25:25 PST 2008
 tip/src/test
 
