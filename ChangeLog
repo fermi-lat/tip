@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Wed Nov 26 12:36:22 PST 2008
+tip/tip
+
+Modified Files:
+	Image.h 
+Log Message:
+In preparation for supporting large images, use PixOrd_t,
+PixelCoordinate typedefs instead of hard-coded std::vector<long>.
+For now, leave PixOrd_t as a signed long, because there is a good
+amount of calling code that uses std::vector<long>.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Nov 26 12:36:22 PST 2008
 tip/src
 
 Modified Files:
