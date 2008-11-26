@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: tip-02-13-00, operation: add
+Package: tip
+User: glastrm  Wed Nov 26 13:30:57 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v2r13, operation: mov
 Package: tip
 User: glastrm  Wed Nov 26 13:30:52 2008
