@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Dec  1 10:04:36 PST 2008
+tip/src/test
+
+Modified Files:
+	TestTable.cxx 
+Log Message:
+Make test for large file access more careful about reporting
+problems, in order to isolate issues on Windows.
+    *
+------------------------------------------------------------
 User: peachey  Mon Dec  1 10:03:44 PST 2008
 tip/doc
 
