@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: peachey  Thu Dec  4 08:19:43 PST 2008
+tip/tip
+
+Modified Files:
+	IFileSvc.h 
+Log Message:
+Be more careful about Root-specific initialization:
+o Check gSystem pointer before deferencing.
+o Repeat the initialization every time the instance of IFileSvc is
+  requested until the initialization succeeds.
+
+These changes improve the stability of tip by allowing the file handler
+to be used by a static variable outside of function scope, but still
+resets Root's signal handlers when possible.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-13-01, operation: add
 Package: tip
