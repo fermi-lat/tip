@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: tip-01-01-01, operation: add
+Package: tip
+User: ecephas  Mon Dec  8 13:40:51 2008
+Files:
+  tip/SConscript  1.12
+  tip/SConscript  1.12
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 13:40:45 PST 2008
 GlastRelease-scons/tip
 
