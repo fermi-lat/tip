@@ -1,8 +1,7 @@
 # -*- python -*-
-# $Id: SConscript,v 1.10 2008/12/01 18:30:39 glastrm Exp $
+# $Id: SConscript,v 1.7 2008/08/15 21:22:48 ecephas Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
-# Version: tip-02-13-02
-
+# Version: tip-01-01-01
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
@@ -20,3 +19,6 @@ test_tipBin = testEnv.Program('test_tip', listFiles(['src/test/*.cxx']))
 
 progEnv.Tool('registerObjects', package = 'tip', libraries = [tipLib], binaries = [sampleProg], testApps = [test_tipBin], includes = listFiles(['tip/*.h']),
              data = listFiles(['data/*'], recursive = True))
+
+
+
