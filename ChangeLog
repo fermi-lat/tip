@@ -2,6 +2,16 @@
 TAG
 Tag name: tip-01-01-01, operation: add
 Package: tip
+User: ecephas  Mon Dec  8 16:08:59 2008
+Files:
+  tip/tipLib.py  1.2
+  tip/tipLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: tip-01-01-01, operation: add
+Package: tip
 User: ecephas  Mon Dec  8 13:40:51 2008
 Files:
   tip/SConscript  1.12
