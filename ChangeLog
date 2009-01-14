@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: v1r1p1, operation: del
+Package: tip
+User: glastrm  Wed Jan 14 11:37:45 2009
+Files:
+  tip/tipLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: tip-01-01-01, operation: del
 Package: tip
 User: glastrm  Wed Jan 14 11:37:23 2009
