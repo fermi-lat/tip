@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: ecephas  Wed Jan 14 10:37:02 PST 2009
+GlastRelease-scons/tip
+
+Modified Files:
+      Tag: GlastReleasev15r49
+	SConscript 
+Log Message:
+Changed the version string from tip-01-01-01 to tip-02-12-03.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-49-00, operation: mov
 Package: tip
