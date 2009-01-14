@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jan 14 08:37:32 PST 2009
+tip/src
+
+Modified Files:
+	KeyRecord.cxx 
+Log Message:
+Eliminate memory access problem revealed by valgrind, in which
+the one-past-last element of a string was accidentally dereferenced.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-50-10, operation: del
 Package: tip
