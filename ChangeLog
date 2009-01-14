@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: ecephas  Wed Jan 14 08:52:28 PST 2009
+GlastRelease-scons/tip
+
+Modified Files:
+      Tag: GlastReleasev15r49
+	SConscript 
+Log Message:
+This fix is provided to turn off optimization for compiling test_tip_main.cxx, for just the Linux and Mac OS.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jan 14 08:37:32 PST 2009
 tip/src
 
