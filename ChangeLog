@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: tip-01-01-01, operation: del
+Package: tip
+User: glastrm  Wed Jan 14 11:36:15 2009
+Files:
+  tip/SConscript  1.12
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v1r1p1, operation: del
 Package: tip
 User: glastrm  Wed Jan 14 11:35:35 2009
