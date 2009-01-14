@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: tip-02-12-03, operation: del
+Package: tip
+User: glastrm  Wed Jan 14 11:11:46 2009
+Files:
+  tip/SConscript  1.6
+
+    *
+------------------------------------------------------------
 User: ecephas  Wed Jan 14 10:37:02 PST 2009
 GlastRelease-scons/tip
 
