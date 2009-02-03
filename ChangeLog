@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Tue Feb  3 09:47:49 PST 2009
+tip
+
+Modified Files:
+	SConscript 
+Log Message:
+don't compile main for test app with optimization on
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-49-00, operation: mov
 Package: tip
