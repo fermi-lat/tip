@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Feb 10 12:15:01 PST 2009
+tip/src
+
+Modified Files:
+	FitsColumn.h FitsTable.cxx 
+Log Message:
+Backed out long long indexing, but left a preprocessor switch, so
+long long indexing can be reenabled by compiling with
+TIP_USE_LONG_LONG_INDEX defined.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-10-00, operation: add
 Package: tip
