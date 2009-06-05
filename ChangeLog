@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Jun  5 11:24:55 PDT 2009
+tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+On non-Windows platforms, test new temporary file setting.
+    *
+------------------------------------------------------------
 User: peachey  Fri Jun  5 11:15:07 PDT 2009
 tip/tip
 
