@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jul  1 10:16:33 PDT 2009
+tip/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add EOH to release.notes
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-15-01, operation: add
 Package: tip
