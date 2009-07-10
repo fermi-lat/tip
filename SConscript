@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.15 2009/06/05 19:30:21 glastrm Exp $
+# $Id: SConscript,v 1.16 2009/06/23 21:30:38 glastrm Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-15-01
 Import('baseEnv')
@@ -32,7 +32,11 @@ if baseEnv['PLATFORM'] != 'win32':
 else:
     test_tipBin = testEnv.Program('test_tip', listFiles(['src/test/*.cxx']))
 
-progEnv.Tool('registerObjects', package = 'tip', libraries = [tipLib], binaries = [sampleProg], testApps = [test_tipBin], includes = listFiles(['tip/*.h']),
+progEnv.Tool('registerTargets', package = 'tip',
+             rootcintSharedCxts = [[tipLib, libEnv]],
+             binaryCxts = [[sampleProg, progEnv]],
+             testAppCxts = [[test_tipBin, progEnv]],
+             includes = listFiles(['tip/*.h']),
              data = listFiles(['data/*'], recursive = True))
 
 
