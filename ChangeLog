@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul  9 17:57:01 PDT 2009
+ScienceTools-scons/tip
+
+Modified Files:
+	SConscript 
+Log Message:
+Change to use registerTargets rather than registerObjects
+
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  1 10:16:33 PDT 2009
 tip/doc
 
