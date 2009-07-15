@@ -1,9 +1,9 @@
 package tip
 
-version v1r1p1
+version v2r15p2
 
 author James Peachey <peachey@lheamail.gsfc.nasa.gov>
-# $Id: requirements,v 1.11 2006/02/01 18:38:35 peachey Exp $
+# $Id: requirements,v 1.12 2007/10/01 18:34:33 golpa Exp $
 
 use STpolicy *
 use ROOT * IExternal
