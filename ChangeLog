@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Tue Jul 21 09:47:58 PDT 2009
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Make test of Header::erase smarter about counting up number
+of history keywords before erasing them. This prevents test from crashing
+when run in a long path. The long path causes the number of history
+keywords written to fluctuate.
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-15-02, operation: add
 Package: tip
