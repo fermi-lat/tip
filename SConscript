@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.18 2009/07/15 18:30:55 glastrm Exp $
+# $Id: SConscript,v 1.19 2009/07/21 16:49:10 peachey Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-15-03
 Import('baseEnv')
@@ -9,6 +9,7 @@ libEnv = baseEnv.Clone()
 test2Env = baseEnv.Clone()
 
 libEnv.Tool('tipLib', depsOnly = 1)
+
 tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
 
 progEnv.Tool('tipLib')
@@ -33,7 +34,7 @@ else:
     test_tipBin = testEnv.Program('test_tip', listFiles(['src/test/*.cxx']))
 
 progEnv.Tool('registerTargets', package = 'tip',
-             rootcintSharedCxts = [[tipLib, libEnv]],
+             staticLibraryCxts = [[tipLib, libEnv]],
              binaryCxts = [[sampleProg, progEnv]],
              testAppCxts = [[test_tipBin, progEnv]],
              includes = listFiles(['tip/*.h']),
