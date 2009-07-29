@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 29 11:21:48 PDT 2009
+ScienceTools-scons/tip
+
+Modified Files:
+	SConscript 
+Log Message:
+Don't need rootcint for tip
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-15-03, operation: add
 Package: tip
