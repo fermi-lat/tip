@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+TAG
+Tag name: tip-02-15-04, operation: add
+Package: tip
+User: jrb  Thu Jul 30 11:20:58 2009
+Files:
+  tip/tipLib.py  1.2
+  tip/ChangeLog  1.818
+  tip/SConscript  1.21
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jul 30 11:20:51 PDT 2009
 ScienceTools-scons/tip/doc
 
