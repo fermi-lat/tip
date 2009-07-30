@@ -2,6 +2,22 @@
 TAG
 Tag name: tip-02-15-04, operation: add
 Package: tip
+User: jrb  Thu Jul 30 11:21:12 2009
+Files:
+  tip/data/ft1.tpl  1.2
+  tip/data/large_file.tpl  1.1
+  tip/data/groD4-dc2v1.fits  1.1
+  tip/data/arlac.pha  1.3
+  tip/data/a1.pha  1.2
+  tip/data/merit.root  1.1
+  tip/data/aeff_DC1.fits  1.1
+  tip/data/FT2.root  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: tip-02-15-04, operation: add
+Package: tip
 User: jrb  Thu Jul 30 11:21:05 2009
 Files:
   tip/cmt/requirements  1.13
