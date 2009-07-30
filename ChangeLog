@@ -2,6 +2,15 @@
 TAG
 Tag name: tip-02-15-04, operation: add
 Package: tip
+User: jrb  Thu Jul 30 11:21:19 2009
+Files:
+  tip/doc/release.notes  1.45
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: tip-02-15-04, operation: add
+Package: tip
 User: jrb  Thu Jul 30 11:21:12 2009
 Files:
   tip/data/ft1.tpl  1.2
