@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Aug 14 12:52:39 PDT 2009
+tip/src
+
+Modified Files:
+      Tag: ScienceToolsv9r15p2
+	FitsColumn.h 
+Log Message:
+Use unsigned bit shifts.
+    *
+------------------------------------------------------------
 User: peachey  Fri Aug 14 12:48:13 PDT 2009
 tip/doc
 
