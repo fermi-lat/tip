@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Dec 14 10:46:56 PST 2009
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx test_tip_main.cxx 
+Log Message:
+Exclude another section of unit test when building without CERN Root.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-06, operation: add
 Package: tip
