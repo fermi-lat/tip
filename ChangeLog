@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: elwinter  Wed Dec 16 15:37:00 PST 2009
+tip/src
+
+Modified Files:
+	FitsHeader.h 
+Log Message:
+Added <cstring> header and std:: namespace qualifier on strncpy()
+needed for gcc4.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-15-05, operation: add
 Package: tip
