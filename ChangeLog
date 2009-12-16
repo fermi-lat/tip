@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Wed Dec 16 15:38:02 PST 2009
+tip/src
+
+Modified Files:
+	KeyRecord.cxx 
+Log Message:
+Added <cstring> needed by gcc4.
+
+    *
+------------------------------------------------------------
 User: elwinter  Wed Dec 16 15:37:00 PST 2009
 tip/src
 
