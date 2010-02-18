@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.22 2009/08/14 19:40:39 peachey Exp $
+# $Id: SConscript,v 1.23 2009/12/14 19:21:46 peachey Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-15-05
 Import('baseEnv')
@@ -7,8 +7,6 @@ Import('listFiles')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 test2Env = baseEnv.Clone()
-
-libEnv.Tool('tipLib', depsOnly = 1)
 
 tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
 
