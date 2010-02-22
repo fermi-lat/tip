@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 22 15:06:26 PST 2010
+ScienceTools-scons/tip
+
+Modified Files:
+	.cvsignore 
+Log Message:
+ignore *.pyc
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 17 17:04:53 PST 2010
 ScienceTools-scons/tip
 
