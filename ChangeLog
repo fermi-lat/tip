@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Mar 25 10:36:07 PDT 2010
+tip/src
+
+Modified Files:
+	IFileSvc.cxx RootTable.h RootTable.cxx 
+Log Message:
+Increase maximum size of a TTree to a number that will probably
+not be exceeded. This is to prevent Root from splitting the file, per JIRA
+issue STARCH-15.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-16-00, operation: add
 Package: tip
