@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 22 14:06:14 PDT 2010
+ScienceTools-scons/tip/tip
+
+Modified Files:
+	IColumn.h 
+Log Message:
+Add getNull methods, for getting the set of null values in a scalar or vector column.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 22 14:05:25 PDT 2010
 ScienceTools-scons/tip/data
 
