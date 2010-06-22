@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 22 14:06:42 PDT 2010
+ScienceTools-scons/tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Add getNull methods, for getting the set of null values in a scalar or vector column.
+    *
+------------------------------------------------------------
 User: peachey  Tue Jun 22 14:06:14 PDT 2010
 ScienceTools-scons/tip/tip
 
