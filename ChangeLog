@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri Sep 17 14:06:44 PDT 2010
+tip/src
+
+Modified Files:
+	FitsColumn.h FitsFileManager.cxx FitsImage.h 
+Log Message:
+Replace unportable conversion of iterators to pointers with legal copies of arrays being read.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-18-03, operation: add
 Package: tip
