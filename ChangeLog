@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Oct 12 07:52:56 PDT 2010
+tip
+
+Modified Files:
+	SConscript 
+Log Message:
+move to use TEventList in RootTable
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-18-05, operation: add
 Package: tip
