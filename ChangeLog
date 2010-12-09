@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jchiang  Wed Dec  8 20:49:55 PST 2010
+ScienceTools-scons/tip/src/test
+
+Modified Files:
+	test_tip_main.cxx 
+Log Message:
+comment out test for dummy.root file since it is not needed anymore
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-19-00, operation: add
 Package: tip
