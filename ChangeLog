@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: tip
+User: heather  Wed Sep  7 10:13:20 2011
+Files:
+  tip/.cvsignore  1.2
+  tip/tipLib.py  1.2
+  tip/ChangeLog  1.921
+  tip/SConscript  1.34
+  tip/cmt/requirements  1.24
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: tip
 User: glastrm  Tue Sep  6 14:17:20 2011
