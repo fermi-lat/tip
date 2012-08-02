@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: gudlaugu  Thu Aug  2 05:58:44 PDT 2012
+ScienceTools-scons/tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Fix for bug described in jira STGEN-129
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-01, operation: add
 Package: tip
