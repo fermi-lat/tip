@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Id: SConscript,v 1.33 2011/02/15 17:28:06 jchiang Exp $
+# $Id: SConscript,v 1.34 2011/05/12 21:07:02 peachey Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
-# Version: tip-02-17-01
+# Version: tip-02-17-02
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
