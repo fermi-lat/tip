@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: gudlaugu  Tue Aug  7 15:17:20 PDT 2012
+ScienceTools-scons/tip/src
+
+Modified Files:
+	FitsColumn.h 
+Log Message:
+Fix writing null values to variable size arrays in tip fits tables.
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-17-02, operation: add
 Package: tip
