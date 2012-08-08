@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: gudlaugu  Wed Aug  8 16:07:18 PDT 2012
+ScienceTools-scons/tip/src
+
+Modified Files:
+	FitsColumn.h FitsTable.cxx 
+Log Message:
+Fix for variable length integer arrays.  The TNULL keyword wasn't set properly
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-17-03, operation: add
 Package: tip
