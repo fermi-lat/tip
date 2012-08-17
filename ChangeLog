@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 17 11:49:26 PDT 2012
+GlastRelease-scons/tip
+
+Modified Files:
+	SConscript tipLib.py 
+Log Message:
+patches for Windows no-install-headers
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-17-04, operation: add
 Package: tip
