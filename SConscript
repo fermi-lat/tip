@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.36 2012/08/07 23:16:48 jchiang Exp $
+# $Id: SConscript,v 1.37 2012/08/09 21:13:23 jchiang Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-17-04
 Import('baseEnv')
@@ -8,6 +8,7 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 test2Env = baseEnv.Clone()
 
+libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
 
 progEnv.Tool('tipLib')
