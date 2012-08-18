@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.37 2012/08/09 21:13:23 jchiang Exp $
+# $Id: SConscript,v 1.38 2012/08/17 18:49:26 jrb Exp $
 # Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
 # Version: tip-02-17-04
 Import('baseEnv')
@@ -35,7 +35,7 @@ else:
 progEnv.Tool('registerTargets', package = 'tip',
              staticLibraryCxts = [[tipLib, libEnv]],
              binaryCxts = [[sampleProg, progEnv]],
-             testAppCxts = [[test_tipBin, progEnv]],
+             testAppCxts = [[test_tipBin, testEnv]],
              includes = listFiles(['tip/*.h']),
              data = listFiles(['data/*'], recursive = True))
 
