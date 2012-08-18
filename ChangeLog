@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 17 18:00:57 PDT 2012
+GlastRelease-scons/tip
+
+Modified Files:
+	SConscript 
+Log Message:
+fix to test_tip project file
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-02, operation: add
 Package: tip
