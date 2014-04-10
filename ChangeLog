@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Thu Apr 10 12:43:51 PDT 2014
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+Fixed "CFITSIO ERROR 314: null value not defined" error for case TBIT
+    *
+------------------------------------------------------------
 TAG
 Tag name: tip-02-18-02, operation: add
 Package: tip
