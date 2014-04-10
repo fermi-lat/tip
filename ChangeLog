@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Wed Apr  9 19:32:24 PDT 2014
+tip/src/test
+
+Modified Files:
+	TestColumn.cxx 
+Log Message:
+Test for 32X read/write functionality
+    *
+------------------------------------------------------------
 User: asercion  Wed Apr  9 19:31:23 PDT 2014
 tip/src
 
