@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: asercion  Wed Apr  9 19:31:23 PDT 2014
+tip/src
+
+Modified Files:
+	FitsPrimProps.cxx FitsTable.cxx FitsPrimProps.h FitsColumn.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-09-09, operation: add
 Package: tip
