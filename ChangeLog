@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Fri Apr 18 13:49:47 PDT 2014
+tip/src
+
+Modified Files:
+	FitsTable.cxx 
+Log Message:
+Fixed  ftverify error "TNULL# is used for column with format"32X""
+    *
+------------------------------------------------------------
 User: asercion  Fri Apr 18 13:46:51 PDT 2014
 tip/src
 
