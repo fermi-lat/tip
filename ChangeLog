@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Fri Feb 20 12:11:24 PST 2015
+tip/src
+
+Modified Files:
+	FitsHeader.h 
+Log Message:
+Added fix for error 204 failure occurring when used with CFITSIO >3.29.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-10-00-00, operation: add
 Package: tip
