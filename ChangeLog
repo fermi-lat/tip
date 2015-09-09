@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Wed Sep  9 11:01:58 PDT 2015
+tip/src/test
+
+Modified Files:
+	TestExtensionData.cxx 
+Log Message:
+Commenting out problem test until Tip has been patched to work with newer CFITSIO
+    *
+------------------------------------------------------------
 User: asercion  Thu Aug 13 04:19:43 PDT 2015
 tip/src
 
