@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Wed Jan 13 07:37:43 PST 2016
+tip/src
+
+Modified Files:
+	FitsHeader.h FitsHeader.cxx FitsTipFile.cxx 
+	FitsFileManager.cxx 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-10-04, operation: add
 Package: tip
