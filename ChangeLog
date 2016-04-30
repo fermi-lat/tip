@@ -1,5 +1,89 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-11-01-00, operation: add
+Package: tip
+User: jchiang  Sat Apr 30 12:14:50 2016
+Files:
+  tip/.cvsignore  1.2
+  tip/tipLib.py  1.3
+  tip/ChangeLog  1.1231
+  tip/SConscript  1.46
+  tip/cmt/requirements  1.34
+  tip/data/ft1.tpl  1.2
+  tip/data/large_file.tpl  1.1
+  tip/data/groD4-dc2v1.fits  1.1
+  tip/data/arlac.pha  1.3
+  tip/data/a1.pha  1.3
+  tip/data/merit.root  1.1
+  tip/data/aeff_DC1.fits  1.2
+  tip/data/FT2.root  1.1
+  tip/doc/release.notes  1.69
+  tip/src/FitsFileManager.h  1.11
+  tip/src/RootHeader.h  1.1
+  tip/src/IFileSvc.cxx  1.36
+  tip/src/FitsHeader.cxx  1.11
+  tip/src/TipException.cxx  1.1
+  tip/src/mainpage.h  1.19
+  tip/src/FitsPrimProps.cxx  1.10
+  tip/src/Header.cxx  1.4
+  tip/src/FitsImage.h  1.7
+  tip/src/FitsTipFile.cxx  1.7
+  tip/src/TipFile.cxx  1.2
+  tip/src/FitsTipFile.h  1.3
+  tip/src/FileSummary.cxx  1.2
+  tip/src/FitsColumn.h  1.31
+  tip/src/FitsFileManager.cxx  1.22
+  tip/src/KeyRecord.cxx  1.9
+  tip/src/RootTable.h  1.6
+  tip/src/FitsTable.cxx  1.20
+  tip/src/LinearInterp.cxx  1.1
+  tip/src/FitsTable.h  1.8
+  tip/src/RootTable.cxx  1.10
+  tip/src/RootColumn.h  1.5
+  tip/src/FitsHeader.h  1.13
+  tip/src/FitsPrimProps.h  1.5
+  tip/src/sample/sample.cxx  1.8
+  tip/src/test/TestHarness.cxx  1.5
+  tip/src/test/TestExtensionData.cxx  1.33
+  tip/src/test/TestColumn.h  1.1
+  tip/src/test/TestImage.h  1.3
+  tip/src/test/TestExtensionData.h  1.7
+  tip/src/test/TestFilter.h  1.2
+  tip/src/test/TestFileSummary.h  1.1
+  tip/src/test/TestTable.cxx  1.32
+  tip/src/test/TestHarness.h  1.3
+  tip/src/test/TestKeyRecord.h  1.2
+  tip/src/test/TestInterpolation.cxx  1.2
+  tip/src/test/TestFileSummary.cxx  1.3
+  tip/src/test/TestTable.h  1.15
+  tip/src/test/TestImage.cxx  1.14
+  tip/src/test/test_tip_main.cxx  1.63
+  tip/src/test/TestFileManager.h  1.10
+  tip/src/test/TestKeyRecord.cxx  1.4
+  tip/src/test/TestInterpolation.h  1.2
+  tip/src/test/TestFilter.cxx  1.2
+  tip/src/test/TestFileManager.cxx  1.14
+  tip/src/test/TestColumn.cxx  1.13
+  tip/src/test/TestException.h  1.1
+  tip/tip/tip_types.h  1.8
+  tip/tip/Iterator.h  1.6
+  tip/tip/FileSummary.h  1.2
+  tip/tip/VectorAdaptor.h  1.13
+  tip/tip/KeyRecord.h  1.6
+  tip/tip/IFileSvc.h  1.24
+  tip/tip/TipFile.h  1.3
+  tip/tip/ScalarAdaptor.h  1.11
+  tip/tip/Image.h  1.11
+  tip/tip/Extension.h  1.15
+  tip/tip/IColumn.h  1.12
+  tip/tip/TipException.h  1.6
+  tip/tip/Table.h  1.44
+  tip/tip/Header.h  1.21
+  tip/tip/LinearInterp.h  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-11-00, operation: add
 Package: tip
 User: heather  Thu Mar 31 20:51:38 2016
