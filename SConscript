@@ -1,6 +1,6 @@
 # -*- python -*-
-# $Id: SConscript,v 1.45 2014/05/22 18:50:18 asercion Exp $
-# Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>
+# $Id: SConscript,v 1.46 2016/01/13 19:12:16 jchiang Exp $
+# Authors: James Peachey <peachey@lheamail.gsfc.nasa.gov>, Joe Asercion <joseph.a.asercion@nasa.gov>
 # Version: tip-02-18-06
 Import('baseEnv')
 Import('listFiles')
