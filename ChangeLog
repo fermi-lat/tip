@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri May  5 17:53:45 PDT 2017
+tip
+
+Modified Files:
+	SConscript tipLib.py 
+Log Message:
+updates so that ST_User can be ROOTless
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-11-05-03, operation: add
 Package: tip
