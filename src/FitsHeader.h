@@ -257,6 +257,7 @@ namespace tip {
     char tmp[FLEN_KEYWORD];
     std::strncpy(tmp, value.c_str(), FLEN_KEYWORD - 1);
     fits_update_key(m_fp, data_type_code, const_cast<char *>(name.c_str()), tmp, 0, &status);
+    fits_flush_file(m_fp,&status);
     if (0 != status) throw TipException(status, formatWhat(std::string("Cannot write keyword \"") + name + '"'));
   }
 
