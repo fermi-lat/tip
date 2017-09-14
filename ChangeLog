@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Thu Sep 14 09:17:16 PDT 2017
+tip/src
+
+Modified Files:
+	FitsHeader.h 
+Log Message:
+Fix keyword mis-write issue (add fits_flush call)
+    *
+------------------------------------------------------------
 User: jrb  Mon May  8 18:10:08 PDT 2017
 tip/cmt
 
