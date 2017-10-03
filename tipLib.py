@@ -8,8 +8,10 @@ def generate(env, **kw):
     if kw.get('incsOnly', 0) == 1:
         env.Tool('findPkgPath', package = 'facilities')         
         return
-
-    env.Tool('addLibrary', library = env['cfitsioLibs'] + env['rootLibs'])
+    if env.get('CONTAINERNAME', '') == 'ScienceTools_User':
+        env.Tool('addLibrary', library = env['cfitsioLibs'])
+    else:
+        env.Tool('addLibrary', library = env['cfitsioLibs'] + env['rootLibs'])
 
 def exists(env):
 	return 1

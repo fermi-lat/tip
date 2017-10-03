@@ -9,28 +9,36 @@ libEnv = baseEnv.Clone()
 test2Env = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
-tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
+if libEnv.get('CONTAINERNAME', '') == 'ScienceTools_User':
+    tipLib = libEnv.StaticLibrary('tip', listFiles(['/srcFileSummary.cxx',
+                                                    'src/Fits*.cxx',
+                                                    'src/Header.cxx',
+                                                    'src/IFileSvc.cxx',
+                                                    'src/KeyRecord.cxx',
+                                                    'src/LinearInterp.cxx',
+                                                    'src/TipException.cxx',
+                                                    'src/TipFile.cxx' ]))
+else:
+    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
 
 progEnv.Tool('tipLib')
 sampleProg = progEnv.Program('sample',[ 'src/sample/sample.cxx'])
 
 testEnv = progEnv.Clone()
 testEnv.Tool('facilitiesLib')
-if baseEnv['PLATFORM'] != 'win32':
-    test2Env.AppendUnique(CCFLAGS=['-O0'])
-    test_tip_main_obj = test2Env.StaticObject(target = 'test_tip_main_obj.o',source = ['src/test/test_tip_main.cxx'])
-    test_tipBin = testEnv.Program('test_tip', ['src/test/TestColumn.cxx','src/test/TestExtensionData.cxx',
-                                               'src/test/TestFileManager.cxx',
-                                               'src/test/TestFileSummary.cxx',
-                                               'src/test/TestFilter.cxx',
-                                               'src/test/TestHarness.cxx',
-                                               'src/test/TestImage.cxx',
-                                               'src/test/TestInterpolation.cxx',
-                                               'src/test/TestKeyRecord.cxx',
-                                               'src/test/TestTable.cxx'] +
-                                  test_tip_main_obj)
-else:
-    test_tipBin = testEnv.Program('test_tip', listFiles(['src/test/*.cxx']))
+
+test2Env.AppendUnique(CCFLAGS=['-O0'])
+test_tip_main_obj = test2Env.StaticObject(target = 'test_tip_main_obj.o',source = ['src/test/test_tip_main.cxx'])
+test_tipBin = testEnv.Program('test_tip', ['src/test/TestColumn.cxx','src/test/TestExtensionData.cxx',
+                                           'src/test/TestFileManager.cxx',
+                                           'src/test/TestFileSummary.cxx',
+                                           'src/test/TestFilter.cxx',
+                                           'src/test/TestHarness.cxx',
+                                           'src/test/TestImage.cxx',
+                                           'src/test/TestInterpolation.cxx',
+                                           'src/test/TestKeyRecord.cxx',
+                                           'src/test/TestTable.cxx'] +
+                              test_tip_main_obj)
 
 progEnv.Tool('registerTargets', package = 'tip',
              staticLibraryCxts = [[tipLib, libEnv]],
