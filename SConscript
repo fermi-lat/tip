@@ -10,7 +10,7 @@ test2Env = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 if libEnv.get('CONTAINERNAME', '') == 'ScienceTools_User':
-    tipLib = libEnv.StaticLibrary('tip', listFiles(['/srcFileSummary.cxx',
+    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/FileSummary.cxx',
                                                     'src/Fits*.cxx',
                                                     'src/Header.cxx',
                                                     'src/IFileSvc.cxx',
