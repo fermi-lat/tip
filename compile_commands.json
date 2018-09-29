@@ -1,0 +1,442 @@
+[
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FileSummary.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FileSummary.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FileSummary.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FitsFileManager.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FitsFileManager.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FitsFileManager.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FitsHeader.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FitsHeader.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FitsHeader.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FitsPrimProps.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FitsPrimProps.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FitsPrimProps.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FitsTable.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FitsTable.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FitsTable.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/FitsTipFile.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/FitsTipFile.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/FitsTipFile.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/Header.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/Header.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/Header.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/IFileSvc.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/IFileSvc.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/IFileSvc.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/KeyRecord.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/KeyRecord.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/KeyRecord.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/LinearInterp.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/LinearInterp.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/LinearInterp.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/TipException.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/TipException.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/TipException.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -I/Users/areustle/nasa/fermi-lat/tip -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG   -o CMakeFiles/tip.dir/src/TipFile.cxx.o -c /Users/areustle/nasa/fermi-lat/tip/src/TipFile.cxx",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/src/TipFile.cxx"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/buffers.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/buffers.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/buffers.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/cfileio.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/cfileio.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/cfileio.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/checksum.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/checksum.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/checksum.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/drvrfile.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrfile.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrfile.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/drvrmem.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrmem.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrmem.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/drvrnet.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrnet.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrnet.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/drvrsmem.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrsmem.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrsmem.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/drvrgsiftp.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrgsiftp.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/drvrgsiftp.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/editcol.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/editcol.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/editcol.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/edithdu.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/edithdu.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/edithdu.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/eval_l.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_l.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_l.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/eval_y.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_y.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_y.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/eval_f.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_f.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/eval_f.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/fitscore.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fitscore.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fitscore.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcol.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcol.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcol.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcolb.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolb.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolb.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcold.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcold.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcold.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcole.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcole.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcole.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcoli.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoli.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoli.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcolj.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolj.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolj.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcolk.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolk.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolk.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcoll.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoll.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoll.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcols.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcols.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcols.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcolsb.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolsb.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolsb.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcoluk.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoluk.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoluk.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcolui.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolui.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcolui.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getcoluj.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoluj.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getcoluj.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/getkey.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getkey.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/getkey.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/group.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/group.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/group.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/grparser.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/grparser.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/grparser.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/histo.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/histo.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/histo.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/iraffits.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/iraffits.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/iraffits.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/modkey.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/modkey.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/modkey.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcol.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcol.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcol.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolb.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolb.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolb.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcold.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcold.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcold.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcole.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcole.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcole.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcoli.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoli.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoli.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolj.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolj.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolj.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolk.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolk.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolk.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcoluk.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoluk.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoluk.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcoll.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoll.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoll.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcols.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcols.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcols.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolsb.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolsb.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolsb.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolu.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolu.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolu.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcolui.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolui.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcolui.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putcoluj.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoluj.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putcoluj.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/putkey.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putkey.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/putkey.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/region.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/region.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/region.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/scalnull.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/scalnull.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/scalnull.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/swapproc.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/swapproc.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/swapproc.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/wcssub.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/wcssub.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/wcssub.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/wcsutil.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/wcsutil.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/wcsutil.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/imcompress.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/imcompress.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/imcompress.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/quantize.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/quantize.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/quantize.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/ricecomp.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/ricecomp.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/ricecomp.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/pliocomp.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/pliocomp.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/pliocomp.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/fits_hcompress.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fits_hcompress.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fits_hcompress.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/fits_hdecompress.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fits_hdecompress.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/fits_hdecompress.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/zuncompress.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zuncompress.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zuncompress.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/zcompress.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zcompress.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zcompress.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/adler32.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/adler32.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/adler32.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/crc32.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/crc32.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/crc32.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/inffast.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inffast.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inffast.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/inftrees.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inftrees.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inftrees.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/trees.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/trees.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/trees.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/zutil.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zutil.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/zutil.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/deflate.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/deflate.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/deflate.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/infback.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/infback.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/infback.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/inflate.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inflate.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/inflate.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/zlib/uncompr.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/uncompr.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/zlib/uncompr.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/simplerng.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/simplerng.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/simplerng.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/f77_wrap1.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap1.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap1.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/f77_wrap2.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap2.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap2.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/f77_wrap3.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap3.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap3.c"
+},
+{
+  "directory": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DCFITSIO_HAVE_CURL -DHAVE_NET_SERVICES -Dcfitsio_EXPORTS -Dunix -I/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src  -O3 -DNDEBUG -fPIC   -o CMakeFiles/cfitsio.dir/f77_wrap4.c.o   -c /Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap4.c",
+  "file": "/Users/areustle/nasa/fermi-lat/tip/build/_deps/cfitsio-src/f77_wrap4.c"
+}
+]

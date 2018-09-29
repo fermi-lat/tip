@@ -1,0 +1,8 @@
+get_filename_component(tip_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+if(NOT TARGET ST::tip)
+    include("${tip_CMAKE_DIR}/tipTargets.cmake")
+endif()
+
+set(tip_LIBRARIES ST::tip)
