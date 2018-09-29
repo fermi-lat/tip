@@ -51,11 +51,14 @@ add_library(tip STATIC
 
 add_library(ST::tip ALIAS tip)
 
+target_compile_definitions(tip PRIVATE BUILD_WITHOUT_ROOT)
+
 target_include_directories(tip
   PUBLIC
     $<INSTALL_INTERFACE:include>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
+
 target_link_libraries(tip
   PRIVATE
     cfitsio::cfitsio
