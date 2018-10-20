@@ -478,16 +478,21 @@ int main() {
       }
       
       try {
+	time_t local_time;
+	time(&local_time);
+	struct tm*time_info = localtime(&local_time);
+	
         struct tm some_time;
         some_time.tm_sec = 12;
         some_time.tm_min = 12;
-        some_time.tm_hour = 11;
+        some_time.tm_hour = 12;
         some_time.tm_mday = 14;
         some_time.tm_mon = 6;
         some_time.tm_year = 104;
         some_time.tm_wday = 3;
         some_time.tm_yday = 195;
-        some_time.tm_isdst = 0;
+        some_time.tm_isdst = time_info->tm_isdst;
+       
         
         time_t made_time = mktime(&some_time);
         if (-1 == made_time) {
