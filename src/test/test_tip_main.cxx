@@ -492,7 +492,7 @@ int main() {
         some_time.tm_wday = 3;
         some_time.tm_yday = 195;
         //some_time.tm_isdst = time_info->tm_isdst;
-        some_time.tm_isdst = 0;
+        some_time.tm_isdst = 1;
         
         time_t made_time = mktime(&some_time);
         if (-1 == made_time) {
