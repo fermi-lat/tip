@@ -1,3 +1,7 @@
+trigger:
+- master
+- patch_branch
+
 resources:
   repositories:
     - repository: fermitools-conda
