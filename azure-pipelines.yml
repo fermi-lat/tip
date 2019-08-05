@@ -1,0 +1,8 @@
+resources:
+  repositories:
+    - repository: fermitools-conda
+      type: github
+      name: fermi-lat
+
+stages:
+- template: azure-pipeline.yml@fermitools-conda
