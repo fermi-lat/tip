@@ -22,7 +22,7 @@ stages:
     - bash: echo "##vso[task.prependpath]$CONDA/bin"
       displayName: 'Add conda to PATH'
     - bash: | 
-        conda install --yes --quiet python=2.7
+        conda install --yes --quiet -c conda-forge/label/cf201901 python=2.7
         conda install --yes --quiet -c conda-forge/label/cf201901 -c fermi fermi-repoman scons swig
         conda install --yes --quiet --only-deps -c conda-forge/label/cf201901 -c fermi fermitools
       displayName: 'Setup Build environment'
