@@ -49,7 +49,7 @@ stages:
     steps:
     - bash: |
         cd ../
-        git clone https://github.com/fermi-lat/fermitools-Conda
+        git clone https://github.com/fermi-lat/fermitools-conda
       displayName: 'Clone repo'
     - bash: |
         cd fermitools-conda
