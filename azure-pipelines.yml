@@ -44,6 +44,13 @@ stages:
 - stage: pipeline_launch_stage
   displayName: 'Launch Fermitools CI Pipeline'
   condition: succeeded('linux_build_stage')
+  variables:
+    - name: version
+      value: grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1
+    - name: revision
+      value: grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2
+    - name: patch
+      value: grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3
   jobs:
   - job: 
     steps:
@@ -52,12 +59,10 @@ stages:
         git clone https://github.com/fermi-lat/fermitools-conda
       displayName: 'Clone repo'
     - bash: |
-        ls ../
         cd ../fermitools-conda
-        ls
-        echo "##vso[task.setvariable variable=version]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)"
-        echo "##vso[task.setvariable variable=revision]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)"
-        echo "##vso[task.setvariable variable=patch]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)"
+        echo "##vso[task.setvariable variable=version]$(version)"
+        echo "##vso[task.setvariable variable=revision]$(revision)"
+        echo "##vso[task.setvariable variable=patch]$(patch)"
         echo Version is $(version).$(revision).$(patch)
       displayName: 'Extract version information'
     - bash: |
