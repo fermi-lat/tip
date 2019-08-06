@@ -2,6 +2,14 @@ trigger:
 - master
 - patch_branch
 
+variables:
+    - name: version
+      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)
+    - name: revision
+      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)
+    - name: patch
+      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)
+
 stages:
 
 #####################################
@@ -47,13 +55,8 @@ stages:
   jobs:
   - job: 
     variables:
-    - name: version
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)
-    - name: revision
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)
-    - name: patch
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)
-
+      - name: newpatch
+        value: $()
     steps:
     - bash: |
         cd ../
@@ -65,7 +68,7 @@ stages:
         echo "##vso[task.setvariable variable=revision]$(revision)"
         echo "##vso[task.setvariable variable=patch]$(patch)"
         echo Version is $(version).$(revision).$(patch)
-        echo "##vso[task.setvariable variable=patch]$(expr $patch + 1)"
+        echo "##vso[task.setvariable variable=newpatch]$(expr $patch + 1)"
         echo New Version is $(version).$(revision).$(patch)
       displayName: 'Extract version information'
     - bash: |
