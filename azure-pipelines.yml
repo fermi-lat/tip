@@ -30,8 +30,9 @@ stages:
         conda install --yes --quiet --only-deps -c conda-forge/label/cf201901 -c fermi fermitools
       displayName: 'Setup Build environment'
     - bash: |
-        cd ..
         repoman --remote-base https://github.com/fermi-lat checkout --force --develop ScienceTools conda
+        rm -rf tip
+        git clone https://github.com/fermi-lat/tip
       displayName: 'Clone Repos'
     - bash: |
         mkdir -p ${CONDA_PREFIX}/include/fftw
