@@ -38,3 +38,8 @@ stages:
       displayName: 'FFTW relinking'
     - bash: scons -C ScienceTools --site-dir=../SConsShared/site_scons --with-cc=/usr/bin/gcc --with-cxx=/usr/bin/g++ --ccflags="-O2" --cxxflags="-O2 -std=c++11" --conda=$CONDA_PREFIX tip
       displayName: 'Compile Package'
+
+- stage: pipeline_launch_stage
+  displayName: 'Launch Fermitools CI Pipeline'
+  condition: succeeded('linux_build_stage')
+
