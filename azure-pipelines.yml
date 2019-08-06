@@ -60,25 +60,15 @@ stages:
       displayName: 'Clone repo'
     - bash: |
         cd ../fermitools-conda
-        ls
-        echo patch is $patch
-        grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1
         echo "##vso[task.setvariable variable=version]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)"
-        echo first set
-        echo version is $version
         echo "##vso[task.setvariable variable=revision]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)"
-        echo second set
-        echo revision is $revision
         echo "##vso[task.setvariable variable=patch]$(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)"
-        echo third set
-        echo version is $version
-        echo revision is $revision
-        echo patch is $patch
-        echo Version is $[version].$[revision].$[patch]
-        echo "##vso[task.setvariable variable=newpatch][expr $patch + 1]"
-        echo New Version is $[version].$[revision].$[newpatch]
       displayName: 'Extract version information'
     - bash: |
         cd ../fermitools-conda
         echo "##vso[task.setvariable variable=patch][expr $patch + 1]"
+      displayName: 'Iterate Patch Number'
+    - bash: |
+        cd ../fermitools-conda
         grep -i 'set version' meta.yaml | awk '{ gsub($5,"\"$(version).$(revision).$(patch)\"",$5); print $5}'
+      displayName: 'Update Patch Number in Fermitools-Conda meta.yaml'
