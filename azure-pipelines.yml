@@ -4,6 +4,8 @@ trigger:
 
 variables:
 - group: DevOps Access Keys
+- name: repo
+  value: tip
 
 stages:
 
@@ -92,3 +94,7 @@ stages:
         echo Commit is $(commit)
         echo Author is $(author)
         echo Message is $(message)
+        git config --global credential.helper store
+        echo https://$(Github-Access-Token):x-oauth-basic@github.com>>~/.git-credentials
+        git commit -m "Patch iteration triggered by $(repo) repository." -m "Trigger: $(commit) \n Author: $(author) \n Message: $(message)" meta.yaml
+        git push
