@@ -2,6 +2,14 @@ trigger:
 - master
 - patch_branch
 
+variables:
+  - name: version
+    value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)
+  - name: revision
+    value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)
+  - name: patch
+    value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)
+
 stages:
 
 #####################################
@@ -44,13 +52,6 @@ stages:
 - stage: pipeline_launch_stage
   displayName: 'Launch Fermitools CI Pipeline'
   condition: succeeded('linux_build_stage')
-  variables:
-    - name: version
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 1)
-    - name: revision
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 2)
-    - name: patch
-      value: $(grep -i 'set version' meta.yaml | awk '{ print $5}' | sed 's/"//g' | cut -d "." -f 3)
   jobs:
   - job: 
     steps:
