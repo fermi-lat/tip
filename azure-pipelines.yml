@@ -58,6 +58,8 @@ stages:
         value:
       - name: patch
         value:
+      - name: oldpatch
+        value:
       - name: commit
         value:
       - name: author
@@ -83,12 +85,13 @@ stages:
     - bash: |
         cd ../fermitools-conda
         echo Patch is $(patch)
+        echo "##vso[task.setvariable variable=oldpatch]$(patch)"
         echo "##vso[task.setvariable variable=patch]$(expr $(patch) + 1)"
       displayName: 'Iterate Patch Number'
     - bash: |
         cd ../fermitools-conda
         echo Patch is $(patch)
-        grep -i 'set version' meta.yaml | awk '{ gsub($5,"\"$(version).$(revision).$(patch)\"",$5); print $5}'
+        sed -i 's/$(version).$(revision).$(oldpatch)/$(version).$(revision).$(patch)/g' meta.yaml
       displayName: 'Update Patch Number in Fermitools-Conda meta.yaml'
     - bash: |
         cd ../fermitools-conda
