@@ -46,7 +46,7 @@ stages:
   jobs:
   - template: azure_templates/azure-testrepolinux-template.yml@ci
     parameters:
-     repo: '$(repo)'
+      repo: '$(repo)'
        
 #####################################
 
