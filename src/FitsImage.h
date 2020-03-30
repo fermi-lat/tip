@@ -306,6 +306,11 @@ namespace tip {
       throw TipException(status, formatWhat("Cannot get dimensions of each degree of freedom of image"));
     }
 
+    if ( naxis < 2 ) {
+      delete [] naxes;
+      throw TipException(status, formatWhat("Image with only one dimension"));
+    }
+
     m_image_dimensions.assign(naxes, naxes + naxis);
     delete [] naxes;
   }
