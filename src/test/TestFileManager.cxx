@@ -86,7 +86,7 @@ namespace tip {
     msg = std::string("creating file IFileSvc_success.fits using template\n\t") + data_dir + "ft1.tpl";
     try {
       IFileSvc::instance().createFile("IFileSvc_success.fits", data_dir + "ft1.tpl");
-      std::auto_ptr<const Table> table(IFileSvc::instance().readTable("IFileSvc_success.fits", "EVENTS"));
+      std::unique_ptr<const Table> table(IFileSvc::instance().readTable("IFileSvc_success.fits", "EVENTS"));
       ReportExpected(msg + " succeeded");
     } catch(const TipException & x) {
       ReportUnexpected(msg + " failed", x);
@@ -96,7 +96,7 @@ namespace tip {
     msg = std::string("creating file IFileSvc_success.fits using template\n\t") + data_dir + "ft1.tpl";
     try {
       IFileSvc::instance().createFile("IFileSvc_success.fits", data_dir + "ft1.tpl");
-      std::auto_ptr<const Table> table(IFileSvc::instance().readTable("IFileSvc_success.fits", "EVENTS"));
+      std::unique_ptr<const Table> table(IFileSvc::instance().readTable("IFileSvc_success.fits", "EVENTS"));
       ReportExpected(msg + " succeeded");
     } catch(const TipException & x) {
       ReportUnexpected(msg + " failed", x);
@@ -106,7 +106,7 @@ namespace tip {
     msg = std::string("creating file new.fits using no template");
     try {
       IFileSvc::instance().createFile("IFileSvc_no_template.fits", "");
-      std::auto_ptr<const Image> image(IFileSvc::instance().readImage("IFileSvc_no_template.fits", "PRIMARY"));
+      std::unique_ptr<const Image> image(IFileSvc::instance().readImage("IFileSvc_no_template.fits", "PRIMARY"));
       ReportExpected(msg + " succeeded");
     } catch(const TipException & x) {
       ReportUnexpected(msg + " failed", x);
@@ -301,7 +301,7 @@ namespace tip {
 
       // Iterate over extensions.
       for (FileSummary::iterator itor = summary.begin(); itor != summary.end(); ++itor) {
-        std::auto_ptr<const tip::Extension> ext(fs.readExtension(file_name, itor->getExtId()));
+        std::unique_ptr<const tip::Extension> ext(fs.readExtension(file_name, itor->getExtId()));
 
         std::string telescop;
         ext->getHeader()["TELESCOP"].get(telescop);
@@ -389,7 +389,7 @@ namespace tip {
       TipFile tip_file_ptr_adopt(tip_file.clone());
 
       // Clone the TipFile which points to another TipFile.
-      std::auto_ptr<ITipFile> itip_file_p(tip_file_ptr_adopt.clone());
+      std::unique_ptr<ITipFile> itip_file_p(tip_file_ptr_adopt.clone());
 
       ReportExpected("TestFileManager::tipFileTest was able to construct and clone ITipFiles");
       

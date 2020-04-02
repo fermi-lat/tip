@@ -274,7 +274,7 @@ namespace tip {
     FileSummary summary;
     getFileSummary(file_name, summary);
     for (FileSummary::iterator itor = summary.begin(); itor != summary.end(); ++itor) {
-      std::auto_ptr<Extension> ext(editExtension(file_name, itor->getExtId()));
+      std::unique_ptr<Extension> ext(editExtension(file_name, itor->getExtId()));
       ext->getHeader().update(kwds);
     }
   }
