@@ -20,7 +20,7 @@ namespace tip {
   int TestInterpolation::test(int status) {
     setStatus(status);
 
-    std::auto_ptr<const Table> table(IFileSvc::instance().readTable(getDataDir() + "a1.pha", "SPECTRUM"));
+    std::unique_ptr<const Table> table(IFileSvc::instance().readTable(getDataDir() + "a1.pha", "SPECTRUM"));
 
     LinearInterp interp(table->begin(), table->end());
 

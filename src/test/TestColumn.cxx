@@ -331,7 +331,7 @@ namespace tip {
       IFileSvc & file_svc(tip::IFileSvc::instance());
       file_svc.createFile(out_file, tpl_file);
       file_svc.appendTable(out_file, table_name);
-      std::auto_ptr<Table> table(file_svc.editTable(out_file, table_name));
+      std::unique_ptr<Table> table(file_svc.editTable(out_file, table_name));
 
       // Add columns to the FITS file.
       table->appendField("1L_COLUMN", "1L");
@@ -494,7 +494,7 @@ namespace tip {
     // Iterate over all extensions.
     for (FileSummary::const_iterator ext_itor = summary.begin(); ext_itor != summary.end(); ++ext_itor) {
       // Open input extension.
-      std::auto_ptr<const Extension> in_ext(IFileSvc::instance().readExtension(in_file, ext_itor->getExtId(), ""));
+      std::unique_ptr<const Extension> in_ext(IFileSvc::instance().readExtension(in_file, ext_itor->getExtId(), ""));
 
       // Skip images for now.
       if (!in_ext->isTable()) continue;
@@ -503,7 +503,7 @@ namespace tip {
       const Table * in_table = dynamic_cast<const Table *>(in_ext.get());
 
       // Open output extension.
-      std::auto_ptr<Table> out_table(IFileSvc::instance().editTable(out_file, ext_itor->getExtId(), ""));
+      std::unique_ptr<Table> out_table(IFileSvc::instance().editTable(out_file, ext_itor->getExtId(), ""));
 
       // Get number of fields in this extension.
       long num_fields = in_table->getValidFields().size();

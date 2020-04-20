@@ -809,7 +809,7 @@ namespace tip {
       IFileSvc::instance().appendTable("single_column.fits", "DUMMY");
 
       // Open the table, and add a column.
-      std::auto_ptr<Table> table(IFileSvc::instance().editTable("single_column.fits", "DUMMY"));
+      std::unique_ptr<Table> table(IFileSvc::instance().editTable("single_column.fits", "DUMMY"));
       table->appendField("COLUMN1", "1D");
       delete table.release();
       
@@ -830,7 +830,7 @@ namespace tip {
       IFileSvc::instance().appendTable("unsigned_int.fits", "DUMMY");
 
       // Open the table.
-      std::auto_ptr<Table> table(IFileSvc::instance().editTable("unsigned_int.fits", "DUMMY"));
+      std::unique_ptr<Table> table(IFileSvc::instance().editTable("unsigned_int.fits", "DUMMY"));
 
       // Add 16 bit unsigned int column.
       table->appendField("USHORT", "1U");
@@ -1191,7 +1191,7 @@ namespace tip {
 
       // Open the table, and add a number of records that should overflow a signed 32 bit index as well as
       // exceed 4GB in size.
-      std::auto_ptr<Table> table(IFileSvc::instance().editTable("large_file.fits", "LARGE"));
+      std::unique_ptr<Table> table(IFileSvc::instance().editTable("large_file.fits", "LARGE"));
       ReportExpected("Opened large_file.fits, to test adding a large (>32 bit) number of rows");
 
       try {

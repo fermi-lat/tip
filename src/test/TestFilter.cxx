@@ -21,7 +21,7 @@ namespace tip {
     setStatus(status);
 
     // Open a copy of test data file.
-    std::auto_ptr<Table> table(IFileSvc::instance().editTable(getDataDir() + "a1.pha", "SPECTRUM", "#row>0"));
+    std::unique_ptr<Table> table(IFileSvc::instance().editTable(getDataDir() + "a1.pha", "SPECTRUM", "#row>0"));
 
     // Verify that the correct number of records is present.
     if (128 != table->getNumRecords())

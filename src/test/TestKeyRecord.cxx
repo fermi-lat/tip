@@ -20,7 +20,7 @@ namespace tip {
   int TestKeyRecord::test(int status) {
     setStatus(status);
 
-    std::auto_ptr<Table> table(IFileSvc::instance().editTable(getDataDir() + "a1.pha", "SPECTRUM", "#row > 0"));
+    std::unique_ptr<Table> table(IFileSvc::instance().editTable(getDataDir() + "a1.pha", "SPECTRUM", "#row > 0"));
 
     Header & hh(table->getHeader());
 

@@ -45,7 +45,7 @@ namespace tip {
       IFileSvc::instance().createFile("new_image.fits",  getDataDir() + "arlac.pha");
 
       // Open new image for writing.
-      std::auto_ptr<Image> image(IFileSvc::instance().editImage("new_image.fits", ""));
+      std::unique_ptr<Image> image(IFileSvc::instance().editImage("new_image.fits", ""));
       // Flip image X and Y.
       PixOrd_t tmp_dim = dims[0];
       dims[0] = dims[1];
@@ -89,7 +89,7 @@ namespace tip {
       IFileSvc::instance().createFile("new_image2.fits",  getDataDir() + "arlac.pha");
 
       // Open new image for writing. Treat pixels as doubles.
-      std::auto_ptr<TypedImage<double> > image(IFileSvc::instance().editImageDbl("new_image2.fits", ""));
+      std::unique_ptr<TypedImage<double> > image(IFileSvc::instance().editImageDbl("new_image2.fits", ""));
 
       // Create array for reading image.
       std::vector<float> image_vec;
@@ -129,7 +129,7 @@ namespace tip {
       IFileSvc::instance().createFile("new_image3.fits",  getDataDir() + "arlac.pha");
 
       // Open new image for writing. Treat pixels as ints.
-      std::auto_ptr<TypedImage<int> > image(IFileSvc::instance().editImageInt("new_image3.fits", ""));
+      std::unique_ptr<TypedImage<int> > image(IFileSvc::instance().editImageInt("new_image3.fits", ""));
 
       // Create array to read image slice.
       std::vector<float> image_vec;
@@ -181,7 +181,7 @@ namespace tip {
     // Test writing a slice of an image to have contrived values, roughly one half the image cut from the center.
     try {
       // Open old image for writing.
-      std::auto_ptr<Image> image(IFileSvc::instance().editImage("new_image2.fits", ""));
+      std::unique_ptr<Image> image(IFileSvc::instance().editImage("new_image2.fits", ""));
 
       // Reset dimensions.
       dims = image->getImageDimensions();
@@ -232,7 +232,7 @@ namespace tip {
     // Test copying slices a row at a time.
     try {
       // Open old image for writing.
-      std::auto_ptr<Image> image(IFileSvc::instance().editImage("new_image2.fits", ""));
+      std::unique_ptr<Image> image(IFileSvc::instance().editImage("new_image2.fits", ""));
 
       // Reset dimensions.
       dims = image->getImageDimensions();
