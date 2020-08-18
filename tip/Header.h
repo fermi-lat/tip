@@ -143,26 +143,26 @@ namespace tip {
 
       virtual KeySeq_t::size_type getNumKeywords() const { unsupported("getNumKeywords()"); return 0; }
 
-      virtual Iterator begin() { unsupported("begin()"); return KeySeq_t().begin(); }
+      virtual Iterator begin() { unsupported("begin()"); return Iterator(); }
 
-      virtual Iterator end() { unsupported("end()"); return KeySeq_t().end(); }
+      virtual Iterator end() { unsupported("end()"); return Iterator(); }
 
-      virtual ConstIterator begin() const { unsupported("begin() const"); return KeySeq_t().begin(); }
+      virtual ConstIterator begin() const { unsupported("begin() const"); return Iterator(); }
 
-      virtual ConstIterator end() const { unsupported("end() const"); return KeySeq_t().end(); }
+      virtual ConstIterator end() const { unsupported("end() const"); return Iterator(); }
 
       /** \brief Return an iterator pointing to the first keyword with the given name. If no keyword
           with this name was found, returns end().
           \param key_name The name of the keyword being sought.
       */
-      virtual Iterator find(const std::string &) { unsupported("find(const std::string &)"); return KeySeq_t().end(); }
+      virtual Iterator find(const std::string &) { unsupported("find(const std::string &)"); return Iterator(); }
 
       /** \brief Return a const iterator pointing to the first keyword with the given name. If no keyword
           with this name was found, returns end().
           \param key_name The name of the keyword being sought.
       */
       virtual ConstIterator find(const std::string &) const
-        { unsupported("find(const std::string &) const"); return KeySeq_t().end(); }
+        { unsupported("find(const std::string &) const"); return Iterator(); }
 
       /** \brief Insert a keyword record before the given iterator position.
           with this name was found, returns end().
@@ -175,13 +175,13 @@ namespace tip {
           This has the same effect as calling insert(end(), record).
           \param record The record being appeneded.
       */
-      virtual Iterator append(const KeyRecord &) { unsupported("append(const KeyRecord &)"); return KeySeq_t().end(); }
+      virtual Iterator append(const KeyRecord &) { unsupported("append(const KeyRecord &)"); return Iterator(); }
 
       /** \brief Erase the keyword pointed to by the iterator. Other keywords with the same name will
           not be erased.
           \param itor Iterator pointing to the keyword being erased.
       */
-      virtual Iterator erase(Iterator) { unsupported("erase(Iterator)"); return KeySeq_t().end(); }
+      virtual Iterator erase(Iterator) { unsupported("erase(Iterator)"); return Iterator(); }
 
       /** \brief Erase all keywords whose name is the same as the given name.
           \param key_name The name of the keyword(s) being erased.
