@@ -9,7 +9,7 @@ def generate(env, **kw):
         env.Tool('findPkgPath', package = 'facilities')         
         return
 
-    env.Tool('addLibrary', library = env['cfitsioLibs'] + env['rootLibs'])
+    #env.Tool('addLibrary', library = env['cfitsioLibs'] + env['rootLibs'])
 
 def exists(env):
 	return 1
