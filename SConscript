@@ -12,7 +12,7 @@ libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 
 if noroot == True:
     tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']).remove('RootTable.cxx'))
-else:y
+else:
     tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
     
 progEnv.Tool('tipLib')
