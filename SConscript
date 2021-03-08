@@ -10,7 +10,7 @@ test2Env = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 
-if baseEnv['CPPDEFINES'] == ['BUILD_WITHOUT_ROOT']:
+if 'BUILD_WITHOUT_ROOT' in baseEnv['CPPDEFINES']:
     tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']).remove('RootTable.cxx'))
 else:
     tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
