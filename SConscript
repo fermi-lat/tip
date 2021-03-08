@@ -11,10 +11,8 @@ test2Env = baseEnv.Clone()
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 
 if baseEnv.GetOption('noroot'):
-    print("Triggered!")
-    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']).remove('RootTable.cxx'))
+    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']).remove('src/RootTable.cxx'))
 else:
-    print("Not Triggered!")
     tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
     
 progEnv.Tool('tipLib')
