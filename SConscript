@@ -11,7 +11,7 @@ test2Env = baseEnv.Clone()
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 
 if baseEnv.GetOption('noroot'):
-    fileList = listFile(['src/*.cxx'])
+    fileList = listFiles(['src/*.cxx'])
     for item in fileList:
         if item.name == "RootTable.cxx":
             fileList.remove(item)
