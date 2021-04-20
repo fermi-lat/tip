@@ -10,14 +10,14 @@ test2Env = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package = 'tip', toBuild='static')
 
-if baseEnv.GetOption('noroot'):
+if (libEnv.get('CONTAINERNAME','') != 'ScienceTools_User') and (('BUILD_WITHOUT_ROOT',) not in libEnv.get('CPPDEFINES','')):
+    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
+else:
     fileList = listFiles(['src/*.cxx'])
     for item in fileList:
         if item.name == "RootTable.cxx":
             fileList.remove(item)
     tipLib = libEnv.StaticLibrary('tip', fileList)
-else:
-    tipLib = libEnv.StaticLibrary('tip', listFiles(['src/*.cxx']))
     
 progEnv.Tool('tipLib')
 sampleProg = progEnv.Program('sample',[ 'src/sample/sample.cxx'])
