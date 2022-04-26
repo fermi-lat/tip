@@ -59,7 +59,7 @@ target_link_libraries(test_tip tip)
 # Installation
 ###############################################################
 install(DIRECTORY tip DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
-install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_REFDATADIR}/tip)
 
 install(
   TARGETS tip test_tip
