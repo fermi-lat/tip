@@ -2,7 +2,7 @@
 # Create target and set properties #
 ####################################
 add_library(
-  tip STATIC
+  tip 
   src/FileSummary.cxx
   src/FitsFileManager.cxx
   src/FitsHeader.cxx
