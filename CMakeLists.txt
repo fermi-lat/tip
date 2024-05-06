@@ -24,7 +24,7 @@ target_include_directories(
   $<INSTALL_INTERFACE:>
 )
 
-target_link_libraries(tip PUBLIC facilities PkgConfig::cfitsio)
+target_link_libraries(tip PUBLIC facilities cfitsio::cfitsio)
 
 
 if(FERMI_BUILD_ROOT)
