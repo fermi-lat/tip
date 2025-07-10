@@ -32,6 +32,7 @@ if(FERMI_BUILD_ROOT)
   target_link_libraries(tip PUBLIC ROOT::Core)
 endif()
 
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 add_executable(
   test_tip
