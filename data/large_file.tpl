@@ -15,7 +15,7 @@ RADECSYS = 'FK5' / world coord. system for this file (FK5 or FK4)
 FILENAME = 'GLL_EVSUM_YYMMDD_C#_V##.FIT' / name of this file
 ORIGIN   = 'LIOC' / name of organization making file
 AUTHOR   = 'NAME_OF_PERSON' / name of person responsible for file generation
-CREATOR  = 'EVENT_SUMMARY_MAKER_V##' / software and version creating file
+CREATOR  =                  / software and version creating file
 VERSION  = 0.0 / integer? string? (TBD)  release version of the file
 SOFTWARE = 0 / version of the processing software
 
