@@ -183,16 +183,18 @@ namespace tip {
         fits_read_key_longstr(fp, key_name, &long_value, comment, &status);
         if (0 != status) break;
 
-        // Determine whether the quoted value (embedded quotes are doubled) fits on one card after "KEYNAME = ".
-        // If not, the value really needs CONTINUE cards, so leave it alone. Long (HIERARCH) names are also skipped.
-        std::size_t quoted_len = 2;
-        for (const char * cp = long_value; '\0' != *cp; ++cp) quoted_len += ('\'' == *cp) ? 2 : 1;
-        bool fits_on_card = name_len <= 8 && quoted_len <= FLEN_CARD - 11;
-
-        char value_string[FLEN_VALUE] = "";
-        if (fits_on_card) ffs2c(long_value, value_string, &status);
+        // Build the quoted value (embedded quotes doubled, padded to at least 8 characters as cfitsio does).
+        // If it does not fit on one card after "KEYNAME = ", the value really needs CONTINUE cards, so leave
+        // it alone. Long (HIERARCH) names are also skipped.
+        std::string value_string("'");
+        for (const char * cp = long_value; '\0' != *cp; ++cp) {
+          value_string += *cp;
+          if ('\'' == *cp) value_string += '\'';
+        }
+        if (value_string.size() < 9) value_string.append(9 - value_string.size(), ' ');
+        value_string += '\'';
         fits_free_memory(long_value, &status);
-        if (!fits_on_card) continue;
+        if (name_len > 8 || value_string.size() > FLEN_CARD - 11) continue;
 
         // Remove the CONTINUE cards, then replace the keyword with a single card. ffmkky truncates the comment.
         while (0 == status && key_num < num_keys) {
@@ -201,7 +203,9 @@ namespace tip {
           fits_delete_record(fp, key_num + 1, &status);
           --num_keys;
         }
-        ffmkky(key_name, value_string, comment, card, &status);
+        char value_buf[FLEN_CARD] = "";
+        std::strcpy(value_buf, value_string.c_str());
+        ffmkky(key_name, value_buf, comment, card, &status);
         fits_modify_record(fp, key_num, card, &status);
       }
     }
