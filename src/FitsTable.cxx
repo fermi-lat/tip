@@ -31,15 +31,15 @@ namespace tip {
     m_header.close(status);
   }
 
-  Header & FitsTable::getHeader() { return m_header; }
+  auto FitsTable::getHeader() -> Header & { return m_header; }
 
-  const Header & FitsTable::getHeader() const { return m_header; }
+  auto FitsTable::getHeader() const -> const Header & { return m_header; }
 
-  const std::string & FitsTable::getName() const { return m_header.getName(); }
+  auto FitsTable::getName() const -> const std::string & { return m_header.getName(); }
 
   void FitsTable::setName(const std::string & name) { m_header.setName(name); }
 
-  Index_t FitsTable::getNumRecords() const {
+  auto FitsTable::getNumRecords() const -> Index_t {
     return m_num_records;
   }
 
@@ -58,21 +58,21 @@ namespace tip {
     }
   }
 
-  const Table::FieldCont & FitsTable::getValidFields() const { return m_fields; }
+  auto FitsTable::getValidFields() const -> const Table::FieldCont & { return m_fields; }
 
-  IColumn * FitsTable::getColumn(FieldIndex_t field_index) {
+  auto FitsTable::getColumn(FieldIndex_t field_index) -> IColumn * {
     if (0 > field_index || m_columns.size() <= std::vector<IColumn*>::size_type(field_index))
       throw TipException(formatWhat("FitsTable::getColumn called with invalid index"));
     return m_columns[field_index];
   }
 
-  const IColumn * FitsTable::getColumn(FieldIndex_t field_index) const {
+  auto FitsTable::getColumn(FieldIndex_t field_index) const -> const IColumn * {
     if (0 > field_index || m_columns.size() <= std::vector<IColumn*>::size_type(field_index))
       throw TipException(formatWhat("FitsTable::getColumn const called with invalid index"));
     return m_columns[field_index];
   }
 
-  FieldIndex_t FitsTable::getFieldIndex(const std::string & field_name) const {
+  auto FitsTable::getFieldIndex(const std::string & field_name) const -> FieldIndex_t {
     // Copy field name and make it lowercase.
     std::string lc_name = field_name;
     for (std::string::iterator itor = lc_name.begin(); itor != lc_name.end(); ++itor) *itor = tolower(*itor);
@@ -312,7 +312,7 @@ namespace tip {
 
   }
 
-  std::string FitsTable::formatWhat(const std::string & msg) const {
+  auto FitsTable::formatWhat(const std::string & msg) const -> std::string {
     std::ostringstream msg_str;
     msg_str << msg;
     const std::string & ext_name(getName());

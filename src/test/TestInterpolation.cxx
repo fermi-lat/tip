@@ -17,7 +17,7 @@ namespace tip {
 
   /** \brief Perform all detailed tests.
   */
-  int TestInterpolation::test(int status) {
+  auto TestInterpolation::test(int status) -> int {
     setStatus(status);
 
     std::unique_ptr<const Table> table(IFileSvc::instance().readTable(getDataDir() + "a1.pha", "SPECTRUM"));

@@ -4,7 +4,7 @@ namespace tip {
 
   ITipFile::ITipFile(const std::string & name): m_file_name(name) {}
 
-  const std::string & ITipFile::getName() const { return m_file_name; }
+  auto ITipFile::getName() const -> const std::string & { return m_file_name; }
 
   void ITipFile::setName(const std::string & file_name) { m_file_name = file_name; }
 
@@ -16,22 +16,22 @@ namespace tip {
 
   TipFile::~TipFile() { delete m_itip_file; }
 
-  TipFile & TipFile::operator =(const TipFile & tip_file) {
+  auto TipFile::operator =(const TipFile & tip_file) -> TipFile & {
     delete m_itip_file;
     m_itip_file = tip_file.m_itip_file->clone();
     setName(tip_file.getName());
     return *this;
   }
 
-  Extension * TipFile::editExtension(const std::string & ext_name) { return m_itip_file->editExtension(ext_name); }
+  auto TipFile::editExtension(const std::string & ext_name) -> Extension * { return m_itip_file->editExtension(ext_name); }
 
-  Image * TipFile::editImage(const std::string & image_name) { return m_itip_file->editImage(image_name); }
+  auto TipFile::editImage(const std::string & image_name) -> Image * { return m_itip_file->editImage(image_name); }
 
-  Table * TipFile::editTable(const std::string & table_name) { return m_itip_file->editTable(table_name); }
+  auto TipFile::editTable(const std::string & table_name) -> Table * { return m_itip_file->editTable(table_name); }
 
   void TipFile::copyFile(const std::string & new_file_name, bool clobber) const { m_itip_file->copyFile(new_file_name, clobber); }
 
-  ITipFile * TipFile::clone() const {
+  auto TipFile::clone() const -> ITipFile * {
     // Pointer to be returned.
     ITipFile * itip_file = 0;
 

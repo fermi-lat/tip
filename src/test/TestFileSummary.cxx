@@ -11,7 +11,7 @@
 
 namespace tip {
 
-  int TestFileSummary::test(int status) {
+  auto TestFileSummary::test(int status) -> int {
     setStatus(status);
     std::string msg;
 

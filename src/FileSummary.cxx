@@ -10,5 +10,5 @@ namespace tip {
 
   ExtSummary::ExtSummary(const std::string & ext_id): m_ext_id(ext_id) {}
 
-  const std::string & ExtSummary::getExtId() const { return m_ext_id; }
+  auto ExtSummary::getExtId() const -> const std::string & { return m_ext_id; }
 }

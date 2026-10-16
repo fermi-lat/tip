@@ -51,7 +51,7 @@ namespace tip {
       throw TipException(status, "Unable to create file named \"" + full_name + "\"");
   }
 
-  TipFile FitsFileManager::createMemFile(const std::string & file_name, const std::string & template_name, bool clobber) {
+  auto FitsFileManager::createMemFile(const std::string & file_name, const std::string & template_name, bool clobber) -> TipFile {
     return TipFile(new FitsTipFile("mem://" + file_name, template_name, clobber));
   }
 
@@ -139,7 +139,7 @@ namespace tip {
       throw TipException(status, std::string("FitsFileManager::getFileSummary had trouble making summary of file ") + file_name);
   }
 
-  bool FitsFileManager::isValid(const std::string & file_name) {
+  auto FitsFileManager::isValid(const std::string & file_name) -> bool {
     fitsfile * fp = 0;
     int status = 0;
     fits_open_file(&fp, const_cast<char *>(file_name.c_str()), READONLY, &status);
@@ -148,8 +148,8 @@ namespace tip {
     return true;
   }
 
-  fitsfile * FitsFileManager::createFile(const std::string & file_name, const std::string & image_name,
-    const ImageBase::PixelCoordinate & dims) {
+  auto FitsFileManager::createFile(const std::string & file_name, const std::string & image_name,
+    const ImageBase::PixelCoordinate & dims) -> fitsfile * {
     fitsfile * fp = 0;
     int status = 0;
 
@@ -163,8 +163,8 @@ namespace tip {
     return createImage(fp, file_name, image_name, dims);
   }
 
-  fitsfile * FitsFileManager::createImage(fitsfile * fp, const std::string & file_name, const std::string & image_name,
-    const ImageBase::PixelCoordinate & dims) {
+  auto FitsFileManager::createImage(fitsfile * fp, const std::string & file_name, const std::string & image_name,
+    const ImageBase::PixelCoordinate & dims) -> fitsfile * {
     int status = 0;
 
     // Copy the coordinates to a C-passable form.

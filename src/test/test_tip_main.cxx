@@ -35,11 +35,11 @@
 #include "facilities/commonUtilities.h"
 
 // Thorough test of IExtensionData and its subclasses.
-int TestExtensionData(const std::string & data_dir, int currentStatus);
+auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int;
 
 namespace {
 
-  int s_makeDirectory(const std::string & dir) {
+  auto s_makeDirectory(const std::string & dir) -> int {
 #ifdef WIN32
     return 1;
 #else
@@ -53,7 +53,7 @@ namespace {
 #endif
   }
 
-  bool s_fileExists(const std::string & file_name) {
+  auto s_fileExists(const std::string & file_name) -> bool {
     bool exists = false;
 #ifndef WIN32
     struct stat file_stat;
@@ -67,7 +67,7 @@ namespace {
 
 }
 
-int main() {
+auto main() -> int {
   int status = 0;
 
   using namespace tip;

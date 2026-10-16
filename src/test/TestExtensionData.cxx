@@ -57,7 +57,7 @@ void ReportWarning(const std::string & msg) {
 }
 
 template <typename T>
-std::string ToString(const T & value) {
+auto ToString(const T & value) -> std::string {
   std::ostringstream os;
   os << value;
   return os.str();
@@ -361,7 +361,7 @@ void TestReadField(const tip::Table * const_ext, const std::string & field_name,
   }
 }
 
-int TestExtensionData(const std::string & data_dir, int currentStatus) {
+auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
   using namespace tip;
 
   int status = 0;
@@ -639,7 +639,7 @@ namespace tip {
 
   TestExtensionData::~TestExtensionData() throw() { delete m_writable_extension; delete m_read_only_extension; }
 
-  int TestExtensionData::test(int status) {
+  auto TestExtensionData::test(int status) -> int {
     setStatus(status);
 
     // Test read-only access:

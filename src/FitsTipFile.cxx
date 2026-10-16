@@ -57,15 +57,15 @@ namespace tip {
   }
 
   // TODO: Turn this around: IFileSvc should call FitsTipFile not vice versa.
-  Extension * FitsTipFile::editExtension(const std::string & ext_name) {
+  auto FitsTipFile::editExtension(const std::string & ext_name) -> Extension * {
     return IFileSvc::instance().editExtension(getName(), ext_name);
   }
 
-  Image * FitsTipFile::editImage(const std::string & image_name) {
+  auto FitsTipFile::editImage(const std::string & image_name) -> Image * {
     return IFileSvc::instance().editImage(getName(), image_name);
   }
 
-  Table * FitsTipFile::editTable(const std::string & table_name) {
+  auto FitsTipFile::editTable(const std::string & table_name) -> Table * {
     return IFileSvc::instance().editTable(getName(), table_name);
   }
 
@@ -98,7 +98,7 @@ namespace tip {
     if (0 != status && VALUE_UNDEFINED != status) throw TipException(status, "FitsTipFile::copyFile could not copy file " + new_file_name);
   }
 
-  ITipFile * FitsTipFile::clone() const { return new FitsTipFile(*this); }
+  auto FitsTipFile::clone() const -> ITipFile * { return new FitsTipFile(*this); }
 
   void FitsTipFile::openFile() {
     int status = 0;

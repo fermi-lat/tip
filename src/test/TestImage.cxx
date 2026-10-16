@@ -19,7 +19,7 @@ namespace tip {
 
   TestImage::~TestImage() throw() { delete m_const_image; }
 
-  int TestImage::test(int status) {
+  auto TestImage::test(int status) -> int {
     // Use inherited status to set initial status.
     setStatus(status);
 
@@ -281,7 +281,7 @@ namespace tip {
 
   }
 
-  const Image * TestImage::getConstImage() const {
+  auto TestImage::getConstImage() const -> const Image * {
     return IFileSvc::instance().readImage(getDataDir() + "arlac.pha", "");
   }
 

@@ -26,7 +26,7 @@
 
 namespace {
   template <typename T>
-  bool is_equal(const T & t1, const T & t2) {
+  auto is_equal(const T & t1, const T & t2) -> bool {
     bool equal = t1 == t2;
     if (!equal) {
       if (0 != t1) equal = std::fabs(double(t2 - t1) / t1) < std::numeric_limits<T>::epsilon();
@@ -42,7 +42,7 @@ namespace tip {
 
   TestTable::~TestTable() throw() {}
 
-  int TestTable::test(int status) {
+  auto TestTable::test(int status) -> int {
     // Use inherited status to set initial status
     setStatus(status);
 
@@ -1294,7 +1294,7 @@ namespace tip {
     remove("large_file.fits");
   }
 
-  Table * TestTable::getTable() {
+  auto TestTable::getTable() -> Table * {
     return new FitsTable(getDataDir() + "a1.pha", "SPECTRUM", "#row > 0", false);
   }
 
@@ -1332,7 +1332,7 @@ namespace tip {
     }
   }
 
-  bool TestTable::confirmEqual(const Table * table1, const Table * table2) {
+  auto TestTable::confirmEqual(const Table * table1, const Table * table2) -> bool {
     Table::ConstIterator itor1 = table1->begin();
     Table::ConstIterator itor2 = table2->begin();
     for (; itor1 != table1->end(); ++itor1, ++itor2) {

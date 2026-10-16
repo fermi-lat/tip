@@ -4,7 +4,7 @@
              James Peachey, HEASARC/GSSC
 */
 #include <cctype>
-#include <errno.h>
+#include <cerrno>
 #include <cstdlib>
 #include <sstream>
 #include <cstring>
@@ -21,13 +21,13 @@ namespace tip {
   KeyRecord::KeyRecord(const std::string & record): m_record(record) {}
 
   // Check whether a value is defined.
-  bool KeyRecord::empty() const { return getValue().empty(); }
+  auto KeyRecord::empty() const -> bool { return getValue().empty(); }
 
-  const std::string & KeyRecord::get() const { return m_record; }
+  auto KeyRecord::get() const -> const std::string & { return m_record; }
 
   void KeyRecord::set(const std::string & record) { m_record = record; }
 
-  std::string KeyRecord::getName() const {
+  auto KeyRecord::getName() const -> std::string {
     char key_name[FLEN_CARD];
     int status = 0;
     int len = 0;
@@ -36,7 +36,7 @@ namespace tip {
     return std::string(key_name, key_name + len);
   }
 
-  std::string KeyRecord::getValue() const {
+  auto KeyRecord::getValue() const -> std::string {
     char value[FLEN_VALUE] = "";
     int status = 0;
     fits_parse_value(const_cast<char *>(m_record.c_str()), value, 0, &status);
@@ -167,7 +167,7 @@ namespace tip {
     m_record = new_rec;
   }
 
-  std::string KeyRecord::getComment() const {
+  auto KeyRecord::getComment() const -> std::string {
     char value[FLEN_VALUE];
     char comment[FLEN_COMMENT];
     int status = 0;

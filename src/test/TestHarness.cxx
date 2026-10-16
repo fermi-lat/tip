@@ -44,11 +44,11 @@ namespace tip {
     std::cerr << "WARNING: " << msg << std::endl;
   }
 
-  int TestHarness::getStatus() const { return m_status; }
+  auto TestHarness::getStatus() const -> int { return m_status; }
 
   void TestHarness::setStatus(int status) const { if (0 == m_status) m_status = status; }
 
-  const std::string & TestHarness::getDataDir() const {
+  auto TestHarness::getDataDir() const -> const std::string & {
     if (m_data_dir.empty()) {
       m_data_dir = facilities::commonUtilities::getDataPath("tip");
       if(m_data_dir == "")

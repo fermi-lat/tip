@@ -25,7 +25,7 @@
 
 namespace {
 
-  std::string & s_getTmpFileName() {
+  auto s_getTmpFileName() -> std::string & {
     static std::string s_tmp_file_name;
     return s_tmp_file_name;
   }
@@ -35,12 +35,12 @@ namespace {
 namespace tip {
 
   // Deprecated.
-  IFileSvc & IFileSvc::getSvc() {
+  auto IFileSvc::getSvc() -> IFileSvc & {
     return instance();
   }
 
   // Get the instance of thie factory.
-  IFileSvc & IFileSvc::instance() {
+  auto IFileSvc::instance() -> IFileSvc & {
     static bool init_success = false;
     if (!init_success) {
       // Make sure global initialization has been performed:
@@ -54,7 +54,7 @@ namespace tip {
   }
 
   // Perform global initializations.
-  bool IFileSvc::globalInit() {
+  auto IFileSvc::globalInit() -> bool {
     bool init_success = true;
 #ifndef BUILD_WITHOUT_ROOT
     init_success = RootTable::init();
@@ -62,7 +62,7 @@ namespace tip {
     return init_success;
   }
 
-  std::string IFileSvc::getTmpFileName() {
+  auto IFileSvc::getTmpFileName() -> std::string {
     return s_getTmpFileName();
   }
 
@@ -79,11 +79,11 @@ namespace tip {
     FitsFileManager::createFile(file_name, template_name, clobber);
   }
 
-  TipFile IFileSvc::createMemFile(const std::string & file_name, const std::string & template_name, bool clobber) {
+  auto IFileSvc::createMemFile(const std::string & file_name, const std::string & template_name, bool clobber) -> TipFile {
     return FitsFileManager::createMemFile(file_name, template_name, clobber);
   }
 
-  TipFile IFileSvc::openFile(const std::string & file_name) {
+  auto IFileSvc::openFile(const std::string & file_name) -> TipFile {
     return new FitsTipFile(file_name);
   }
 
@@ -109,8 +109,8 @@ namespace tip {
   // specific tests isValid(string) to FitsFileManager and RootExtensionManager, respectively.
 
   // Open read-write an extension in a file, be it FITS or Root, table or image.
-  Extension * IFileSvc::editExtension(const std::string & file_name, const std::string & ext_name,
-    const std::string & filter) {
+  auto IFileSvc::editExtension(const std::string & file_name, const std::string & ext_name,
+    const std::string & filter) -> Extension * {
     Extension * ext = 0;
     try {
       ext = editTable(file_name, ext_name, filter);
@@ -138,8 +138,8 @@ namespace tip {
   }
 
   // Edit a image in a file, be it FITS or Root.
-  TypedImage<double> * IFileSvc::editImageDbl(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::editImageDbl(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> TypedImage<double> * {
     TypedImage<double> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -150,8 +150,8 @@ namespace tip {
   }
 
   // Edit a image in a file, be it FITS or Root.
-  TypedImage<float> * IFileSvc::editImageFlt(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::editImageFlt(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> TypedImage<float> * {
     TypedImage<float> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -162,8 +162,8 @@ namespace tip {
   }
 
   // Edit a image in a file, be it FITS or Root.
-  TypedImage<int> * IFileSvc::editImageInt(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::editImageInt(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> TypedImage<int> * {
     TypedImage<int> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -174,8 +174,8 @@ namespace tip {
   }
 
   // Edit a table in a file, be it FITS or Root.
-  Table * IFileSvc::editTable(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::editTable(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> Table * {
     Table * table = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -188,8 +188,8 @@ namespace tip {
   }
 
   // Read-only an extension in a file, be it FITS or Root, table or image.
-  const Extension * IFileSvc::readExtension(const std::string & file_name, const std::string & ext_name,
-    const std::string & filter) {
+  auto IFileSvc::readExtension(const std::string & file_name, const std::string & ext_name,
+    const std::string & filter) -> const Extension * {
     const Extension * ext = 0;
     try {
       ext = readTable(file_name, ext_name, filter);
@@ -205,8 +205,8 @@ namespace tip {
   }
 
   // Read-only an image in a file, be it FITS or Root.
-  const TypedImage<double> * IFileSvc::readImageDbl(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::readImageDbl(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> const TypedImage<double> * {
     TypedImage<double> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -219,8 +219,8 @@ namespace tip {
   }
 
   // Read-only an image in a file, be it FITS or Root.
-  const TypedImage<float> * IFileSvc::readImageFlt(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::readImageFlt(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> const TypedImage<float> * {
     TypedImage<float> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -233,8 +233,8 @@ namespace tip {
   }
 
   // Read-only an image in a file, be it FITS or Root.
-  const TypedImage<int> * IFileSvc::readImageInt(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::readImageInt(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> const TypedImage<int> * {
     TypedImage<int> * image = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -247,8 +247,8 @@ namespace tip {
   }
 
   // Read-only a table in a file, be it FITS or Root.
-  const Table * IFileSvc::readTable(const std::string & file_name, const std::string & table_name,
-    const std::string & filter) {
+  auto IFileSvc::readTable(const std::string & file_name, const std::string & table_name,
+    const std::string & filter) -> const Table * {
     Table * table = 0;
     std::string file_type = classifyFile(file_name);
     if (file_type == "fits")
@@ -264,7 +264,7 @@ namespace tip {
     FitsFileManager::getFileSummary(file_name, summary);
   }
 
-  bool IFileSvc::fileExists(const std::string & file_name) {
+  auto IFileSvc::fileExists(const std::string & file_name) -> bool {
     std::ifstream file(file_name.c_str());
     if (!file.is_open()) return false;
     return true;
@@ -279,7 +279,7 @@ namespace tip {
     }
   }
 
-  std::string IFileSvc::classifyFile(const std::string & file_name) {
+  auto IFileSvc::classifyFile(const std::string & file_name) -> std::string {
     std::string file_type = "unknown";
 
     // Test whether file is a FITS file. This should be done first in case the file_name argument itself

@@ -17,7 +17,7 @@ namespace tip {
 
   /** \brief Perform all detailed tests.
   */
-  int TestKeyRecord::test(int status) {
+  auto TestKeyRecord::test(int status) -> int {
     setStatus(status);
 
     std::unique_ptr<Table> table(IFileSvc::instance().editTable(getDataDir() + "a1.pha", "SPECTRUM", "#row > 0"));
@@ -460,7 +460,7 @@ namespace tip {
     return getStatus();
   }
 
-  std::string TestKeyRecord::formatRec(const std::string & name, const std::string & value, const std::string & comment) {
+  auto TestKeyRecord::formatRec(const std::string & name, const std::string & value, const std::string & comment) -> std::string {
     std::ostringstream os;
 
     os.width(8);
@@ -471,7 +471,7 @@ namespace tip {
     return os.str();
   }
 
-  std::string TestKeyRecord::formatStringRec(const std::string & name, const std::string & value, const std::string & comment) {
+  auto TestKeyRecord::formatStringRec(const std::string & name, const std::string & value, const std::string & comment) -> std::string {
     std::ostringstream os;
 
     // Start with name at left edge, padded as needed.

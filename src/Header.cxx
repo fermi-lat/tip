@@ -9,7 +9,7 @@
 
 namespace tip {
 
-  Keyword & Keyword::emptyKeyword() {
+  auto Keyword::emptyKeyword() -> Keyword & {
     static Keyword s_empty_keyword;
     return s_empty_keyword;
   }
@@ -49,7 +49,7 @@ namespace tip {
     }
   }
 
-  std::string Header::formatTime(const time_t & time) const {
+  auto Header::formatTime(const time_t & time) const -> std::string {
     // Standard date format defined by FITS standard.
     char string_time[] = "YYYY-MM-DDThh:mm:ss";
 

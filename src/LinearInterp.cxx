@@ -52,7 +52,7 @@ namespace tip {
   }
 
 
-  double LinearInterp::get(const std::string & field) const {
+  auto LinearInterp::get(const std::string & field) const -> double {
     return m_coeff[0] * (*m_match[0])[field].get() + m_coeff[1] * (*m_match[1])[field].get();
   }
 

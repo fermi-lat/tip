@@ -111,19 +111,19 @@ namespace tip {
     m_fp = 0;
   }
 
-  Header::Iterator FitsHeader::find(const std::string & key_name) {
+  auto FitsHeader::find(const std::string & key_name) -> Header::Iterator {
     Header::Iterator found_key = m_keyword_seq.begin();
     for (; found_key != m_keyword_seq.end() && key_name != found_key->getName(); ++found_key);
     return found_key;
   }
 
-  Header::ConstIterator FitsHeader::find(const std::string & key_name) const {
+  auto FitsHeader::find(const std::string & key_name) const -> Header::ConstIterator {
     Header::ConstIterator found_key = m_keyword_seq.begin();
     for (; found_key != m_keyword_seq.end() && key_name != found_key->getName(); ++found_key);
     return found_key;
   }
 
-  Header::Iterator FitsHeader::insert(Iterator itor, const KeyRecord & record) {
+  auto FitsHeader::insert(Iterator itor, const KeyRecord & record) -> Header::Iterator {
     int status = 0;
     fits_insert_record(m_fp, itor - m_keyword_seq.begin() + 1, const_cast<char *>(record.get().c_str()), &status);
     if (0 != status) {
@@ -134,11 +134,11 @@ namespace tip {
     return m_keyword_seq.insert(itor, record);
   }
 
-  Header::Iterator FitsHeader::append(const KeyRecord & record) {
+  auto FitsHeader::append(const KeyRecord & record) -> Header::Iterator {
     return insert(m_keyword_seq.end(), record);
   }
 
-  Header::Iterator FitsHeader::erase(Iterator itor) {
+  auto FitsHeader::erase(Iterator itor) -> Header::Iterator {
     int status = 0;
     fits_delete_record(m_fp, itor - begin() + 1, &status);
     return m_keyword_seq.erase(itor);
@@ -166,7 +166,7 @@ namespace tip {
     }
   }
 
-  std::string FitsHeader::getKeyComment(const std::string & name) const {
+  auto FitsHeader::getKeyComment(const std::string & name) const -> std::string {
     int status = 0;
     char value[FLEN_VALUE];
     char comment[FLEN_COMMENT];
@@ -183,7 +183,7 @@ namespace tip {
     if (0 != status) throw TipException(status, formatWhat(std::string("Cannot write comment for keyword \"") + name + '"'));
   }
 
-  std::string FitsHeader::getKeyUnit(const std::string & name) const {
+  auto FitsHeader::getKeyUnit(const std::string & name) const -> std::string {
     int status = 0;
     char unit[FLEN_CARD] = "";
     fits_read_key_unit(m_fp, const_cast<char *>(name.c_str()), unit, &status);
@@ -215,7 +215,7 @@ namespace tip {
     if (0 != status) throw TipException(status, formatWhat("Cannot add history string"));
   }
 
-  const std::string & FitsHeader::getName() const { return m_ext_name; }
+  auto FitsHeader::getName() const -> const std::string & { return m_ext_name; }
 
   void FitsHeader::setName(const std::string & name) {
     if (m_read_only)
@@ -224,7 +224,7 @@ namespace tip {
     m_ext_name = name;
   }
 
-  std::string FitsHeader::formatWhat(const std::string & msg) const {
+  auto FitsHeader::formatWhat(const std::string & msg) const -> std::string {
     std::ostringstream msg_str;
     msg_str << msg;
     if (!m_ext_name.empty()) msg_str << " in extension \"" << m_ext_name << '"';

@@ -17,7 +17,7 @@ namespace tip {
 
   /** \brief Perform all detailed tests.
   */
-  int TestFilter::test(int status) {
+  auto TestFilter::test(int status) -> int {
     setStatus(status);
 
     // Open a copy of test data file.

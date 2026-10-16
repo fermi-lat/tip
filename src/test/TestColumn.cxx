@@ -18,11 +18,11 @@
 #include "tip/IFileSvc.h"
 
 #ifndef WIN32
-#include <math.h>
+#include <cmath>
 #endif
 
 namespace {
-  double s_tip_nan() {
+  auto s_tip_nan() -> double {
     double my_nan = 0.;
     if (std::numeric_limits<double>::has_quiet_NaN) {
       my_nan = std::numeric_limits<double>::quiet_NaN();
@@ -50,7 +50,7 @@ namespace tip {
 
   /** \brief Perform all detailed tests.
   */
-  int TestColumn::test(int status) {
+  auto TestColumn::test(int status) -> int {
     setStatus(status);
 
     // Test copying a file containing scalars and fixed-width vectors.

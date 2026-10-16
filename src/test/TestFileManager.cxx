@@ -23,7 +23,7 @@
 
 namespace tip {
 
-  int TestFileManager::test(int status) {
+  auto TestFileManager::test(int status) -> int {
     // Use inherited status to set initial status.
     setStatus(status);
 
