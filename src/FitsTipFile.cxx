@@ -1,4 +1,5 @@
 #include "FitsTipFile.h"
+#include "FitsFileManager.h"
 
 #include "fitsio.h"
 
@@ -35,7 +36,14 @@ namespace tip {
       throw TipException(status, "Unable to create file named \"" + full_name + '"');
     }
 
-    if (template_name.empty()) {
+    if (!template_name.empty()) {
+      // Template keywords with overlong comments are written by cfitsio using CONTINUE cards; collapse them.
+      FitsFileManager::collapseCommentContinuations(m_fp, status);
+      if (0 != status) {
+        closeFile(false, status);
+        throw TipException(status, "Unable to clean up keywords in file named \"" + full_name + '"');
+      }
+    } else {
       long dims[1] = { 0 };
 
       // No template: need to create primary image explicitly.

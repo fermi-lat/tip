@@ -62,6 +62,15 @@ namespace tip {
       */
       static bool isValid(const std::string & file_name);
 
+      /** \brief Undo cfitsio's use of the long string (CONTINUE) convention for string keywords whose
+                 values fit on a single card, but whose comments do not. Such keywords are rewritten as a
+                 single card with the comment truncated. Keywords with values that genuinely require
+                 CONTINUE cards are left alone. All HDUs in the file are processed.
+          \param fp The open, writable file.
+          \param status The cfitsio status variable.
+      */
+      static void collapseCommentContinuations(fitsfile * fp, int & status);
+
     private:
       static fitsfile * createFile(const std::string & file_name, const std::string & image_name,
         const ImageBase::PixelCoordinate & dims);

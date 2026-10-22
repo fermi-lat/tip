@@ -38,6 +38,9 @@ namespace tip {
 
       // Create the file.
       fits_create_file(&fp, const_cast<char *>(full_name.c_str()), &status);
+
+      // Template keywords with overlong comments are written by cfitsio using CONTINUE cards; collapse them.
+      collapseCommentContinuations(fp, status);
     } else {
       // No template: need to create primary image explicitly.
       ImageBase::PixelCoordinate dims;
@@ -146,6 +149,69 @@ namespace tip {
     if (0 != status) return false;
     closeFile(fp, false, status);
     return true;
+  }
+
+  void FitsFileManager::collapseCommentContinuations(fitsfile * fp, int & status) {
+    if (0 != status) return;
+
+    int num_hdus = 0;
+    fits_get_num_hdus(fp, &num_hdus, &status);
+
+    for (int hdu = 1; 0 == status && hdu <= num_hdus; ++hdu) {
+      fits_movabs_hdu(fp, hdu, 0, &status);
+
+      int num_keys = 0;
+      fits_get_hdrspace(fp, &num_keys, 0, &status);
+
+      for (int key_num = 1; 0 == status && key_num < num_keys; ++key_num) {
+        char card[FLEN_CARD] = "";
+        char next_card[FLEN_CARD] = "";
+
+        // Only keywords followed by a CONTINUE card are of interest.
+        fits_read_record(fp, key_num + 1, next_card, &status);
+        if (0 != status || 0 != std::strncmp(next_card, "CONTINUE", 8)) continue;
+
+        fits_read_record(fp, key_num, card, &status);
+        char key_name[FLEN_KEYWORD] = "";
+        int name_len = 0;
+        fits_get_keyname(card, key_name, &name_len, &status);
+        if (0 != status || 0 == std::strcmp(key_name, "CONTINUE")) continue;
+
+        // Read the full (continued) value and comment.
+        char * long_value = 0;
+        char comment[FLEN_COMMENT] = "";
+        fits_read_key_longstr(fp, key_name, &long_value, comment, &status);
+        if (0 != status) break;
+
+        // Build the quoted value (embedded quotes doubled, padded to at least 8 characters as cfitsio does).
+        // If it does not fit on one card after "KEYNAME = ", the value really needs CONTINUE cards, so leave
+        // it alone. Long (HIERARCH) names are also skipped.
+        std::string value_string("'");
+        for (const char * cp = long_value; '\0' != *cp; ++cp) {
+          value_string += *cp;
+          if ('\'' == *cp) value_string += '\'';
+        }
+        if (value_string.size() < 9) value_string.append(9 - value_string.size(), ' ');
+        value_string += '\'';
+        fits_free_memory(long_value, &status);
+        if (name_len > 8 || value_string.size() > FLEN_CARD - 11) continue;
+
+        // Remove the CONTINUE cards, then replace the keyword with a single card. ffmkky truncates the comment.
+        while (0 == status && key_num < num_keys) {
+          fits_read_record(fp, key_num + 1, next_card, &status);
+          if (0 != status || 0 != std::strncmp(next_card, "CONTINUE", 8)) break;
+          fits_delete_record(fp, key_num + 1, &status);
+          --num_keys;
+        }
+        char value_buf[FLEN_CARD] = "";
+        std::strcpy(value_buf, value_string.c_str());
+        ffmkky(key_name, value_buf, comment, card, &status);
+        fits_modify_record(fp, key_num, card, &status);
+      }
+    }
+
+    // Return to the primary HDU, as cfitsio leaves it after creating a file from a template.
+    if (0 == status) fits_movabs_hdu(fp, 1, 0, &status);
   }
 
   fitsfile * FitsFileManager::createFile(const std::string & file_name, const std::string & image_name,
