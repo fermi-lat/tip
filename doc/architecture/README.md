@@ -253,8 +253,9 @@ row filters, `mem://`, compressed files, and so on.
   exits non-zero on failure.
   - It finds test data with `facilities::commonUtilities::getDataPath("tip")`.
     `facilities` is built with `HEADAS`, so this resolves to
-    `$FERMI_INST_DIR/refdata/fermi/tip`. Set `FERMI_INST_DIR` to the install
-    prefix (in a conda dev env this is usually `$CONDA_PREFIX`).
+    `$FERMI_INST_DIR/refdata/fermi/tip`, which is in the **install** tree.
+    Conda activation sets `FERMI_INST_DIR=$CONDA_PREFIX/share/fermitools`
+    (see "Runtime environment" in ScienceTools' `docs/architecture/README.md`).
   - It writes scratch FITS files (e.g. `IFileSvc_success.fits`) into the
     **current working directory**, so run it from a scratch directory.
 - **Test data (`data/`):** `ft1.tpl`, `large_file.tpl` (templates),
