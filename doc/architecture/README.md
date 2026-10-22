@@ -44,11 +44,11 @@ STL-style iteration.
 | Depends on | `cfitsio` (external) | All actual file access. Linked `PUBLIC`, so clients also get `fitsio.h` on their include path. |
 | Depends on | `facilities` | Linked `PUBLIC` in CMake, but used only by the test program (`commonUtilities::getDataPath`). The library sources do not include it. |
 | Optional | ROOT | `RootTable.cxx` is compiled when `FERMI_BUILD_ROOT=ON`, but it is unreachable (see gotchas). |
-| Used by | ~19 packages | Heaviest users: `Likelihood`, `irfs`, `evtbin`, `skymaps`, `dataSubselector`, `SolarSystemTools`. |
+| Used by | 19 built packages, all real users (`#include` plus `tip::` symbols) | Heaviest: `Likelihood`, `irfs`, `evtbin`, `dataSubselector`, `SolarSystemTools`, `fitsGen`. The unbuilt `skymaps` also includes it. |
 
-tip has no dependencies on other Fermi science packages, which makes it one
-of the foundation-layer packages. Changes to its public headers force a
-rebuild of most of the tree.
+tip has no dependencies on other Fermi science packages, so it sits at the
+bottom of the `io` tier. Changes to its public headers force a rebuild of
+most of the tree.
 
 ## Key abstractions
 
@@ -235,6 +235,11 @@ is built only by the legacy SCons build.
 
 None directly. tip is not wrapped by SWIG. Python users reach FITS data
 through other means, such as astropy in pyLikelihood scripts.
+
+### Environment variables
+
+The library reads none. The test program finds its data through
+`FERMI_INST_DIR` (see *Build and test*).
 
 ### File formats
 
