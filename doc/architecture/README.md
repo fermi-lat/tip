@@ -258,9 +258,11 @@ row filters, `mem://`, compressed files, and so on.
   ScienceTools' `recipe/tests/ST-unit-test`, which runs it in the installed
   environment and then (`check_test_tip_output`) compares 17 named output
   files against `$CONDA_PREFIX/share/fermitools/data/tip/outref`. That
-  reference data does not live in this repo: it comes from the separate
-  **`fermitools-data`** package (`outrefFiles/tip/`). Update it there when
-  test outputs change intentionally. The program exits non-zero on failure.
+  reference data does not live in this repo: it ships in the
+  **`fermitools-test-scripts-data`** conda package, installed only in the CI
+  test environment, and is sourced from `outrefFiles/tip/` in the
+  `fermi-lat/fermitools-data` repository. Update it there when test outputs
+  change intentionally. The program exits non-zero on failure.
   - It finds test data with `facilities::commonUtilities::getDataPath("tip")`.
     `facilities` is built with `HEADAS`, so this resolves to
     `$FERMI_INST_DIR/refdata/fermi/tip`, which is in the **install** tree.
