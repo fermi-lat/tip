@@ -259,8 +259,8 @@ row filters, `mem://`, compressed files, and so on.
   environment and then (`check_test_tip_output`) compares 17 named output
   files against `$CONDA_PREFIX/share/fermitools/data/tip/outref`. That
   reference data does not live in this repo: it ships in the
-  **`fermitools-test-scripts-data`** conda package, installed only in the CI
-  test environment, and is sourced from `outrefFiles/tip/` in the
+  runtime **`fermitools-data`** conda package (pinned by the Fermitools
+  recipe), sourced from `outrefFiles/tip/` in the
   `fermi-lat/fermitools-data` repository. Update it there when test outputs
   change intentionally. The program exits non-zero on failure.
   - It finds test data with `facilities::commonUtilities::getDataPath("tip")`.
