@@ -257,10 +257,10 @@ row filters, `mem://`, compressed files, and so on.
   (`TestHarness`). It is **not registered with CTest**. CI runs it through
   ScienceTools' `recipe/tests/ST-unit-test`, which runs it in the installed
   environment and then (`check_test_tip_output`) compares 17 named output
-  files against `$CONDA_PREFIX/share/fermitools/data/tip/outref`. **tip has
-  no `outref` directory** and installs none, so that comparison step has
-  nothing to compare against (from reading the code; not run). The program
-  exits non-zero on failure.
+  files against `$CONDA_PREFIX/share/fermitools/data/tip/outref`. That
+  reference data does not live in this repo: it comes from the separate
+  **`fermitools-data`** package (`outrefFiles/tip/`). Update it there when
+  test outputs change intentionally. The program exits non-zero on failure.
   - It finds test data with `facilities::commonUtilities::getDataPath("tip")`.
     `facilities` is built with `HEADAS`, so this resolves to
     `$FERMI_INST_DIR/refdata/fermi/tip`, which is in the **install** tree.
