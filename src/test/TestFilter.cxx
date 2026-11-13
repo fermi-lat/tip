@@ -13,7 +13,7 @@
 
 namespace tip {
 
-  TestFilter::~TestFilter() throw() {}
+  TestFilter::~TestFilter() throw() = default;
 
   /** \brief Perform all detailed tests.
   */

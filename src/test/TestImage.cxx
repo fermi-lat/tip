@@ -15,7 +15,7 @@
 
 namespace tip {
 
-  TestImage::TestImage(): m_const_image(0) {}
+  TestImage::TestImage(): m_const_image(nullptr) {}
 
   TestImage::~TestImage() throw() { delete m_const_image; }
 
@@ -145,8 +145,8 @@ namespace tip {
       m_const_image->get(range, image_vec);
 
       // Recompute dimensions of output image from the slice specification.
-      std::vector<PixOrd_t>::iterator d_itor = dims.begin();
-      Image::PixelCoordRange::iterator r_itor = range.begin();
+      auto d_itor = dims.begin();
+      auto r_itor = range.begin();
       for (; d_itor != dims.end(); ++d_itor, ++r_itor) {
         *d_itor = r_itor->second - r_itor->first;
       }
@@ -195,7 +195,7 @@ namespace tip {
 
       // Compute dimensions of slice from the slice specification.
       PixOrd_t slice_size = 1;
-      for (Image::PixelCoordRange::iterator r_itor = range.begin(); r_itor != range.end(); ++r_itor) {
+      for (auto r_itor = range.begin(); r_itor != range.end(); ++r_itor) {
         slice_size *= r_itor->second - r_itor->first;
       }
 

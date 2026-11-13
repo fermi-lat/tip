@@ -72,7 +72,7 @@ auto main() -> int {
 
   using namespace tip;
 
-  Table * my_table = 0;
+  Table * my_table = nullptr;
 
   try {
      facilities::commonUtilities::setupEnvironment();
@@ -98,7 +98,7 @@ auto main() -> int {
       std::cerr << "Expected: opening non-existent.pha threw exception: " << x.what() << std::endl;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     try {
       // Opening an existent file which is neither FITS nor Root should throw an exception.
@@ -113,7 +113,7 @@ auto main() -> int {
       std::cerr << "Expected: opening ft1.tpl threw exception: " << x.what() << std::endl;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     try {
       // Opening an existent file which is really a directory should throw an exception.
@@ -128,7 +128,7 @@ auto main() -> int {
       std::cerr << "Expected: opening directory threw exception: " << x.what() << std::endl;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     try {
       // Opening an existent FITS file but asking for a non-existent extension should throw an exception.
@@ -143,7 +143,7 @@ auto main() -> int {
       std::cerr << "Expected: opening extension NON_EXIS in a1.pha threw exception: " << x.what() << std::endl;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     try {
       // Opening an existent Root file but asking for a non-existent extension should throw an exception.
@@ -158,7 +158,7 @@ auto main() -> int {
       std::cerr << "Expected: opening extension NON_EXIS in merit.root threw exception: " << x.what() << std::endl;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     // Test opening some extensions in a1.pha, both with and without write access.
     try {
@@ -424,7 +424,7 @@ auto main() -> int {
       const Header & const_header = my_table->getHeader();
       
       // Test getting key-value pairs from header. All should be found except NON_EXIS.
-      const char * keys [] = { "POISSERR", "GROUPING", "NON_EXIS", "QUALITY", 0 };
+      const char * keys [] = { "POISSERR", "GROUPING", "NON_EXIS", "QUALITY", nullptr };
       Header::KeyValCont_t key_vals;
 
       // Get the container of key-value pairs from the const_header.
@@ -437,7 +437,7 @@ auto main() -> int {
       }
 
       std::string s;
-      for (Header::KeyValCont_t::iterator itor = key_vals.begin(); itor != key_vals.end(); ++itor)
+      for (auto itor = key_vals.begin(); itor != key_vals.end(); ++itor)
         s += "\t" + itor->first + " = " + itor->second + "\n";
 
       std::string s_should_be("\tPOISSERR = T\n\tGROUPING = 0\n\tQUALITY = 0\n");
@@ -518,7 +518,7 @@ auto main() -> int {
       status = 1;
     }
 
-    delete my_table; my_table = 0;
+    delete my_table; my_table = nullptr;
 
     // Set up test environment to create a test directory to hold the dummy root file.
     bool use_tmp_file = false;

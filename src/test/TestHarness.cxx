@@ -15,7 +15,7 @@ namespace tip {
 
   TestHarness::TestHarness(): m_data_dir(), m_status(0) {}
 
-  TestHarness::~TestHarness() throw() {}
+  TestHarness::~TestHarness() throw() = default;
 
   void TestHarness::ReportExpected(const std::string & context, const std::exception & x) const {
 #if 1
@@ -23,7 +23,7 @@ namespace tip {
     if (typeid(x) != typeid(Ignore)) {
       std::cerr << "\n\twhat() == ";
       const char * what = x.what();
-      if (0 != what) std::cerr << what;
+      if (nullptr != what) std::cerr << what;
     }
     std::cerr << "\n" << std::endl;
 #endif
@@ -35,7 +35,7 @@ namespace tip {
     if (typeid(x) != typeid(Ignore)) {
       std::cerr << "\n\twhat() == ";
       const char * what = x.what();
-      if (0 != what) std::cerr << what;
+      if (nullptr != what) std::cerr << what;
     }
     std::cerr << "\n" << std::endl;
   }

@@ -38,9 +38,9 @@ namespace {
 
 namespace tip {
 
-  TestTable::TestTable(): m_fits_table(0), m_root_table(0), m_root_ft2(0) {}
+  TestTable::TestTable(): m_fits_table(nullptr), m_root_table(nullptr), m_root_ft2(nullptr) {}
 
-  TestTable::~TestTable() throw() {}
+  TestTable::~TestTable() throw() = default;
 
   auto TestTable::test(int status) -> int {
     // Use inherited status to set initial status
@@ -77,9 +77,9 @@ namespace tip {
     largeFileTest();
 
     // Clean up.
-    delete m_root_ft2; m_root_ft2 = 0;
-    delete m_root_table; m_root_table = 0;
-    delete m_fits_table; m_fits_table = 0;
+    delete m_root_ft2; m_root_ft2 = nullptr;
+    delete m_root_table; m_root_table = nullptr;
+    delete m_fits_table; m_fits_table = nullptr;
 
     return getStatus();
   }
@@ -127,14 +127,14 @@ namespace tip {
 
   void TestTable::getValidFieldsTest() {
     std::string msg;
-    if (0 != m_fits_table) {
+    if (nullptr != m_fits_table) {
       msg = "getting field container from FITS table";
       try {
         // Get container of field names:
         const Table::FieldCont & fields = m_fits_table->getValidFields();
 
         int num_fields = 0;
-        for (Table::FieldCont::const_iterator it = fields.begin(); it != fields.end(); ++it) {
+        for (auto it = fields.begin(); it != fields.end(); ++it) {
           // Don't count "new_chan" which is a field added during the test process.
           if (0 != it->compare("new_chan")) ++num_fields;
         }
@@ -147,14 +147,14 @@ namespace tip {
         ReportUnexpected(msg + " failed", x);
       }
     }
-    if (0 != m_root_table) {
+    if (nullptr != m_root_table) {
       msg = "getting field container from Root table";
       try {
         // Get container of field names:
         const Table::FieldCont & fields = m_root_table->getValidFields();
 
         int num_fields = 0;
-        for (Table::FieldCont::const_iterator it = fields.begin(); it != fields.end(); ++it) {
+        for (auto it = fields.begin(); it != fields.end(); ++it) {
           ++num_fields;
         }
 
@@ -172,7 +172,7 @@ namespace tip {
     // Test FITS field read/write for channel field:
     readWriteFieldTest(m_fits_table, "FITS", "chaNNel");
 
-    if (0 == m_root_table) return;
+    if (nullptr == m_root_table) return;
 
     // Test Root field read only for McEnergy field; note that this doesn't test whether the
     // values were read correctly.
@@ -228,7 +228,7 @@ namespace tip {
       ReportUnexpected("reading McEnergy field from Root table failed", x);
     }
 
-    if (0 == m_root_table) {
+    if (nullptr == m_root_table) {
       ReportUnexpected("pointer to root table is null, skipping some tests.");
       return;
     }
@@ -270,7 +270,7 @@ namespace tip {
 
     // Test type conversions, just the first value of each loop.
     try {
-      typedef unsigned int uint;
+      using uint = unsigned int;
       for (Table::Iterator itor = m_root_table->begin(); itor != m_root_table->end(); ++itor) {
         uint mc_energy;
         (*itor)["McEnergy"].get(mc_energy);
@@ -307,7 +307,7 @@ namespace tip {
 
     // Test type conversions, just the first value of each loop.
     try {
-      typedef unsigned long ulong;
+      using ulong = unsigned long;
       for (Table::Iterator itor = m_root_table->begin(); itor != m_root_table->end(); ++itor) {
         ulong mc_energy;
         (*itor)["McEnergy"].get(mc_energy);
@@ -332,7 +332,7 @@ namespace tip {
     std::vector<double> modified;
     std::vector<double> read_modified;
     bool no_error = true;
-    if (0 != table) {
+    if (nullptr != table) {
       // Read original values from table into orig array:
       msg = std::string("testing reading ") + format + " table";
       try {
@@ -347,7 +347,7 @@ namespace tip {
       // Fill modified array, trying to make sure the contents are distinct from the orig array:
       modified.reserve(orig.size());
       srand(1023);
-      for (std::vector<double>::iterator itor = orig.begin(); itor != orig.end(); ++itor) {
+      for (auto itor = orig.begin(); itor != orig.end(); ++itor) {
         double new_val = short(double(rand()) * std::numeric_limits<short>::max() / RAND_MAX);
         modified.push_back(new_val);
       }
@@ -413,7 +413,7 @@ namespace tip {
   }
 
   void TestTable::readFieldTest(const Table * table, const std::string & field_name, std::vector<double> & field_values) {
-    if (0 != table) {
+    if (nullptr != table) {
       std::string msg;
 
       // Test error cases:
@@ -461,7 +461,7 @@ namespace tip {
   }
 
   void TestTable::writeFieldTest(Table * table, const std::string & field_name, const std::vector<double> & field_values) {
-    if (0 != table) {
+    if (nullptr != table) {
       std::string msg;
 
       // Test error cases:
@@ -492,7 +492,7 @@ namespace tip {
       } else {
         // Loop over array and table, copying input array into table:
         Table::Iterator out = table->begin();
-        for (std::vector<double>::const_iterator itor = field_values.begin(); itor != field_values.end(); ++itor, ++out) {
+        for (auto itor = field_values.begin(); itor != field_values.end(); ++itor, ++out) {
           (*out)[field_name].set(*itor);
         }
       }
@@ -566,7 +566,7 @@ namespace tip {
   // Test appending a field to an existing table.
   void TestTable::appendFieldTest() {
     std::string msg;
-    if (0 != m_root_table) {
+    if (nullptr != m_root_table) {
       msg = "appending field to Root table";
       try {
         m_root_table->appendField("new_chan", "1I");
@@ -576,7 +576,7 @@ namespace tip {
       }
     }
 
-    if (0 != m_fits_table) {
+    if (nullptr != m_fits_table) {
       msg = "appending field to FITS table";
       try {
         m_fits_table->appendField("NEW_chan", "1I");
@@ -593,7 +593,7 @@ namespace tip {
         // Create a state with alternating T/F.
         bool ramp = false;
         std::vector<bool> bool_state(8, false);
-        for (std::vector<bool>::iterator itor = bool_state.begin(); itor != bool_state.end(); ++itor, ramp = !ramp)
+        for (auto itor = bool_state.begin(); itor != bool_state.end(); ++itor, ramp = !ramp)
           (*itor) = ramp;
     
         // Assign the state to each row in the new field.
@@ -617,7 +617,7 @@ namespace tip {
             ReportUnexpected("after " + msg + " state read was:");
             std::ostringstream os;
             const char * delim = "\t(";
-            for (std::vector<std::string>::iterator s_itor = state.begin(); s_itor != state.end(); ++s_itor) {
+            for (auto s_itor = state.begin(); s_itor != state.end(); ++s_itor) {
               os << delim << *s_itor;
               delim = ", ";
             }
@@ -626,7 +626,7 @@ namespace tip {
             ReportUnexpected("but the state read should have been:");
             os.str("");
             delim = "\t(";
-            for (std::vector<std::string>::iterator s_itor = correct_state.begin(); s_itor != correct_state.end(); ++s_itor) {
+            for (auto s_itor = correct_state.begin(); s_itor != correct_state.end(); ++s_itor) {
               os << delim << *s_itor;
               delim = ", ";
             }
@@ -655,7 +655,7 @@ namespace tip {
 
         // Recreate the state with ramp.
         short ramp = 0;
-        for (std::vector<short>::iterator itor = short_state.begin(); itor != short_state.end(); ++itor, ++ramp)
+        for (auto itor = short_state.begin(); itor != short_state.end(); ++itor, ++ramp)
           (*itor) = ramp;
     
         // Assign the state to each remaining row in the new field.
@@ -678,7 +678,7 @@ namespace tip {
             ReportUnexpected("after " + msg + " state read was:");
             std::ostringstream os;
             const char * delim = "\t(";
-            for (std::vector<std::string>::iterator s_itor = state.begin(); s_itor != state.end(); ++s_itor) {
+            for (auto s_itor = state.begin(); s_itor != state.end(); ++s_itor) {
               os << delim << *s_itor;
               delim = ", ";
             }
@@ -687,7 +687,7 @@ namespace tip {
             ReportUnexpected("but the state read should have been:");
             os.str("");
             delim = "\t(";
-            for (std::vector<std::string>::iterator s_itor = correct_state.begin(); s_itor != correct_state.end(); ++s_itor) {
+            for (auto s_itor = correct_state.begin(); s_itor != correct_state.end(); ++s_itor) {
               os << delim << *s_itor;
               delim = ", ";
             }
@@ -729,7 +729,7 @@ namespace tip {
     Table::ConstIterator itor2;
     *itor1 = *itor2;
 #endif
-    if (0 != m_fits_table) {
+    if (nullptr != m_fits_table) {
       const Table * in_table = m_fits_table;
       Table * out_table = getTable();
       try {
@@ -778,7 +778,7 @@ namespace tip {
     }
 
     // Try copying to a Root file; this should fail.
-    if (0 != m_fits_table && 0 != m_root_table) {
+    if (nullptr != m_fits_table && nullptr != m_root_table) {
       const Table * in_table = m_fits_table;
       try {
         Table::ConstIterator in_itor = in_table->begin();
@@ -914,7 +914,7 @@ namespace tip {
   }
 
   void TestTable::rootFt2Test() {
-    if (0 == m_root_ft2) return;
+    if (nullptr == m_root_ft2) return;
 
     double expected_prim[] = {
       -5181385, 3659535.75, 2811837, -5283849, 3464278.25, 2867339, -5380638.5, 3265300.25, 2919752.5,
@@ -1071,7 +1071,7 @@ namespace tip {
 
     // Test type conversions, just the first value of each loop.
     try {
-      typedef unsigned int uint;
+      using uint = unsigned int;
       for (Table::Iterator itor = m_root_ft2->begin(); itor != m_root_ft2->end(); ++itor) {
         std::vector<uint> sc_position;
         (*itor)["sc_position"].get(sc_position);
@@ -1138,7 +1138,7 @@ namespace tip {
 
     // Test type conversions, just the first value of each loop.
     try {
-      typedef unsigned long ulong;
+      using ulong = unsigned long;
       for (Table::Iterator itor = m_root_ft2->begin(); itor != m_root_ft2->end(); ++itor) {
         std::vector<ulong> sc_position;
         (*itor)["sc_position"].get(sc_position);
@@ -1227,7 +1227,7 @@ namespace tip {
       }
 
       // Try reading and writing the last row.
-      IColumn * column = 0;
+      IColumn * column = nullptr;
       if (success) {
         try {
           column = table->getColumn(0);
@@ -1326,7 +1326,7 @@ namespace tip {
       (*itor)["Counts"].get(vvalue);
 
       // Check whether vector is now all zeroes.
-      for (std::vector<long>::iterator itor = vvalue.begin(); itor != vvalue.end(); ++itor) {
+      for (auto itor = vvalue.begin(); itor != vvalue.end(); ++itor) {
         if (0 != *itor) throw TipException("setToZero() failed to set all vector values in a table to 0");
       }
     }

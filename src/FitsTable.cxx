@@ -25,7 +25,7 @@ namespace tip {
 
   // Close file.
   void FitsTable::close(int status) {
-    for (std::vector<IColumn *>::reverse_iterator itor = m_columns.rbegin(); itor != m_columns.rend(); ++itor) delete *itor;
+    for (auto itor = m_columns.rbegin(); itor != m_columns.rend(); ++itor) delete *itor;
     m_fields.clear();
     m_col_name_lookup.clear();
     m_header.close(status);
@@ -78,7 +78,7 @@ namespace tip {
     for (std::string::iterator itor = lc_name.begin(); itor != lc_name.end(); ++itor) *itor = tolower(*itor);
 
     // Find (lowercased) field_name in container of columns. Complain if not found.
-    std::map<std::string, FieldIndex_t>::const_iterator field_itor = m_col_name_lookup.find(lc_name);
+    auto field_itor = m_col_name_lookup.find(lc_name);
     if (field_itor == m_col_name_lookup.end())
       throw TipException(formatWhat(std::string("Could not get field index for field ") + lc_name));
 
@@ -110,7 +110,7 @@ namespace tip {
 
     // Find out type code for this column, needed for TNULL keyword.
     int type_code = 0;
-    fits_get_coltype(m_header.getFp(), col_num, &type_code, 0, 0, &status);
+    fits_get_coltype(m_header.getFp(), col_num, &type_code, nullptr, nullptr, &status);
     if (0 != status) {
       std::ostringstream os;
       os << "Could not get type of newly inserted field \"" << field_name << "\"";
@@ -118,7 +118,7 @@ namespace tip {
     }
 
     // Get the address of the TNULL value for the correct primitive type.
-    void * value = 0;
+    void * value = nullptr;
 //    int bool_value = FitsPrimProps<char>::undefined();
 
     // Handle variable-length column specifiers.
@@ -143,11 +143,11 @@ namespace tip {
       default: break;
     }
 
-    if (0 != value) {
+    if (nullptr != value) {
       // Construct and set the TNULL keyword name for this column.
       std::ostringstream tnullN;
       tnullN << "TNULL" << col_num;
-      fits_update_key(m_header.getFp(), type_code, const_cast<char *>(tnullN.str().c_str()), value, 0, &status);
+      fits_update_key(m_header.getFp(), type_code, const_cast<char *>(tnullN.str().c_str()), value, nullptr, &status);
       if (0 != status) {
         throw TipException(status, formatWhat("Could not update keyword " + tnullN.str()));
       }
@@ -244,7 +244,7 @@ namespace tip {
     int status = 0;
 
     // Get column type for this column number.
-    fits_get_coltype(m_header.getFp(), col_num, &type_code, 0, 0, &status);
+    fits_get_coltype(m_header.getFp(), col_num, &type_code, nullptr, nullptr, &status);
     if (0 != status) {
       std::ostringstream s;
       s << "Could not get type information for column number " << col_num;

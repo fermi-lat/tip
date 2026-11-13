@@ -39,7 +39,7 @@ void ReportBehavior(const std::string & context, const int &, const tip::TipExce
 #if 1
   std::cerr << "Expected behavior: " << context;
   const char * what = x.what();
-  if (0 != what && '\0' != *what) std::cerr << "\n\twhat() == " << what;
+  if (nullptr != what && '\0' != *what) std::cerr << "\n\twhat() == " << what;
   std::cerr << "\n" << std::endl;
 #endif
 }
@@ -48,7 +48,7 @@ void ReportError(const std::string & context, int & status, const tip::TipExcept
   if (0 == status) status = 1;
   std::cerr << "Unexpected behavior: " << context;
   const char * what = x.what();
-  if (0 != what && '\0' != *what) std::cerr << "\n\twhat() == " << what;
+  if (nullptr != what && '\0' != *what) std::cerr << "\n\twhat() == " << what;
   std::cerr << "\n" << std::endl;
 }
 
@@ -374,7 +374,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
   // BEGIN Test success cases for FitsTable, FitsImage constructors.
   // This test object will be used in further tests below so create it at this scope:
-  Image * image = 0;
+  Image * image = nullptr;
 
   try {
     // Valid file name, valid extension name:
@@ -385,7 +385,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
   }
 
   // This test object will be used in further tests below so create it at this scope:
-  Table * table = 0;
+  Table * table = nullptr;
 
   try {
     // Valid file name, valid extension name:
@@ -403,7 +403,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
   // BEGIN Test const FitsImage methods for an image extension.
   // Skip these tests if image object was not successfully opened above:
-  if (0 == image) {
+  if (nullptr == image) {
     ReportError("image pointer is null; skipping some tests", status);
   } else {
     // Note that image points to the primary HDU, which is an image.
@@ -423,7 +423,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
   // BEGIN Test const FitsImage methods for a table extension.
   // Skip these tests if table object was not successfully opened above:
-  if (0 == table) {
+  if (nullptr == table) {
     ReportError("table pointer is null; skipping some tests", status);
   } else {
     // Name of the extension type, used in reporting errors:
@@ -523,7 +523,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
     try {
       // Test adding a keyword before the 46th keyword.
-      Header::Iterator itor = table->getHeader().begin();
+      auto itor = table->getHeader().begin();
       KeyRecord prev = itor[44];
       KeyRecord next = itor[45];
       std::string test_key = "TESTKEY = 'Test keyword value'";
@@ -624,8 +624,8 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
 
   // Clean up:
-  delete table; table = 0;
-  delete image; image = 0;
+  delete table; table = nullptr;
+  delete image; image = nullptr;
 
   // If currentStatus is non-0, keep it. Otherwise return the status from this test.
   status = (0 == currentStatus) ? status : currentStatus;
@@ -635,7 +635,7 @@ auto TestExtensionData(const std::string & data_dir, int currentStatus) -> int {
 
 namespace tip {
 
-  TestExtensionData::TestExtensionData(): m_read_only_extension(0), m_writable_extension(0) {}
+  TestExtensionData::TestExtensionData(): m_read_only_extension(nullptr), m_writable_extension(nullptr) {}
 
   TestExtensionData::~TestExtensionData() throw() { delete m_writable_extension; delete m_read_only_extension; }
 
@@ -684,7 +684,7 @@ namespace tip {
       }
   
       confirmReadOnly(m_read_only_extension);
-      delete m_read_only_extension; m_read_only_extension = 0;
+      delete m_read_only_extension; m_read_only_extension = nullptr;
     } catch (...) {
       // Make sure file is writable after this test, even if the test failed in some unexpected way:
       chmod(file_name.c_str(), S_IRUSR | S_IRGRP | S_IROTH | S_IWUSR);
@@ -710,7 +710,7 @@ namespace tip {
   }
 
   void TestExtensionData::confirmReadOnly(Table * extension) {
-    if (0 != extension) {
+    if (nullptr != extension) {
       std::string msg;
 
       // Now we have a non-const extension object whose underlying physical file is const (not writable).
@@ -757,7 +757,7 @@ namespace tip {
       ReportUnexpected(msg + " failed", x);
     }
 
-    if (0 == m_writable_extension) {
+    if (nullptr == m_writable_extension) {
       ReportUnexpected("writable extension pointer is NULL; skipping read/write test.");
       return;
     }
@@ -803,8 +803,8 @@ namespace tip {
   }
 
   void TestExtensionData::testCopy() {
-    const Table * input = 0;
-    Table * output = 0;
+    const Table * input = nullptr;
+    Table * output = nullptr;
     try {
       bool failed = false;
 
@@ -863,7 +863,7 @@ namespace tip {
   }
 
   void TestExtensionData::testKeywordItor() {
-    if (0 == m_read_only_extension || 0 == m_writable_extension) {
+    if (nullptr == m_read_only_extension || nullptr == m_writable_extension) {
       ReportUnexpected("testKeywordItor was called with null table pointers; skipping tests.");
       return;
     }
@@ -882,7 +882,7 @@ namespace tip {
    
     // Make sure getting keywords using the associative container interface yields the same results as
     // the sequential iterator.
-    for (Header::ConstIterator itor = header.begin(); itor != header.end(); ++itor) {
+    for (auto itor = header.begin(); itor != header.end(); ++itor) {
       std::string key_name = itor->getName();
       if (!key_name.empty()) {
         std::string assoc_value;
@@ -902,7 +902,7 @@ namespace tip {
     Header::KeySeq_t::size_type num_keywords = write_header.getNumKeywords();
 
     // Go to the last keyword in the header.
-    Header::Iterator key_itor = write_header.end();
+    auto key_itor = write_header.end();
     --key_itor;
 
     // Get value of this keyword.
@@ -940,7 +940,7 @@ namespace tip {
 
     // Count history keywords. They should all be erased below.
     Header::KeySeq_t::size_type num_history = 0u;
-    for (Header::ConstIterator itor = write_header.begin(); itor != write_header.end(); ++itor) {
+    for (auto itor = write_header.begin(); itor != write_header.end(); ++itor) {
       std::string key_name = itor->getName();
       if ("HISTORY" == key_name) ++num_history;
     }
@@ -988,7 +988,7 @@ namespace tip {
     }
 
     // Look for a keyword which is in the table.
-    Header::ConstIterator const_key_itor = header.find("HV_BIAS");
+    auto const_key_itor = header.find("HV_BIAS");
     if (const_key_itor != header.end()) {
       ReportExpected("TestExtensionData::testKeywordItor: const find found keyword HV_BIAS");
     } else {

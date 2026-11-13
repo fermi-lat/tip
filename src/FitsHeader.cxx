@@ -14,15 +14,15 @@ namespace tip {
 
   FitsHeader::FitsHeader(const std::string & file_name, const std::string & ext_name,
     const std::string & filter, bool read_only): m_keyword_seq(), m_file_name(file_name), m_ext_name(ext_name),
-    m_filter(filter), m_fp(0), m_is_primary(false), m_is_table(false), m_read_only(read_only) { open(); }
+    m_filter(filter), m_fp(nullptr), m_is_primary(false), m_is_table(false), m_read_only(read_only) { open(); }
 
   // Close file automatically while destructing.
   FitsHeader::~FitsHeader() { close(); }
 
   // Subclasses call this to open the file and position it to the desired extension.
   void FitsHeader::open() {
-    if (0 == m_fp) {
-      fitsfile * fp = 0;
+    if (nullptr == m_fp) {
+      fitsfile * fp = nullptr;
       int status = 0;
 
       // Construct the full name of the file from file name [extension] [filter] (if any):
@@ -99,7 +99,7 @@ namespace tip {
 
   // Close file.
   void FitsHeader::close(int status) {
-    if (0 != m_fp) {
+    if (nullptr != m_fp) {
       if (!m_read_only) fits_write_chksum(m_fp, &status);
       if (VALUE_UNDEFINED != status && 0 != status) {
 	throw TipException(status, "Close: Something's Wrong!");
@@ -108,17 +108,17 @@ namespace tip {
       status = 0;
       fits_close_file(m_fp, &status);
     }
-    m_fp = 0;
+    m_fp = nullptr;
   }
 
   auto FitsHeader::find(const std::string & key_name) -> Header::Iterator {
-    Header::Iterator found_key = m_keyword_seq.begin();
+    auto found_key = m_keyword_seq.begin();
     for (; found_key != m_keyword_seq.end() && key_name != found_key->getName(); ++found_key);
     return found_key;
   }
 
   auto FitsHeader::find(const std::string & key_name) const -> Header::ConstIterator {
-    Header::ConstIterator found_key = m_keyword_seq.begin();
+    auto found_key = m_keyword_seq.begin();
     for (; found_key != m_keyword_seq.end() && key_name != found_key->getName(); ++found_key);
     return found_key;
   }
@@ -154,7 +154,7 @@ namespace tip {
 
     // Next, erase all matching keywords in the container of keywords.
     // Iterate through container in reverse order, but using forward iterator.
-    for (KeySeq_t::iterator itor = m_keyword_seq.end(); itor != m_keyword_seq.begin();) {
+    for (auto itor = m_keyword_seq.end(); itor != m_keyword_seq.begin();) {
       // See if the previous item matches.
       if (key_name == (itor - 1)->getName()) {
         // Remove the matching item, and reset iterator to point to the element after the one
@@ -236,7 +236,7 @@ namespace tip {
     // Get number of keywords in header.
     int status = 0;
     int num_keywords = 0;
-    fits_get_hdrspace(m_fp, &num_keywords, 0, &status);
+    fits_get_hdrspace(m_fp, &num_keywords, nullptr, &status);
     if (0 != status) throw TipException(status, formatWhat("Cannot get number of keywords in header"));
 
     // See if any of these keywords were not already loaded.

@@ -10,12 +10,12 @@
 
 namespace tip {
 
-  FitsTipFile::FitsTipFile(const std::string & file_name): ITipFile(file_name), m_fp(0), m_read_only(true) {
+  FitsTipFile::FitsTipFile(const std::string & file_name): ITipFile(file_name), m_fp(nullptr), m_read_only(true) {
     openFile();
   }
 
   FitsTipFile::FitsTipFile(const std::string & file_name, const std::string & template_name, bool clobber): ITipFile(file_name),
-    m_fp(0), m_read_only(true) {
+    m_fp(nullptr), m_read_only(true) {
     std::string full_name;
 
     // Handle clobber by prepending a bang or not.
@@ -48,7 +48,7 @@ namespace tip {
     m_read_only = false;
   }
 
-  FitsTipFile::FitsTipFile(const FitsTipFile & file): ITipFile(file.getName()), m_fp(0), m_read_only(true) {
+  FitsTipFile::FitsTipFile(const FitsTipFile & file): ITipFile(file.getName()), m_fp(nullptr), m_read_only(true) {
     openFile();
   }
 
@@ -74,7 +74,7 @@ namespace tip {
     if (clobber) full_name = "!";
     full_name += new_file_name;
     
-    fitsfile * new_fp = 0;
+    fitsfile * new_fp = nullptr;
     int status = 0;
     fits_create_file(&new_fp, const_cast<char *>(full_name.c_str()), &status);
     if (0 != status) throw TipException(status, "FitsTipFile::copyFile could not create file " + new_file_name);
@@ -82,7 +82,7 @@ namespace tip {
     fits_copy_file(m_fp, new_fp, 1, 1, 1, &status);
     if (0 != status) throw TipException(status, "FitsTipFile::copyFile Somethings Wrong!" + new_file_name);
     //int ignored_status = status;
-    for (int ii = 1; 0 == fits_movabs_hdu(new_fp, ii, 0, &status) && ii <= new_fp->Fptr->maxhdu; ++ii) {
+    for (int ii = 1; 0 == fits_movabs_hdu(new_fp, ii, nullptr, &status) && ii <= new_fp->Fptr->maxhdu; ++ii) {
       // Why are write commands throwing 204 errors (VALUE_UNDEFINED?)
       if (0 != fits_write_chksum(new_fp, &status) && VALUE_UNDEFINED != status) throw TipException(status, "FitsTipFile::copyFile could not update checksum for " + new_file_name);
       status = 0;
@@ -117,7 +117,7 @@ namespace tip {
   void FitsTipFile::closeFile(bool update_checksum, int status) {
     if (update_checksum && 0 == status) {
       //int ignored_status = 0;
-      for (int ii = 1; 0 == fits_movabs_hdu(m_fp, ii, 0, &status) && ii <= m_fp->Fptr->maxhdu; ++ii) {
+      for (int ii = 1; 0 == fits_movabs_hdu(m_fp, ii, nullptr, &status) && ii <= m_fp->Fptr->maxhdu; ++ii) {
         if (fits_write_chksum(m_fp, &status) && VALUE_UNDEFINED != status) throw TipException(status, "FitsTipFile::closeFile could not update checksum.");
 	status = 0;
       }
@@ -128,7 +128,7 @@ namespace tip {
       throw TipException(status, "FitsTipFile::copyFile could not update checksum for this file!!!!");
     }
     fits_close_file(m_fp, &status);
-    m_fp = 0;
+    m_fp = nullptr;
   }
 
 }

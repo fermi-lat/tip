@@ -46,7 +46,7 @@ namespace {
 
 namespace tip {
 
-  TestColumn::~TestColumn() throw() {}
+  TestColumn::~TestColumn() throw() = default;
 
   /** \brief Perform all detailed tests.
   */
@@ -389,7 +389,7 @@ namespace tip {
       test_string_list.push_back("123   ");
       test_string_list.push_back("   123");
       test_string_list.push_back("   123   ");
-      for (std::list<std::string>::const_iterator itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
+      for (auto itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
         const std::string & test_string(*itor);
         try {
           record["1I_COLUMN"].set(test_string);
@@ -406,7 +406,7 @@ namespace tip {
       vector_string_input[0] = "111";
       vector_string_input[1] = "222";
       vector_string_input[2] = "333";
-      for (std::list<std::string>::const_iterator itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
+      for (auto itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
         vector_string_input[1] = *itor;
         try {
           record["3I_COLUMN"].set(vector_string_input);
@@ -425,7 +425,7 @@ namespace tip {
       test_string_list.push_back("T   ");
       test_string_list.push_back("   T");
       test_string_list.push_back("   T   ");
-      for (std::list<std::string>::const_iterator itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
+      for (auto itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
         const std::string & test_string(*itor);
         try {
           record["1L_COLUMN"].set(test_string);
@@ -456,7 +456,7 @@ namespace tip {
       test_string_list.clear();
       test_string_list.push_back(" ");
     #endif
-      for (std::list<std::string>::const_iterator itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
+      for (auto itor = test_string_list.begin(); itor != test_string_list.end(); ++itor) {
         vector_string_input[1] = *itor;
         try {
           record["3L_COLUMN"].set(vector_string_input);
@@ -492,7 +492,7 @@ namespace tip {
     IFileSvc::instance().getFileSummary(in_file, summary);
 
     // Iterate over all extensions.
-    for (FileSummary::const_iterator ext_itor = summary.begin(); ext_itor != summary.end(); ++ext_itor) {
+    for (auto ext_itor = summary.begin(); ext_itor != summary.end(); ++ext_itor) {
       // Open input extension.
       std::unique_ptr<const Extension> in_ext(IFileSvc::instance().readExtension(in_file, ext_itor->getExtId(), ""));
 
@@ -500,7 +500,7 @@ namespace tip {
       if (!in_ext->isTable()) continue;
 
       // Cast into Table state.
-      const Table * in_table = dynamic_cast<const Table *>(in_ext.get());
+      const auto * in_table = dynamic_cast<const Table *>(in_ext.get());
 
       // Open output extension.
       std::unique_ptr<Table> out_table(IFileSvc::instance().editTable(out_file, ext_itor->getExtId(), ""));
@@ -526,7 +526,7 @@ namespace tip {
         }
       }
 
-      if (FitsTable * fits_table = dynamic_cast<FitsTable *>(out_table.get())) {
+      if (auto * fits_table = dynamic_cast<FitsTable *>(out_table.get())) {
 
         // A little ugliness to handle variable length columns.
         fitsfile * out_fp = fits_table->getFp();

@@ -17,7 +17,7 @@ namespace tip {
   void Header::get(const char ** keys, KeyValCont_t & key_vals) const {
     std::string value;
     // Iterate over the given set of keys.
-    for (const char ** key = keys; 0 != *key; ++key) {
+    for (const char ** key = keys; nullptr != *key; ++key) {
       try {
         // Look up its value.
         operator [](*key).get(value);
@@ -33,7 +33,7 @@ namespace tip {
 
   void Header::update(const KeyValCont_t & key_vals) {
     std::string value;
-    for (KeyValCont_t::const_iterator itor = key_vals.begin(); itor != key_vals.end(); ++itor) {
+    for (auto itor = key_vals.begin(); itor != key_vals.end(); ++itor) {
       try {
         // Find the keyword.
         Keyword & keyword = operator [](itor->first);

@@ -39,7 +39,7 @@ namespace tip {
   auto KeyRecord::getValue() const -> std::string {
     char value[FLEN_VALUE] = "";
     int status = 0;
-    fits_parse_value(const_cast<char *>(m_record.c_str()), value, 0, &status);
+    fits_parse_value(const_cast<char *>(m_record.c_str()), value, nullptr, &status);
     if (0 != status) throw TipException(status, "KeyRecord::getValue could not parse record");
 
     // See if this is treated as a string, in which case it will have trailing blanks and a quote.
@@ -105,10 +105,10 @@ namespace tip {
     if (value == "T" || value == "F") is_new_string = false;
     else {
       // Does not look like a logical, so see if it looks like a number.
-      char * remainder = 0;
+      char * remainder = nullptr;
       errno = 0;
       strtod(value.c_str(), &remainder);
-      if (0 == errno && (0 == remainder || '\0' == *remainder)) is_new_string = false;
+      if (0 == errno && (nullptr == remainder || '\0' == *remainder)) is_new_string = false;
     }
 
     // Truth table to determine how to treat the new string.

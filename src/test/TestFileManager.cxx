@@ -133,7 +133,7 @@ namespace tip {
 
   void TestFileManager::editExtensionTest() {
     std::string msg;
-    Extension * ext = 0;
+    Extension * ext = nullptr;
 
     // Find test data directory:
     std::string data_dir = getDataDir();
@@ -144,8 +144,8 @@ namespace tip {
       ext = IFileSvc::instance().editExtension(data_dir + "a1.pha", "SPECTRUM", "#row > 50 && #row <= 100");
       ReportExpected(msg + " succeeded");
 
-      Table * table = dynamic_cast<Table *>(ext);
-      if (0 == table) ReportUnexpected(msg + ": extension is not a table");
+      auto * table = dynamic_cast<Table *>(ext);
+      if (nullptr == table) ReportUnexpected(msg + ": extension is not a table");
     } catch(const TipException & x) {
       ReportUnexpected(msg + " failed", x);
     }
@@ -155,7 +155,7 @@ namespace tip {
 
   void TestFileManager::readExtensionTest() {
     std::string msg;
-    const Extension * ext = 0;
+    const Extension * ext = nullptr;
 
     // Find test data directory:
     std::string data_dir = getDataDir();
@@ -166,8 +166,8 @@ namespace tip {
       ext = IFileSvc::instance().readExtension(data_dir + "a1.pha", "SPECTRUM", "#row > 50 && #row <= 100");
       ReportExpected(msg + " succeeded");
 
-      const Table * table = dynamic_cast<const Table *>(ext);
-      if (0 == table) ReportUnexpected(msg + ": extension is not a table");
+      const auto * table = dynamic_cast<const Table *>(ext);
+      if (nullptr == table) ReportUnexpected(msg + ": extension is not a table");
     } catch(const TipException & x) {
       ReportUnexpected(msg + " failed", x);
     }
@@ -177,7 +177,7 @@ namespace tip {
 
   void TestFileManager::readTableTest() {
     std::string msg;
-    const Table * table = 0;
+    const Table * table = nullptr;
 
     // Find test data directory:
     std::string data_dir = getDataDir();
@@ -192,7 +192,7 @@ namespace tip {
     }
 
     // Basic sanity check only: is the number of records 50, as the filter should have selected?
-    if (0 != table) {
+    if (nullptr != table) {
       Index_t num_rec = -1;
       try {
         num_rec = table->getNumRecords();
@@ -300,7 +300,7 @@ namespace tip {
       fs.getFileSummary(file_name, summary);
 
       // Iterate over extensions.
-      for (FileSummary::iterator itor = summary.begin(); itor != summary.end(); ++itor) {
+      for (auto itor = summary.begin(); itor != summary.end(); ++itor) {
         std::unique_ptr<const tip::Extension> ext(fs.readExtension(file_name, itor->getExtId()));
 
         std::string telescop;
@@ -329,7 +329,7 @@ namespace tip {
 
       // Try to open this new image.
       const Image * image = IFileSvc::instance().readImage("created_image.fits", "TEST_IMAGE");
-      delete image; image = 0;
+      delete image; image = nullptr;
 
       // Try to create new image when the file does exist. Clobber should not be
       // relevant because the first image exists, so test that setting clobber to false
@@ -355,7 +355,7 @@ namespace tip {
 
       // Try to open this new table.
       const Table * table = IFileSvc::instance().readTable("created_table.fits", "TEST_TABLE");
-      delete table; table = 0;
+      delete table; table = nullptr;
 
       // Try to create new table when the file does exist. Clobber should not be
       // relevant because the first image exists, so test that setting clobber to false

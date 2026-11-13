@@ -13,7 +13,7 @@
 
 namespace tip {
 
-  TestInterpolation::~TestInterpolation() throw() {}
+  TestInterpolation::~TestInterpolation() throw() = default;
 
   /** \brief Perform all detailed tests.
   */

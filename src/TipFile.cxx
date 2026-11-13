@@ -8,7 +8,7 @@ namespace tip {
 
   void ITipFile::setName(const std::string & file_name) { m_file_name = file_name; }
 
-  TipFile::TipFile(): ITipFile(""), m_itip_file(0) {}
+  TipFile::TipFile(): ITipFile(""), m_itip_file(nullptr) {}
 
   TipFile::TipFile(const TipFile & tip_file): ITipFile(tip_file.getName()), m_itip_file(tip_file.m_itip_file->clone()) {}
 
@@ -33,11 +33,11 @@ namespace tip {
 
   auto TipFile::clone() const -> ITipFile * {
     // Pointer to be returned.
-    ITipFile * itip_file = 0;
+    ITipFile * itip_file = nullptr;
 
     // See if this object's ITipFile object is itself another TipFile.
-    TipFile * tf = dynamic_cast<TipFile *>(m_itip_file);
-    if (0 == tf) {
+    auto * tf = dynamic_cast<TipFile *>(m_itip_file);
+    if (nullptr == tf) {
       // Underlying object is not a TipFile, so it is safe to clone it and return a new TipFile which owns
       // the clone.
       itip_file = new TipFile(m_itip_file->clone());

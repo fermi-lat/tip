@@ -29,7 +29,7 @@ namespace tip {
     else full_name = file_name;
 
     // Fitsio stuff.
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
 
     // Concatenate the file name with the template name so that cfitsio can use it.
@@ -57,7 +57,7 @@ namespace tip {
 
   void FitsFileManager::appendImage(const std::string & file_name, const std::string & image_name,
     const ImageBase::PixelCoordinate & dims) {
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
 
     // Open or create the file.
@@ -76,7 +76,7 @@ namespace tip {
   }
 
   void FitsFileManager::appendTable(const std::string & file_name, const std::string & table_name) {
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
 
     // Open or create the file.
@@ -92,7 +92,7 @@ namespace tip {
     }
 
     // Create new table extension at end of file.
-    fits_create_tbl(fp, BINARY_TBL, 0, 0, 0, 0, 0, const_cast<char *>(table_name.c_str()), &status);
+    fits_create_tbl(fp, BINARY_TBL, 0, 0, nullptr, nullptr, nullptr, const_cast<char *>(table_name.c_str()), &status);
 
     // Close the file; not interested in it anymore.
     closeFile(fp, true, status);
@@ -102,7 +102,7 @@ namespace tip {
   }
 
   void FitsFileManager::getFileSummary(const std::string & file_name, FileSummary & summary) {
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
 
     // Clear out summary.
@@ -114,7 +114,7 @@ namespace tip {
       throw TipException(status, std::string("Unable to open file named \"") + file_name + "\" with read only access");
     
     // Make sure we scan starting from the first extension, regardless of the full file name used.
-    fits_movabs_hdu(fp, 1, 0, &status);
+    fits_movabs_hdu(fp, 1, nullptr, &status);
     if (0 != status) {
       closeFile(fp, false, status);
       throw TipException(status, std::string("Unable to move to primary HDU in file named \"") + file_name);
@@ -129,7 +129,7 @@ namespace tip {
       summary.push_back(ExtSummary(ext_id));
 
       // Go on to next extension.
-      fits_movrel_hdu(fp, 1, 0, &status);
+      fits_movrel_hdu(fp, 1, nullptr, &status);
     }
     // Clean up.
     closeFile(fp, false, status);
@@ -140,7 +140,7 @@ namespace tip {
   }
 
   auto FitsFileManager::isValid(const std::string & file_name) -> bool {
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
     fits_open_file(&fp, const_cast<char *>(file_name.c_str()), READONLY, &status);
     if (0 != status) return false;
@@ -150,7 +150,7 @@ namespace tip {
 
   auto FitsFileManager::createFile(const std::string & file_name, const std::string & image_name,
     const ImageBase::PixelCoordinate & dims) -> fitsfile * {
-    fitsfile * fp = 0;
+    fitsfile * fp = nullptr;
     int status = 0;
 
     // Create the file.
@@ -168,7 +168,7 @@ namespace tip {
     int status = 0;
 
     // Copy the coordinates to a C-passable form.
-    PixOrd_t * dims_tmp = new PixOrd_t[dims.size()];
+    auto * dims_tmp = new PixOrd_t[dims.size()];
     for (std::size_t ii = 0; ii != dims.size(); ++ii) dims_tmp[ii] = dims[ii];
 
     // Create new image extension at end of file.
@@ -195,7 +195,7 @@ namespace tip {
     char key_name[16];
     if (1 == hdu_num) strcpy(key_name, "HDUNAME");
     else strcpy(key_name, "EXTNAME");
-    fits_update_key(fp, TSTRING, key_name, const_cast<char *>(image_name.c_str()), 0, &status);
+    fits_update_key(fp, TSTRING, key_name, const_cast<char *>(image_name.c_str()), nullptr, &status);
     if (0 != status) {
       closeFile(fp, true, status);
       throw TipException(status, std::string("Unable to name image in file \"") + file_name + "\"");
@@ -211,16 +211,16 @@ namespace tip {
     char tmp_id[FLEN_CARD] = "";
 
     // Try EXTNAME keyword first.
-    fits_read_key(fp, TSTRING, "EXTNAME", tmp_id, 0, &status);
+    fits_read_key(fp, TSTRING, "EXTNAME", tmp_id, nullptr, &status);
     if (0 != status) {
       status = 0;
       // If that didn't work, try HDUNAME.
-      fits_read_key(fp, TSTRING, "HDUNAME", tmp_id, 0, &status);
+      fits_read_key(fp, TSTRING, "HDUNAME", tmp_id, nullptr, &status);
       if (0 != status) {
         // Finally, if that didn't work, just use the number, offset by 1.
         int hdu_num = 0;
         fits_get_hdu_num(fp, &hdu_num);
-        sprintf(tmp_id, "%d", hdu_num - 1);
+        snprintf(tmp_id, sizeof(tmp_id),  "%d", hdu_num - 1);
       }
     }
     ext_id = tmp_id;
@@ -229,7 +229,7 @@ namespace tip {
   void FitsFileManager::closeFile(fitsfile *fp, bool update_checksum, int status) {
     if (update_checksum && 0 == status) {
       //int ignored_status = 0;
-      for (int ii = 1; 0 == fits_movabs_hdu(fp, ii, 0, &status) && ii <= fp->Fptr->maxhdu; ++ii) {
+      for (int ii = 1; 0 == fits_movabs_hdu(fp, ii, nullptr, &status) && ii <= fp->Fptr->maxhdu; ++ii) {
         if (0 != fits_write_chksum(fp, &status)) {
 	  if (VALUE_UNDEFINED != status) {
 	  throw TipException(status, "FitsFileManager::closeFile could not update checksum.");

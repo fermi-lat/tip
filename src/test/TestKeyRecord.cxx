@@ -13,7 +13,7 @@
 
 namespace tip {
 
-  TestKeyRecord::~TestKeyRecord() throw() {}
+  TestKeyRecord::~TestKeyRecord() throw() = default;
 
   /** \brief Perform all detailed tests.
   */
